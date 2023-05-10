@@ -97,15 +97,75 @@ public class ABOX {
             for (int i = 0; i < papersArray.size(); i++) {
                 JsonObject record = papersArray.getJsonObject(i);
 
+                String __paper_type = record.getString("paper_type");
+                String __venue_type = record.getString("journal", "");
+
+
+                if(__paper_type.equals("Poster")){
+                    // it should be published in a conference, otherwise skip it
+                    if (__venue_type.equals("")){
+                        continue;
+                    }
+                    else {
+                        System.out.println("Problem!, skipping a paper that has Poster type, but not published in a conference.");
+                        break;
+                    }
+                }
                 String __paper_id = record.getString("paperId");
                 String __paper_doi = record.getJsonObject("externalIds").getString("DOI", "");
                 if (__paper_doi.equals("")) continue; // skip if no doi
                 String __paper_title = record.getString("title");
 
+                // add doi to schmea
+
+
+
+                // venue info
+                if (__venue_type.equals("")) {
+                    // conference
+                    String __conference_name = record.getString("venue");
+                    String __conference_type = record.getString("conference_type");
+                    if (__conference_type.equals("Symposium")){
+                        // Symposium
+
+                    } else if (__conference_type.equals("ExpertGroup")) {
+                        // ExpertGroup
+
+                    } else if (__conference_type.equals("Workshop")) {
+                        // Workshop
+                        
+                    } else if (__conference_type.equals("Regular")) {
+                        //Regular
+                        
+                    }
+                    else {
+                        continue;
+                    }
+                }
+
+                else {
+                    // journal
+                }
+
 
                 Individual _paper = paper.createIndividual(Base_url + __paper_id);
-                _paper.addProperty(doi, __paper_doi);
-                _paper.addProperty(title, __paper_title);
+//                _paper.addProperty(doi, Base_url + "www.doi.org/"+ __paper_doi);
+//                _paper.addProperty(title, Base_url + __paper_title);
+
+                // loop through the authors and add them to the model
+                JsonArray authorsArray = record.getJsonArray("authors");
+                for (int j = 0; j < authorsArray.size(); j++) {
+                    JsonObject _author = authorsArray.getJsonObject(j);
+
+                    String __author_id = _author.getString("authorId");
+                    String __author_name = _author.getString("name");
+
+                    Individual __author = author.createIndividual(Base_url + __author_id);
+//                    __author.addProperty(name,Base_url+ __author_name);
+
+                    _paper.addProperty(writtenBy, __author);
+
+                }
             }
 
 
