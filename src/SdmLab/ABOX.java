@@ -9,7 +9,6 @@ import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.reasoner.Reasoner;
 import org.apache.jena.reasoner.ReasonerRegistry;
 import org.apache.jena.vocabulary.*;
-import org.json.*;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
 
@@ -30,12 +29,13 @@ public class ABOX {
         try {
             // create models instances
             OntModel model = null;
-			Model m = ModelFactory.createDefaultModel().read("data/Ontology-output.owl");
-			model = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM, m);
+                Model m = ModelFactory.createDefaultModel().read("data/Ontology-output.owl");
+                model = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM, m);
             String Base_url = "http://www.sdm-lab.com/#";
             // read the JSON file
             JsonReader reader;
             reader = Json.createReader(Files.newInputStream(Paths.get("data/papers_json.json")));
+
 
 
             OntClass venue = model.getOntClass( Base_url +"Venue");
@@ -98,59 +98,117 @@ public class ABOX {
                 JsonObject record = papersArray.getJsonObject(i);
 
                 String __paper_type = record.getString("paper_type");
-                String __venue_type = record.getString("journal", "");
+                String __journal_exists = record.get("journal").toString();
 
 
-                if(__paper_type.equals("Poster")){
+                if (__paper_type.equals("Fullpaper")) {
+                    // fullpaper
+                    Individual __paper = fullpaper.createIndividual(Base_url + __paper_type);
+
+                } else if (__paper_type.equals("ShortPaper")) {
+                    // ShortPaper
+                    Individual __paper = shortPaper.createIndividual(Base_url + __paper_type);
+                } else if (__paper_type.equals("DemoPaper")) {
+                    // DemoPaper
+                    Individual __paper = demoPaper.createIndividual(Base_url + __paper_type);
+                }
+                else if (__paper_type.equals("Poster")) {
                     // it should be published in a conference, otherwise skip it
-                    if (__venue_type.equals("")){
+                    if (__journal_exists == null) {
+                        Individual __paper = poster.createIndividual(Base_url + __paper_type);
                         continue;
-                    }
-                    else {
+                    } else {
                         System.out.println("Problem!, skipping a paper that has Poster type, but not published in a conference.");
                         break;
                     }
                 }
+
                 String __paper_id = record.getString("paperId");
                 String __paper_doi = record.getJsonObject("externalIds").getString("DOI", "");
                 if (__paper_doi.equals("")) continue; // skip if no doi
                 String __paper_title = record.getString("title");
-
-                // add doi to schmea
-
+                // add doi to schema
+                Integer __year = record.getInt("year");
+                //add year as a property to schema #toadd
 
 
                 // venue info
-                if (__venue_type.equals("")) {
+                if (__journal_exists == null) {
                     // conference
-                    String __conference_name = record.getString("venue");
-                    String __conference_type = record.getString("conference_type");
-                    if (__conference_type.equals("Symposium")){
+                    String __conferencename = record.get("conference").toString();
+                    Integer __editionN = record.getInt("edition");
+                    // System.out.println(__conference_name);
+                    String __conference_type = record.get("conference_type").toString();
+
+                    if (__conference_type.equals("Symposium")) {
                         // Symposium
+                        Individual __conference = symposium.createIndividual(Base_url + __conference_type);
 
                     } else if (__conference_type.equals("ExpertGroup")) {
                         // ExpertGroup
-
+                        Individual __conference = expertGroup.createIndividual(Base_url + __conference_type);
                     } else if (__conference_type.equals("Workshop")) {
                         // Workshop
-                        
+                        Individual __conference = workshop.createIndividual(Base_url + __conference_type);
                     } else if (__conference_type.equals("Regular")) {
                         //Regular
-                        
+                        Individual __conference = regular.createIndividual(Base_url + __conference_type);
                     }
+
+                    //Conference name as attribute #toAdd
+                    //Conference edition as attribute #toAdd
+                    //Proceeding is missing - should we add the same name as the conference
+
                     else {
                         continue;
                     }
-                }
-
-                else {
+                } else {
                     // journal
-                }
+                    JsonArray journalArray = record.getJsonArray("journal");
+                    for (int j = 0; j < journalArray.size(); j++) {
+                        JsonObject _journal = journalArray.getJsonObject(j);
 
+                        String __journalName = record.get("name").toString();
+                        Integer __volumeN = record.getInt("volume");
+
+                        Individual __journal = journal.createIndividual(Base_url + __journalName);
+                        Individual __volume = volume.createIndividual(Base_url + __volumeN);
+
+
+                        //add property name and Volume #toadd
+                        //__journal.addProperty(name,Base_url+ __journalName);
+                        //__journal.addProperty(name,Base_url+ __volume);
+
+                        __volume.addProperty(belongsToJournal, __journal);
+
+                        //__journal.addProperty(journalRelatedTo, __area);
+
+
+                    }
+                }
 
                 Individual _paper = paper.createIndividual(Base_url + __paper_id);
 //                _paper.addProperty(doi, Base_url + "www.doi.org/"+ __paper_doi);
 //                _paper.addProperty(title, Base_url + __paper_title);
+
+
+                // loop through the keyword and area and add them to the model
+
+                JsonArray s2FieldsOfStudyArray = record.getJsonArray("category");
+                for (int j = 0; j < s2FieldsOfStudyArray.size(); j++) {
+                    JsonObject _keyword = s2FieldsOfStudyArray.getJsonObject(j);
+
+                    String __keywordN = _keyword.getString("category");
+                    String __areaN = _keyword.getString("category");
+
+                    Individual __keyword = keyword.createIndividual(Base_url + __keywordN);
+                    Individual __area = area.createIndividual(Base_url + __areaN);
+
+                    _paper.addProperty(containsKeyword, __keyword);
+                    __keyword.addProperty(keywordRelatedTo, __area);
+                    //area needs to be connected with journal and conference  #toadd
+
+                }
 
                 // loop through the authors and add them to the model
                 JsonArray authorsArray = record.getJsonArray("authors");
@@ -166,9 +224,24 @@ public class ABOX {
                     _paper.addProperty(writtenBy, __author);
 
                 }
+
+
+                //loop through the reviewer of the paper
+
+                JsonArray revArray = record.getJsonArray("reviewers");
+                for (int j = 0; j < revArray.size(); j++) {
+                    JsonObject _reviewer = revArray.getJsonObject(j);
+
+                    String __reviewer_id = _reviewer.get("reviewer").toString();
+
+                    Individual __reviewer = reviewer.createIndividual(Base_url + __reviewer_id);
+                     __reviewer.addProperty(reviewsPaper, _paper);
+                     //Add reviewer writesreview  #toadd
+                    //Review is missing in data
+
+
+                }
             }
-
-
 
             // Create a reasoner and bind it to the ontology
             Reasoner reasoner = ReasonerRegistry.getOWLReasoner();
@@ -194,3 +267,4 @@ public class ABOX {
         }
     }
 }
+
