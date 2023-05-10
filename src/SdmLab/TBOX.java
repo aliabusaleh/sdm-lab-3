@@ -207,6 +207,7 @@ public class TBOX {
             doi.addRange(XSD.anyURI);
             doi.addLabel("A paper has a DOI", "en");
 
+
             DatatypeProperty edition = model.createDatatypeProperty(Base_url + "edition");
             edition.addDomain(proceeding);
             edition.addRange(XSD.integer);
@@ -228,10 +229,11 @@ public class TBOX {
             domin.addLabel("A keyword has a domain", "en");
 
             DatatypeProperty name = model.createDatatypeProperty(Base_url + "name");
-            name.addDomain(person);
-            name.addDomain(venue);
+            UnionClass unionClass = model.createUnionClass(null, model.createList(person, venue));
+            name.addDomain(unionClass);
             name.addRange(XSD.xstring);
             name.addLabel("A person/venue has a name", "en");
+
 
 
             DatatypeProperty reviewdecision = model.createDatatypeProperty(Base_url + "reviewdecision");
@@ -273,14 +275,14 @@ public class TBOX {
 //            poster.addProperty(submittedIn, conference);
 //            model.createHasValueRestriction(null, submittedIn, conference);
 
-            // Create the restriction
-            SomeValuesFromRestriction submitToConference = model.createSomeValuesFromRestriction(null, submittedIn, conference);
-
-            // Create the intersection of Paper and the restriction
-            IntersectionClass posterIntersection = model.createIntersectionClass(null, model.createList(paper, submitToConference));
-
-            // Set the equivalence between Poster and the intersection class
-            poster.setEquivalentClass(posterIntersection);
+//            // Create the restriction
+//            SomeValuesFromRestriction submitToConference = model.createSomeValuesFromRestriction(null, submittedIn, conference);
+//
+//            // Create the intersection of Paper and the restriction
+//            IntersectionClass posterIntersection = model.createIntersectionClass(null, model.createList(paper, submitToConference));
+//
+//            // Set the equivalence between Poster and the intersection class
+//            poster.setEquivalentClass(posterIntersection);
 
 
             FileOutputStream writerStream = new FileOutputStream("data/Ontology-output.owl");
