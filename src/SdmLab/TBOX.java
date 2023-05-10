@@ -204,7 +204,7 @@ public class TBOX {
 
             DatatypeProperty doi = model.createDatatypeProperty(Base_url + "doi");
             doi.addDomain(paper);
-            doi.addRange(XSD.anyURI);
+            doi.addRange(XSD.xstring);
             doi.addLabel("A paper has a DOI", "en");
 
 

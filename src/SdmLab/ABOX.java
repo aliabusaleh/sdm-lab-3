@@ -1,5 +1,6 @@
 package SdmLab;
 
+import jakarta.json.*;
 import org.apache.jena.ontology.*;
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.ontology.OntModel;
@@ -9,34 +10,34 @@ import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.reasoner.Reasoner;
 import org.apache.jena.reasoner.ReasonerRegistry;
 import org.apache.jena.vocabulary.*;
-import java.io.FileOutputStream;
-import java.io.OutputStream;
 
-import jakarta.json.Json;
-import jakarta.json.JsonArray;
-import jakarta.json.JsonObject;
-import jakarta.json.JsonReader;
+import java.io.*;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.FileOutputStream;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
 public class ABOX {
+    static String encodeValue(String value) {
+        try {
+            return URLEncoder.encode(value, StandardCharsets.UTF_8.toString());
+        } catch (UnsupportedEncodingException e) {
+            throw new RuntimeException(e);
+        }
+    }
     public static void createAndSaveABOX() {
         try {
             // create models instances
             OntModel model = null;
                 Model m = ModelFactory.createDefaultModel().read("data/Ontology-output.owl");
-                model = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM, m);
+                model = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM, m);
+                model.setNsPrefix("sdm", "https://www.sdm-lab/#");
             String Base_url = "http://www.sdm-lab.com/#";
             // read the JSON file
             JsonReader reader;
             reader = Json.createReader(Files.newInputStream(Paths.get("data/papers_json.json")));
-
-
 
             OntClass venue = model.getOntClass( Base_url +"Venue");
             OntClass journal = model.getOntClass(  Base_url +"Journal");
@@ -94,118 +95,159 @@ public class ABOX {
 
             JsonArray papersArray = reader.readArray();
             // loop through the papers array and add each paper to the model
-            for (int i = 0; i < papersArray.size(); i++) {
+            for (int i = 0; i < 100; i++) {
                 JsonObject record = papersArray.getJsonObject(i);
+
+                if( record.getJsonArray("reviewers").size()<2){
+                    System.out.println("Less than 2 reviewer, skip it");
+                    continue;
+                }
 
                 String __paper_type = record.getString("paper_type");
                 String __journal_exists = record.get("journal").toString();
 
+                String __paper_id = record.getString("paperId");
+                OntClass __paper;
 
                 if (__paper_type.equals("Fullpaper")) {
                     // fullpaper
-                    Individual __paper = fullpaper.createIndividual(Base_url + __paper_type);
+                     __paper = fullpaper;
 
                 } else if (__paper_type.equals("ShortPaper")) {
                     // ShortPaper
-                    Individual __paper = shortPaper.createIndividual(Base_url + __paper_type);
+                    __paper = shortPaper;
                 } else if (__paper_type.equals("DemoPaper")) {
                     // DemoPaper
-                    Individual __paper = demoPaper.createIndividual(Base_url + __paper_type);
+                     __paper = demoPaper;
                 }
                 else if (__paper_type.equals("Poster")) {
                     // it should be published in a conference, otherwise skip it
-                    if (__journal_exists == null) {
-                        Individual __paper = poster.createIndividual(Base_url + __paper_type);
-                        continue;
+                    if (__journal_exists.equals("null")) {
+                         __paper = poster;
                     } else {
                         System.out.println("Problem!, skipping a paper that has Poster type, but not published in a conference.");
                         break;
                     }
-                }
 
-                String __paper_id = record.getString("paperId");
+                }
+                else {
+                    System.out.println("Problem!, Problem with unknown type!");
+                    continue;
+                }
+                // now create the paper
+                Individual __paperInstance = __paper.createIndividual(Base_url + __paper_id);
+
+
+                String __paper_title = record.getString("title");
+                __paperInstance.addProperty(title, __paper_title);
+
+//                // add doi to schema
+//                Integer __year = record.getInt("year");
+//                //add year as a property to schema #toadd
+
+
                 String __paper_doi = record.getJsonObject("externalIds").getString("DOI", "");
                 if (__paper_doi.equals("")) continue; // skip if no doi
-                String __paper_title = record.getString("title");
-                // add doi to schema
-                Integer __year = record.getInt("year");
-                //add year as a property to schema #toadd
+                __paperInstance.addProperty(doi, encodeValue(__paper_doi));
 
 
                 // venue info
-                if (__journal_exists == null) {
+                // conference
+                if (__journal_exists.equals("null")) {
                     // conference
-                    String __conferencename = record.get("conference").toString();
+                    String __conferencename = record.getString("conference");
                     Integer __editionN = record.getInt("edition");
                     // System.out.println(__conference_name);
-                    String __conference_type = record.get("conference_type").toString();
+                    String __conference_type = record.getString("conference_type");
+                    String __conference_name = record.getString("conference");
+                    Individual __conferenceInstance;
+                    // try to check of conferance exists
+                    __conferenceInstance = model.getIndividual(Base_url + encodeValue(__conference_name));
+                    if (__conferenceInstance == null) {
+                        if (__conference_type.equals("Symposium")) {
+                            // Symposium
+                            ;
+                            __conferenceInstance = symposium.createIndividual(Base_url + encodeValue(__conference_name));
 
-                    if (__conference_type.equals("Symposium")) {
-                        // Symposium
-                        Individual __conference = symposium.createIndividual(Base_url + __conference_type);
-
-                    } else if (__conference_type.equals("ExpertGroup")) {
-                        // ExpertGroup
-                        Individual __conference = expertGroup.createIndividual(Base_url + __conference_type);
-                    } else if (__conference_type.equals("Workshop")) {
-                        // Workshop
-                        Individual __conference = workshop.createIndividual(Base_url + __conference_type);
-                    } else if (__conference_type.equals("Regular")) {
-                        //Regular
-                        Individual __conference = regular.createIndividual(Base_url + __conference_type);
+                        } else if (__conference_type.equals("ExpertGroup")) {
+                            // ExpertGroup
+                            __conferenceInstance = expertGroup.createIndividual(Base_url + encodeValue(__conference_name));
+                        } else if (__conference_type.equals("Workshop")) {
+                            // Workshop
+                            __conferenceInstance = workshop.createIndividual(Base_url + encodeValue(__conference_name));
+                        } else if (__conference_type.equals("Regular")) {
+                            //Regular
+                            __conferenceInstance = regular.createIndividual(Base_url + encodeValue(__conference_name));
+                        } else {
+                            System.out.println("Conference type unkown");
+                            continue;
+                        }
                     }
-
                     //Conference name as attribute #toAdd
                     //Conference edition as attribute #toAdd
+
+
                     //Proceeding is missing - should we add the same name as the conference
+                    String _proceeding = record.get("edition").toString();
+                    Individual __proceeding = proceeding.createIndividual(Base_url + _proceeding);
 
-                    else {
-                        continue;
-                    }
-                } else {
-                    // journal
-                    JsonArray journalArray = record.getJsonArray("journal");
-                    for (int j = 0; j < journalArray.size(); j++) {
-                        JsonObject _journal = journalArray.getJsonObject(j);
-
-                        String __journalName = record.get("name").toString();
-                        Integer __volumeN = record.getInt("volume");
-
-                        Individual __journal = journal.createIndividual(Base_url + __journalName);
-                        Individual __volume = volume.createIndividual(Base_url + __volumeN);
+                    // connect paper with publication
+                    __paperInstance.addProperty(publishedIn, __proceeding);
 
 
-                        //add property name and Volume #toadd
-                        //__journal.addProperty(name,Base_url+ __journalName);
-                        //__journal.addProperty(name,Base_url+ __volume);
+                    //connect paper with instance
+                    __paperInstance.addProperty(submittedIn, __conferenceInstance);
 
-                        __volume.addProperty(belongsToJournal, __journal);
+                    //connect proceeding with conference
+                    __proceeding.addProperty(belongsToConference, __conferenceInstance);
 
-                        //__journal.addProperty(journalRelatedTo, __area);
-
-
-                    }
                 }
+                // journal
+                else {
+                    // journal
+                    JsonObject _journal = record.getJsonObject("journal");
+                    String _journal_name = _journal.getString("name");
+                    // create journal instance or get existing one
+                    Individual __journal = model.getIndividual(Base_url + encodeValue(_journal_name));
+                    if (__journal == null) __journal = journal.createIndividual(Base_url + encodeValue(_journal_name));
+                    // connect paper with it
+                    __paperInstance.addProperty(submittedIn, __journal);
 
-                Individual _paper = paper.createIndividual(Base_url + __paper_id);
-//                _paper.addProperty(doi, Base_url + "www.doi.org/"+ __paper_doi);
-//                _paper.addProperty(title, Base_url + __paper_title);
+                    String _journal_volume = String.valueOf(_journal.get("volume"));
+                    Individual __volume = volume.createIndividual(Base_url + encodeValue(_journal_volume));
+
+                    // connect paper with publication
+                    __paperInstance.addProperty(publishedIn, __volume);
+                    // connect journal with volume
+                    __volume.addProperty(belongsToJournal, __journal);
+
+                }
 
 
                 // loop through the keyword and area and add them to the model
 
-                JsonArray s2FieldsOfStudyArray = record.getJsonArray("category");
+                JsonArray s2FieldsOfStudyArray = record.getJsonArray("s2FieldsOfStudy");
                 for (int j = 0; j < s2FieldsOfStudyArray.size(); j++) {
                     JsonObject _keyword = s2FieldsOfStudyArray.getJsonObject(j);
 
                     String __keywordN = _keyword.getString("category");
                     String __areaN = _keyword.getString("category");
 
-                    Individual __keyword = keyword.createIndividual(Base_url + __keywordN);
-                    Individual __area = area.createIndividual(Base_url + __areaN);
+                    // try to find already existing keyword
+                    Individual _keyword__ = model.getIndividual(Base_url + encodeValue(__keywordN));
+                    if( _keyword__ == null) {
+                        _keyword__ = keyword.createIndividual(Base_url + encodeValue(__keywordN));
+                    }
+                    Individual _area__ = model.getIndividual(Base_url + encodeValue(__areaN));
+                    if(_area__ == null) {
+                        _area__ = area.createIndividual(Base_url + encodeValue(__areaN));
+                    }
 
-                    _paper.addProperty(containsKeyword, __keyword);
-                    __keyword.addProperty(keywordRelatedTo, __area);
+                    // connect keyword with area
+                    _keyword__.addProperty(keywordRelatedTo, _area__);
+                    // connect them with paper
+                    __paperInstance.addProperty(containsKeyword, _keyword__);
+
                     //area needs to be connected with journal and conference  #toadd
 
                 }
@@ -221,26 +263,22 @@ public class ABOX {
                     Individual __author = author.createIndividual(Base_url + __author_id);
 //                    __author.addProperty(name,Base_url+ __author_name);
 
-                    _paper.addProperty(writtenBy, __author);
+                    __paperInstance.addProperty(writtenBy, __author);
 
                 }
-
-
+//
+//
                 //loop through the reviewer of the paper
 
                 JsonArray revArray = record.getJsonArray("reviewers");
-                for (int j = 0; j < revArray.size(); j++) {
-                    JsonObject _reviewer = revArray.getJsonObject(j);
-
-                    String __reviewer_id = _reviewer.get("reviewer").toString();
-
-                    Individual __reviewer = reviewer.createIndividual(Base_url + __reviewer_id);
-                     __reviewer.addProperty(reviewsPaper, _paper);
-                     //Add reviewer writesreview  #toadd
+                for (int j=0; j < revArray.size()-1; j++){
+                    String _reviwer = revArray.getString(j);
+                    Individual __reviewer = reviewer.createIndividual(Base_url + _reviwer);
+                    __reviewer.addProperty(reviewsPaper, __paperInstance);
+                    //Add reviewer writesreview  #toadd
                     //Review is missing in data
-
-
                 }
+
             }
 
             // Create a reasoner and bind it to the ontology
@@ -254,17 +292,16 @@ public class ABOX {
             } else {
                 System.out.println("Ontology is inconsistent");
             }
-            FileOutputStream writerStream = new FileOutputStream("data/Abox-output.owl");
+            FileWriter  writerStream = new FileWriter("data/Abox-output.owl");
             model.write(writerStream, "RDF/XML-ABBREV");
             writerStream.close();
 
 
-
         }
         catch (Exception e){
-            System.out.println(e.getCause());
             e.printStackTrace();
         }
     }
+
 }
 

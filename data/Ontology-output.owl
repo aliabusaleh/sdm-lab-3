@@ -168,7 +168,7 @@
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://www.sdm-lab.com/#doi">
     <rdfs:label xml:lang="en">A paper has a DOI</rdfs:label>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="http://www.sdm-lab.com/#Paper"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://www.sdm-lab.com/#role">
