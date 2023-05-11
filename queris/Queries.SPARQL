@@ -1,0 +1,23 @@
+1) Find all Authors.
+
+PREFIX xsd: <http://www.sdm-lab.com/#>
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl:<http://www.w3.org/2002/07/owl#>
+PREFIX j.0: <http://www.sdm-lab.com/#>
+SELECT DISTINCT ?author
+WHERE {
+    ?author rdf:type  j.0:Author
+}
+
+----------------------------------
+
+2) Find all properties whose domain is Author
+
+PREFIX xsd: <http://www.sdm-lab.com/#>
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl:<http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?prop WHERE {
+  ?prop rdf:type owl:DatatypeProperty .
+  ?prop rdfs:domain xsd:Person .
+}

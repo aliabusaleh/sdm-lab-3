@@ -1,0 +1,4165 @@
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdm:  <http://www.sdm-lab.com/#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+sdm:38979717  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "R. Gottfredson" .
+
+sdm:6203074  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:0b0556ef543bdf4e0a7b7e9debe11b309bede1ba ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.5465%2FAMJ.2010.54533176This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:2183417632  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Monisha N S" .
+
+sdm:1398744071  rdf:type  sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:cfd0400973b9215ac96ef918c6ea2215b845571a ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.JBUSRES.2021.03.032This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:Review  rdf:type  owl:Class .
+
+sdm:27581584  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:ad0beaa0e79a9b95e4de41cd855b7f7f76a8eb7a ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1111%2FJ.1744-6570.2010.01203.XThis+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:66e46478fc83b19353a5fd67044f2592ff511a9b
+        rdf:type             sdm:Fullpaper ;
+        sdm:ContainsKeyword  <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1186%2Fs40537-023-00703-wThis+paper+is+rejected%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2210%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+Big+Data> ;
+        sdm:WrittenBy        sdm:2152334609 , sdm:1733364226 , sdm:1491585715 ;
+        sdm:doi              "10.1186%2Fs40537-023-00703-w" ;
+        sdm:title            "Data-centric artificial intelligence in oncology: a systematic review assessing data quality in machine learning models for head and neck cancer" .
+
+sdm:12077660  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:779713324245b32c12f1817999ec87bb0511858f ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2009.04.003This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+<http://www.sdm-lab.com/#%2223%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Leadership+Quarterly> ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:16713466  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:164e2afbb0a39993581fa3a05530a67c1e3e6da6 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1002%2Fasi.23696This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+<http://www.sdm-lab.com/#10.28991%2Fesj-2023-07-02-023This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+sdm:48518439  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:5e8c9145855755438ae8f732d2256b92045018f7 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1093%2FOXFORDHB%2F9780199326174.013.0009This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:1a928939f8663da3c1c46a01da7e315f91df3af1
+        rdf:type             sdm:Fullpaper ;
+        sdm:ContainsKeyword  sdm:Medicine ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.12659%2FMSM.938835This+paper+is+accepted%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2229%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Medical+Science+Monitor+%3A+International+Medical+Journal+of+Experimental+and+Clinical+Research> ;
+        sdm:WrittenBy        sdm:77838431 , sdm:2152176463 , sdm:78143588 ;
+        sdm:doi              "10.12659%2FMSM.938835" ;
+        sdm:title            "Necessity and Importance of Developing AI in Anesthesia from the Perspective of Clinical Safety and Information Security" .
+
+<http://www.sdm-lab.com/#%2251+4%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Journal+of+the+American+Academy+of+Child+and+Adolescent+Psychiatry> ;
+        sdm:PublicationRelatedTo  sdm:Medicine , sdm:Psychology ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:1339  rdf:type           sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:7303822 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:50744658  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:ad0beaa0e79a9b95e4de41cd855b7f7f76a8eb7a ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1111%2FJ.1744-6570.2010.01203.XThis+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:1644707378  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Afshin Taheri" .
+
+sdm:23385  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:34856590 , sdm:123880806 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:67128030  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "N. Contractor" .
+
+sdm:2581  rdf:type           sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:7619964 , sdm:1392514324 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+<http://www.sdm-lab.com/#10.1111%2FJASP.12744This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+sdm:2387226  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "P. Curșeu" .
+
+<http://www.sdm-lab.com/#%2239%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Journal+of+Organizational+Behavior> ;
+        sdm:PublicationRelatedTo  sdm:Psychology ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:ContainsKeyword  rdf:type  owl:ObjectProperty ;
+        rdfs:domain  sdm:Paper ;
+        rdfs:label   "A Paper contains keywords"@en ;
+        rdfs:range   sdm:Keyword .
+
+sdm:6562  rdf:type           sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:2107601477 , sdm:1403820244 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+<http://www.sdm-lab.com/#The+Rolling+Scopes+Conference>
+        rdf:type                 sdm:ExpertGroup ;
+        sdm:ConferenceRelatedTo  sdm:Business , sdm:Medicine , sdm:Psychology ;
+        sdm:name                 "The Rolling Scopes Conference" ;
+        sdm:venueHasHandler      sdm:688 .
+
+sdm:67278043  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Tomaž Čater" .
+
+<http://www.sdm-lab.com/#10.1002%2Fasi.23696This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+sdm:2078204993  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Alejandro Álvarez-Marín" .
+
+sdm:496  rdf:type            sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:114130900 , sdm:6015019 , sdm:12706874 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:3052094  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "R. T. Sparrowe" .
+
+sdm:20876  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:121546819 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:108061873  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Filomena Canterino" .
+
+sdm:123694439  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "L. Gilson" .
+
+sdm:15e10871bd34d61742790ca8c3e90ae45c486689
+        rdf:type             sdm:Fullpaper ;
+        sdm:ContainsKeyword  sdm:Business ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.5465%2FAMR.2009.0402This+paper+is+accepted%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2236%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Academy+of+Management+Review> ;
+        sdm:WrittenBy        sdm:40954029 , sdm:5505290 , sdm:49667830 ;
+        sdm:doi              "10.5465%2FAMR.2009.0402" ;
+        sdm:title            "Human Resource Systems and Helping in Organizations: A Relational Perspective" .
+
+sdm:fb13ca4e683932b30d74fcdac4780e1b4bc819a1
+        rdf:type             sdm:ShortPaper ;
+        sdm:ContainsKeyword  sdm:Business , <http://www.sdm-lab.com/#Political+Science> ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2Fj.jbusres.2019.09.052This+paper+is+rejected%21> ;
+        sdm:PublishedIn      sdm:7 ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+Business+Research> ;
+        sdm:WrittenBy        sdm:98539811 , sdm:122403081 , sdm:108061873 , sdm:40035191 ;
+        sdm:doi              "10.1016%2Fj.jbusres.2019.09.052" ;
+        sdm:title            "Leadership and change mobilization: The mediating role of distributed leadership" .
+
+sdm:5ea475a81406e5d0ea907fad1ce5be42ad599a15
+        rdf:type             sdm:Fullpaper ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2011.08.009This+paper+is+accepted%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2223%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Leadership+Quarterly> ;
+        sdm:WrittenBy        sdm:40423316 , sdm:5910610 , sdm:70294020 ;
+        sdm:doi              "10.1016%2FJ.LEAQUA.2011.08.009" ;
+        sdm:title            "Relative leader-member exchange, negative affectivity and social identification: A moderated-mediation examination" .
+
+sdm:55bb71c7283c13cafa0950b988c1a73e802045ce
+        rdf:type             sdm:ShortPaper ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.5465%2FAMJ.2009.0865This+paper+is+rejected%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2255%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Academy+of+Management+Journal> ;
+        sdm:WrittenBy        sdm:144307804 , sdm:47446991 , sdm:2151438 ;
+        sdm:doi              "10.5465%2FAMJ.2009.0865" ;
+        sdm:title            "Leader-follower congruence in proactive personality and work outcomes: The mediating role of leader-member exchange" .
+
+sdm:4705  rdf:type           sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:48518439 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:145568464  rdf:type   sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:1a928939f8663da3c1c46a01da7e315f91df3af1 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.12659%2FMSM.938835This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:Author  rdf:type     owl:Class ;
+        rdfs:subClassOf  sdm:Person .
+
+sdm:1796135  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:60be7fab57de6fd77e52812264f6d0073d9e19cb ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.HRMR.2016.09.008This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+<http://www.sdm-lab.com/#%2235%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Journal+of+Organizational+Behavior> ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:16219820  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "S. Wayne" .
+
+sdm:1763145  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "G. Abramo" .
+
+sdm:3244528  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:fb13ca4e683932b30d74fcdac4780e1b4bc819a1 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2Fj.jbusres.2019.09.052This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:340a4d469f33c07ac0108ab882a802235e0a7757
+        rdf:type             sdm:Poster ;
+        sdm:ContainsKeyword  sdm:Psychology , sdm:Business ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1002%2FJOB.2202This+paper+is+accepted%21> ;
+        sdm:PublishedIn      sdm:1 ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Typography+Day+2017> ;
+        sdm:WrittenBy        sdm:87796254 , sdm:48287585 , sdm:47321370 , sdm:51499126 ;
+        sdm:doi              "10.1002%2FJOB.2202" ;
+        sdm:title            "Leader–member exchange (LMX) differentiation and work outcomes: conceptual clarification and critical review" .
+
+<http://www.sdm-lab.com/#%2233%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Organization+Studies> ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Sociology ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:39835700  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "L. V. Dyne" .
+
+sdm:49453512  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "R. King" .
+
+sdm:reviewdecision  rdf:type  owl:DatatypeProperty ;
+        rdfs:domain  sdm:Review ;
+        rdfs:label   "A review has a decision ACCEPTED/REJECTED"@en ;
+        rdfs:range   xsd:string .
+
+sdm:9872  rdf:type           sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:2107737261 , sdm:16713466 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:6907  rdf:type           sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:113870042 , sdm:2069916496 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:1401033074  rdf:type  sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:a713ea4d4c48afc79abea40af006e420e8547802 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1108%2FCDI-05-2013-0063This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:144241701  rdf:type   sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:340a4d469f33c07ac0108ab882a802235e0a7757 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1002%2FJOB.2202This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+<http://www.sdm-lab.com/#10.3390%2Fijgi12020035This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+<http://www.sdm-lab.com/#Voxxed+Days+-+Zurich>
+        rdf:type                 sdm:Symposium ;
+        sdm:ConferenceRelatedTo  sdm:Business , sdm:Medicine , sdm:Psychology ;
+        sdm:name                 "Voxxed Days - Zurich" ;
+        sdm:venueHasHandler      sdm:23483 .
+
+<http://www.sdm-lab.com/#10.1002%2FJOB.2202This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:34312385  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "J. Nahrgang" .
+
+sdm:8573611  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Mary B Mawritz" .
+
+sdm:10202  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:2673144 , sdm:38476574 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+<http://www.sdm-lab.com/#10.4236%2FJSSM.2016.91009This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:2005996770  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Pegah Sajadi" .
+
+sdm:c7101e46dc539be171db692c529610dd4faf01fe
+        rdf:type             sdm:ShortPaper ;
+        sdm:ContainsKeyword  <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.3390%2Fsu15043713This+paper+is+accepted%21> ;
+        sdm:PublishedIn      sdm:3 ;
+        sdm:SubmittedIn      sdm:Sustainability ;
+        sdm:WrittenBy        sdm:3058225 , sdm:2207946432 , sdm:90244165 , sdm:1644707378 , sdm:2133816058 , sdm:144597886 , sdm:51134045 ;
+        sdm:doi              "10.3390%2Fsu15043713" ;
+        sdm:title            "Integration of Blockchain and Digital Twins in the Smart Built Environment Adopting Disruptive Technologies—A Systematic Review" .
+
+sdm:0700a4314a1c14f1894d58ae8581e265d80158bc
+        rdf:type             sdm:ShortPaper ;
+        sdm:ContainsKeyword  sdm:Psychology , sdm:Business ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1002%2FJOB.627This+paper+is+rejected%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2231%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+Organizational+Behavior> ;
+        sdm:WrittenBy        sdm:40403474 , sdm:3455874 , sdm:39747184 , sdm:6038454 ;
+        sdm:doi              "10.1002%2FJOB.627" ;
+        sdm:title            "The relationship between ethical leadership and core job characteristics." .
+
+<http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2016.10.007This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+<http://www.sdm-lab.com/#%2231%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Journal+of+Organizational+Behavior> , <http://www.sdm-lab.com/#Leadership+Quarterly> ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:1413517130  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Xavier Parent-Rocheleau" .
+
+sdm:48287585  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Robin Martin" .
+
+sdm:1403390172  rdf:type  sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:13b326f5a8869bf72b368fbcdabcb3736f77531c ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.3390%2Fijgi12020035This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+<http://www.sdm-lab.com/#10.1037%2Fa0031757This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:8058  rdf:type           sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:3956702 , sdm:66485074 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:4004192  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:ee7aaba2e911b3a74e0eb97a14d7028db825945b ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1037%2Fa0029978This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:2059598628  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Michael T. Braun" .
+
+sdm:4622439  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "D. Conlon" .
+
+<http://www.sdm-lab.com/#10.1111%2FJ.1744-6570.2012.01246.XThis+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:topic  rdf:type  owl:DatatypeProperty ;
+        rdfs:domain  sdm:Area ;
+        rdfs:label   "An area has a topic"@en ;
+        rdfs:range   xsd:string .
+
+sdm:118224089  rdf:type   sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:a797c38057fddbf635a2917424f44b5583792813 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1037%2Fa0021484This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:2433744  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:60df2c1705ba5bdda4d0ec8a563756f39b90a3a6 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.JBUSRES.2017.12.011This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+<http://www.sdm-lab.com/#Organizational+Research+Methods>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Business , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:venueHasHandler   sdm:4593 .
+
+<http://www.sdm-lab.com/#10.1177%2F0149206320930813This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+<http://www.sdm-lab.com/#%2247%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Journal+of+Management> ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:236e777e336a96911b67161e89c73317f514cb43
+        rdf:type   sdm:DemoPaper ;
+        sdm:title  "Leader-Member Exchange: A Critique of Theory & Practice" .
+
+sdm:8611013  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "G. Banks" .
+
+sdm:e6945a04fcfcd3262f5ecceb03deeb1c3d7ed6f8
+        rdf:type             sdm:Fullpaper ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2016.10.008This+paper+is+rejected%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2228%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Leadership+Quarterly> ;
+        sdm:WrittenBy        sdm:4986923 , sdm:48287585 , sdm:115195611 ;
+        sdm:doi              "10.1016%2FJ.LEAQUA.2016.10.008" ;
+        sdm:title            "Complementary person-supervisor fit: An investigation of supplies-values (S-V) fit, leader-member exchange (LMX) and work outcomes" .
+
+sdm:4671716  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:7253454d31e983929e683e2eb9150cc810cedce7 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1002%2FJOB.1885This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:34856590  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:dae4a6e0d6bf612993b608e2e556a3c91ff8b56f ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1037%2Fa0021452This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:Reviewer  rdf:type   owl:Class ;
+        rdfs:subClassOf  sdm:Person .
+
+sdm:fdb3307a9e903bacf6632d1013a280db6dcbd0d1
+        rdf:type             sdm:ShortPaper ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Psychology , sdm:Medicine ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1177%2F0033294117716465This+paper+is+accepted%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%22120%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Psychological+Reports> ;
+        sdm:WrittenBy        sdm:47415235 , sdm:7773084 , sdm:49821654 , sdm:153310624 ;
+        sdm:doi              "10.1177%2F0033294117716465" ;
+        sdm:title            "Leader Trust, Competence, LMX, and Member Performance: A Moderated Mediation Framework" .
+
+sdm:Jfokus  rdf:type             sdm:ExpertGroup ;
+        sdm:ConferenceRelatedTo  sdm:Business , sdm:Psychology , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:name                 "Jfokus" ;
+        sdm:venueHasHandler      sdm:23843 .
+
+sdm:3129735  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:f435c4e1a2f549b3a6288520499014769d311a67 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.3389%2Ffpsyg.2022.792599This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:h-index  rdf:type  owl:DatatypeProperty ;
+        rdfs:domain  sdm:Person ;
+        rdfs:label   "A person has an h-index"@en ;
+        rdfs:range   xsd:integer .
+
+sdm:0c5108cc2b1cceff12808219b16ac5f8f11dd420
+        rdf:type             sdm:ShortPaper ;
+        sdm:ContainsKeyword  sdm:Psychology , sdm:Business ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1111%2FJ.1744-6570.2012.01246.XThis+paper+is+accepted%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2265%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Personnel+Psychology> ;
+        sdm:WrittenBy        sdm:4801448 , sdm:8573611 , sdm:8250249 , sdm:49391374 , sdm:16219820 ;
+        sdm:doi              "10.1111%2FJ.1744-6570.2012.01246.X" ;
+        sdm:title            "A TRICKLE-DOWN MODEL OF ABUSIVE SUPERVISION" .
+
+<http://www.sdm-lab.com/#10.4337%2F9781786439017This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+sdm:7c4a728d8daebb6ec46b30d81db27fb719fe378e
+        rdf:type             sdm:DemoPaper ;
+        sdm:ContainsKeyword  sdm:Biology ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1101%2F2023.01.23.525255This+paper+is+rejected%21> ;
+        sdm:PublishedIn      sdm:10 ;
+        sdm:SubmittedIn      sdm:bioRxiv ;
+        sdm:WrittenBy        sdm:4681485 , sdm:82126346 , sdm:1441502197 ;
+        sdm:doi              "10.1101%2F2023.01.23.525255" ;
+        sdm:title            "Detecting cultural evolution in a songbird species using community-science data and computational modeling" .
+
+sdm:29825117  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:5bf957bd3393240befc4511d130be0c2c6b5b681 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.4337%2F9781786439017.00031This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:6677546  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "David H Sommerfeld" .
+
+sdm:affiliation  rdf:type  owl:DatatypeProperty ;
+        rdfs:domain  sdm:Person ;
+        rdfs:label   "A person is affiliated to some organization/university ..etc"@en ;
+        rdfs:range   xsd:string .
+
+sdm:113712585  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Mariana Iatagan" .
+
+<http://www.sdm-lab.com/#10.1177%2F0149206314559946This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+sdm:10450  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:49150737 , sdm:12077660 , sdm:8092765 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:8113436  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:7326d3ac058e5653482a1b5fcdbb46d3484f6ab8 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1002%2FJOB.2549This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+<http://www.sdm-lab.com/#%22abs%2F2301.08841%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      sdm:ArXiv ;
+        sdm:PublicationRelatedTo  sdm:Physics , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+<http://www.sdm-lab.com/#Sustainable+UX>
+        rdf:type                 sdm:Workshop ;
+        sdm:ConferenceRelatedTo  sdm:Medicine , sdm:Psychology , sdm:Education , sdm:Sociology ;
+        sdm:name                 "Sustainable UX" ;
+        sdm:venueHasHandler      sdm:12639 .
+
+sdm:40078267  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "M. Maynard" .
+
+sdm:6   rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#International+Journal+of+Advanced+Research+in+Science%2C+Communication+and+Technology> ;
+        sdm:PublicationRelatedTo  <http://www.sdm-lab.com/#Materials+Science> , <http://www.sdm-lab.com/#Computer+Science> , sdm:Education ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:PublishedIn  rdf:type  owl:ObjectProperty ;
+        rdfs:domain  sdm:Paper ;
+        rdfs:label   "A paper is published in a publication"@en ;
+        rdfs:range   sdm:Publication .
+
+sdm:48792606  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:13b326f5a8869bf72b368fbcdabcb3736f77531c ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.3390%2Fijgi12020035This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+<http://www.sdm-lab.com/#Elgar+Introduction+to+Theories+of+Human+Resources+and+Employment+Relations>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:venueHasHandler   sdm:6113 .
+
+sdm:2207946432  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Florian Westphal" .
+
+sdm:1733364226  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "L. Hui" .
+
+sdm:113032791  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Lauren R. Locklear" .
+
+<http://www.sdm-lab.com/#10.5465%2FAMJ.2009.0865This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+sdm:9c4dfc2f8841a4e80b3407bcd4ae2044ca2722bf
+        rdf:type             sdm:DemoPaper ;
+        sdm:ContainsKeyword  sdm:Physics , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.48550%2FarXiv.2301.08841This+paper+is+accepted%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%22abs%2F2301.08841%22> ;
+        sdm:SubmittedIn      sdm:ArXiv ;
+        sdm:WrittenBy        sdm:1415163723 ;
+        sdm:doi              "10.48550%2FarXiv.2301.08841" ;
+        sdm:title            "mkite: A distributed computing platform for high-throughput materials simulations" .
+
+sdm:5bf957bd3393240befc4511d130be0c2c6b5b681
+        rdf:type             sdm:Fullpaper ;
+        sdm:ContainsKeyword  sdm:Psychology , sdm:Business ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.4337%2F9781786439017.00031This+paper+is+accepted%21> ;
+        sdm:PublishedIn      sdm:5 ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Elgar+Introduction+to+Theories+of+Human+Resources+and+Employment+Relations> ;
+        sdm:WrittenBy        sdm:35180620 , sdm:1400987196 ;
+        sdm:doi              "10.4337%2F9781786439017.00031" ;
+        sdm:title            "LMX and HRM: a multi-level review of how LMX is used to explain the employment relationship" .
+
+sdm:Economics  rdf:type       sdm:Keyword ;
+        sdm:KeywordRelatedTo  sdm:Economics ;
+        sdm:domain            "dummy domain" .
+
+sdm:1928997  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Julia E. Hoch" .
+
+<http://www.sdm-lab.com/#10.1016%2FJ.JBUSRES.2017.12.011This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+sdm:5011222  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:411dbf4787f7cbd59ca281e7efbb01e14584507a ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2016.10.007This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:3569648  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:15e10871bd34d61742790ca8c3e90ae45c486689 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.5465%2FAMR.2009.0402This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:33091184  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "L. Shore" .
+
+sdm:145734978  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "S. D. Suppiah" .
+
+sdm:39581878  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Michael S Christian" .
+
+sdm:3729856  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:c3bcc1687e84e5ed4d1a9519761f962c78922ef5 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2014.05.003This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:2059505766  rdf:type  sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:c8fcd37be1be142bcfc9ef745f204a1d286669d5 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1177%2F0149206320930813This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:113870042  rdf:type   sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:55bb71c7283c13cafa0950b988c1a73e802045ce ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.5465%2FAMJ.2009.0865This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:e5dd05fd5bbf4e4ace0cb2bf20e4695abbf36a01
+        rdf:type             sdm:DemoPaper ;
+        sdm:ContainsKeyword  sdm:Psychology ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2017.10.002This+paper+is+accepted%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2229%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Leadership+Quarterly> ;
+        sdm:WrittenBy        sdm:10620012 , sdm:152245072 , sdm:40423316 , sdm:70294020 ;
+        sdm:doi              "10.1016%2FJ.LEAQUA.2017.10.002" ;
+        sdm:title            "Affect and leader-member exchange in the new millennium: A state-of-art review and guiding framework" .
+
+sdm:PublicationRelatedTo
+        rdf:type     owl:ObjectProperty ;
+        rdfs:domain  sdm:Publication ;
+        rdfs:label   "A publication is related to an area"@en ;
+        rdfs:range   sdm:Area .
+
+sdm:49649535  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Lihua Shi" .
+
+sdm:51134045  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "I. Yitmen" .
+
+<http://www.sdm-lab.com/#10.15458%2F2335-4216.1004This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:117143893  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Maruša Premru" .
+
+sdm:ec745a805f894c86df005615de7a98a257b88c6b
+        rdf:type             sdm:Poster ;
+        sdm:ContainsKeyword  sdm:Medicine , sdm:Business , sdm:Psychology ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1037%2Fa0030264This+paper+is+rejected%21> ;
+        sdm:PublishedIn      sdm:3 ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Voxxed+Days+-+Cern> ;
+        sdm:WrittenBy        sdm:34655016 , sdm:1928997 ;
+        sdm:doi              "10.1037%2Fa0030264" ;
+        sdm:title            "Leading virtual teams: hierarchical leadership, structural supports, and shared team leadership." .
+
+sdm:ExpertGroup  rdf:type  owl:Class ;
+        rdfs:subClassOf  sdm:Conference .
+
+<http://www.sdm-lab.com/#10.1177%2F21582440221097688This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+<http://www.sdm-lab.com/#10.1007%2FS10551-012-1354-YThis+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+sdm:1754942  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:a2126884ac972bc42ac96b1f5a3c9aa7c979cd02 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.JBUSRES.2021.04.070This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:25512  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:40018541 , sdm:3340622 , sdm:4240574 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:9981  rdf:type           sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:3569648 , sdm:4387556 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:1   rdf:type                  sdm:Proceeding , sdm:Volume ;
+        sdm:BelongsToConference   <http://www.sdm-lab.com/#O%27Reilly+Velocity+Conference> , <http://www.sdm-lab.com/#Sustainable+UX> , <http://www.sdm-lab.com/#The+Lead+Developer+New+York> , <http://www.sdm-lab.com/#Voxxed+Days+-+Zurich> , <http://www.sdm-lab.com/#Typography+Day+2017> ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Association+for+Computing+Machinery+%28ACM%29> ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology , sdm:Medicine ;
+        sdm:edition               "1"^^xsd:int ;
+        sdm:issn                  "123450" , "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:49507320  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "H. Xu" .
+
+sdm:18735  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:15390666 , sdm:4773784 , sdm:1401033074 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:2155095  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "K. Mearns" .
+
+sdm:2187329458  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Moollya Gautami Bhaskar" .
+
+sdm:16093  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:4343376 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:2209917736  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Yaseen A. A. Hezam" .
+
+sdm:5505290  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Randall P. Settoon" .
+
+sdm:4681485  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "N. Creanza" .
+
+sdm:2202163148  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Dongjun Bi" .
+
+sdm:34615430  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "B. Vogel" .
+
+sdm:d49dc28600e0fb85cbedfefe936e1a7a8219af9c
+        rdf:type             sdm:Poster ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2018.03.001This+paper+is+rejected%21> ;
+        sdm:PublishedIn      sdm:2 ;
+        sdm:SubmittedIn      sdm:Script17 ;
+        sdm:WrittenBy        sdm:97405037 , sdm:51499126 , sdm:48384596 , sdm:2065066749 , sdm:38353251 ;
+        sdm:doi              "10.1016%2FJ.LEAQUA.2018.03.001" ;
+        sdm:title            "Leadership, creativity, and innovation: A critical review and practical recommendations" .
+
+sdm:15474964  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:36e1912e9be9e1a90a06edd78ea16a429a03fb35 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2Fj.jaac.2012.01.018This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+<http://www.sdm-lab.com/#10.1101%2F2023.01.23.525255This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+sdm:2345032  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Saša Batistič" .
+
+sdm:115478194  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Ernest H. O’Boyle" .
+
+<http://www.sdm-lab.com/#Economic+and+Business+Review>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Business , sdm:Sociology ;
+        sdm:venueHasHandler   sdm:8894 .
+
+sdm:35a4b9e020bfada436755eeef4dfa1354ec98bf4
+        rdf:type             sdm:ShortPaper ;
+        sdm:ContainsKeyword  sdm:Education , <http://www.sdm-lab.com/#Materials+Science> , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.48175%2Fijarsct-8038This+paper+is+accepted%21> ;
+        sdm:PublishedIn      sdm:6 ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#International+Journal+of+Advanced+Research+in+Science%2C+Communication+and+Technology> ;
+        sdm:WrittenBy        sdm:2187329458 , sdm:2183277043 , sdm:2183417632 , sdm:2183414253 , sdm:2203524009 ;
+        sdm:doi              "10.48175%2Fijarsct-8038" ;
+        sdm:title            "Review Paper on Educational Data Mining" .
+
+<http://www.sdm-lab.com/#10.1002%2FJOB.2268This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:2203524009  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Mohan Raju. V" .
+
+sdm:779713324245b32c12f1817999ec87bb0511858f
+        rdf:type             sdm:DemoPaper ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2009.04.003This+paper+is+accepted%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2220%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Leadership+Quarterly> ;
+        sdm:WrittenBy        sdm:7177926 , sdm:4381864 , sdm:100693056 , sdm:47600386 ;
+        sdm:doi              "10.1016%2FJ.LEAQUA.2009.04.003" ;
+        sdm:title            "LMX Differentiation: A Multilevel Review and Examination of its Antecedents and Outcomes" .
+
+sdm:31857231  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Emily D. Heaphy" .
+
+sdm:2356574  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:cfd0400973b9215ac96ef918c6ea2215b845571a ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.JBUSRES.2021.03.032This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:Scientometrics  rdf:type  sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Education , sdm:Sociology , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:venueHasHandler   sdm:8802 .
+
+sdm:144676228  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "P. Neves" .
+
+sdm:47202106  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:6cc1c4b8cb5daac2984bf82c043f82fd53d75af0 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1177%2F0018726715597481This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:115434713  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Jesus Bravo" .
+
+sdm:2205466  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:bf191236573edc2242ff319e4ea1a71fe5125cc7 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.4236%2FJSSM.2016.91009This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:7a4e971ceaef48d194abf6d206e6c2855f7d107e
+        rdf:type             sdm:Poster ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Medicine ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2Fj.aap.2009.08.009This+paper+is+accepted%21> ;
+        sdm:PublishedIn      sdm:2 ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#The+Rolling+Scopes+Conference> ;
+        sdm:WrittenBy        sdm:2155095 , sdm:2614057 , sdm:3484325 , sdm:143634845 ;
+        sdm:doi              "10.1016%2Fj.aap.2009.08.009" ;
+        sdm:title            "Investment in workforce health: exploring the implications for workforce safety climate and commitment." .
+
+sdm:22915  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:31839425 , sdm:4886650 , sdm:46916148 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:49200540  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "M. Velez" .
+
+sdm:5923733  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:0c5108cc2b1cceff12808219b16ac5f8f11dd420 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1111%2FJ.1744-6570.2012.01246.XThis+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:38353251  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "A. Tian" .
+
+sdm:2108169698  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Junyang Chen" .
+
+<http://www.sdm-lab.com/#Association+for+Computing+Machinery+%28ACM%29>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:venueHasHandler   sdm:25512 , sdm:4705 .
+
+sdm:144307804  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Zhen Zhang" .
+
+sdm:81323357  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:bab5c537bdef6b5c5b8e82213abc5650fc2ecd03 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1037%2Fa0038922This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:87796254  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "G. Thomas" .
+
+<http://www.sdm-lab.com/#10.1177%2F0033294117716465This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:bf191236573edc2242ff319e4ea1a71fe5125cc7
+        rdf:type             sdm:Poster ;
+        sdm:ContainsKeyword  sdm:Psychology , sdm:Business ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.4236%2FJSSM.2016.91009This+paper+is+accepted%21> ;
+        sdm:PublishedIn      sdm:1 ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#The+Lead+Developer+New+York> ;
+        sdm:WrittenBy        sdm:47780686 , sdm:2062055419 ;
+        sdm:doi              "10.4236%2FJSSM.2016.91009" ;
+        sdm:title            "Abusive Supervision and Counterproductive Work Behavior: Moderating Effect of Negative Affectivity" .
+
+sdm:1397903461  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Ciriaco Andrea D’Angelo" .
+
+sdm:7253454d31e983929e683e2eb9150cc810cedce7
+        rdf:type             sdm:Fullpaper ;
+        sdm:ContainsKeyword  sdm:Psychology , sdm:Business ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1002%2FJOB.1885This+paper+is+accepted%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2235%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+Organizational+Behavior> ;
+        sdm:WrittenBy        sdm:115478194 , sdm:7574885 , sdm:8611013 , sdm:46232420 , sdm:40595787 , sdm:14406742 ;
+        sdm:doi              "10.1002%2FJOB.1885" ;
+        sdm:title            "What does team–member exchange bring to the party? A meta‐analytic review of team and leader social exchange" .
+
+<http://www.sdm-lab.com/#10.2224%2FSBP.2015.43.8.1273%E2%80%931286This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+<http://www.sdm-lab.com/#Revue+Europ%C3%A9enne+de+Psychologie+Appliqu%C3%A9e>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:venueHasHandler   sdm:25330 .
+
+sdm:4131043  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:748ab9fcc4fdfd82cd22e0a1360ad852c15a4c64 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.15458%2F2335-4216.1004This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:7177926  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "A. Chaudhry" .
+
+sdm:0b0556ef543bdf4e0a7b7e9debe11b309bede1ba
+        rdf:type             sdm:Poster ;
+        sdm:ContainsKeyword  sdm:Sociology , sdm:Business ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.5465%2FAMJ.2010.54533176This+paper+is+rejected%21> ;
+        sdm:PublishedIn      sdm:2 ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#The+Lead+Developer+New+York> ;
+        sdm:WrittenBy        sdm:7484553 , sdm:34794000 , sdm:4381864 , sdm:46850105 ;
+        sdm:doi              "10.5465%2FAMJ.2010.54533176" ;
+        sdm:title            "Good citizens in poor-quality relationships: Idiosyncratic deals as a substitute for relationship quality" .
+
+sdm:145835903  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "S. Wright" .
+
+sdm:1978193  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:bab5c537bdef6b5c5b8e82213abc5650fc2ecd03 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1037%2Fa0038922This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:2133816058  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Habib Sadri" .
+
+sdm:4886650  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:1d47b94a81d952f76e1c498de61ae670f12b799e ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1007%2FS10551-012-1354-YThis+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:144048717  rdf:type   sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:cc5d004f90bb2ef05cdc2d28f87f462d57754d72 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.ERAP.2017.05.005This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:40068017  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Michel Tremblay" .
+
+sdm:14745040  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:37d0ee300bd42ec99c986b538760066ff0dea56d ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.4337%2F9781786439017This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:34773914  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:ee7aaba2e911b3a74e0eb97a14d7028db825945b ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1037%2Fa0029978This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:40206711  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:94943d22fce7877f2089f0a9afb90eb7fc2352ee ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1080%2F02648725.2023.2168910This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+<http://www.sdm-lab.com/#10.1108%2FCDI-05-2013-0063This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:12706874  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:ec745a805f894c86df005615de7a98a257b88c6b ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1037%2Fa0030264This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:51439243  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "M. Černe" .
+
+sdm:Mathematics  rdf:type     sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Business , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:venueHasHandler   sdm:17963 .
+
+<http://www.sdm-lab.com/#10.1016%2FJ.HRMR.2018.02.004This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+<http://www.sdm-lab.com/#Frontiers+in+Psychology>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Psychology , sdm:Medicine ;
+        sdm:venueHasHandler   sdm:222 .
+
+sdm:23483  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:4004192 , sdm:34773914 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:49667830  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "K. W. Mossholder" .
+
+sdm:2898986  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:5ea475a81406e5d0ea907fad1ce5be42ad599a15 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2011.08.009This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:7d67c664d625cdeb7f91403ceac15a4496a32396
+        rdf:type             sdm:Poster ;
+        sdm:ContainsKeyword  sdm:Psychology , sdm:Medicine ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1037%2Fa0031757This+paper+is+accepted%21> ;
+        sdm:PublishedIn      sdm:1 ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Sustainable+UX> ;
+        sdm:WrittenBy        sdm:7168826 , sdm:40633362 , sdm:4622439 , sdm:6099791 , sdm:144937232 , sdm:48811537 , sdm:7989587 ;
+        sdm:doi              "10.1037%2Fa0031757" ;
+        sdm:title            "Justice at the millennium, a decade later: a meta-analytic test of social exchange and affect-based perspectives." .
+
+sdm:2820282  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Leslie A. DeChurch" .
+
+<http://www.sdm-lab.com/#O%27Reilly+Velocity+Conference>
+        rdf:type                 sdm:Symposium ;
+        sdm:ConferenceRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:name                 "O'Reilly Velocity Conference" ;
+        sdm:venueHasHandler      sdm:12307 .
+
+<http://www.sdm-lab.com/#10.1007%2Fs11192-019-03184-yThis+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:40102157  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:7326d3ac058e5653482a1b5fcdbb46d3484f6ab8 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1002%2FJOB.2549This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:36e1912e9be9e1a90a06edd78ea16a429a03fb35
+        rdf:type             sdm:Fullpaper ;
+        sdm:ContainsKeyword  sdm:Psychology , sdm:Medicine ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2Fj.jaac.2012.01.018This+paper+is+rejected%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2251+4%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+the+American+Academy+of+Child+and+Adolescent+Psychiatry> ;
+        sdm:WrittenBy        sdm:6677546 , sdm:145349578 ;
+        sdm:doi              "10.1016%2Fj.jaac.2012.01.018" ;
+        sdm:title            "Leadership, innovation climate, and attitudes toward evidence-based practice during a statewide implementation." .
+
+sdm:66373895  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "T. Dundon" .
+
+sdm:Script17  rdf:type           sdm:Regular ;
+        sdm:ConferenceRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:name                 "Script17" ;
+        sdm:venueHasHandler      sdm:22797 .
+
+sdm:Business  rdf:type        sdm:Keyword ;
+        sdm:KeywordRelatedTo  sdm:Business ;
+        sdm:domain            "dummy domain" .
+
+sdm:Symposium  rdf:type  owl:Class ;
+        rdfs:subClassOf  sdm:Conference .
+
+<http://www.sdm-lab.com/#10.1111%2Fj.1035-6851.2001.249-13.xThis+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:9a536eabd4abeb979392cf4c51aa0b7407267f93
+        rdf:type             sdm:Poster ;
+        sdm:ContainsKeyword  <http://www.sdm-lab.com/#Computer+Science> , sdm:Psychology ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1007%2Fs11192-019-03184-yThis+paper+is+accepted%21> ;
+        sdm:PublishedIn      sdm:0 ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#The+Lead+Developer+New+York> ;
+        sdm:WrittenBy        sdm:40345999 , sdm:1763145 , sdm:1397903461 ;
+        sdm:doi              "10.1007%2Fs11192-019-03184-y" ;
+        sdm:title            "Peer review versus bibliometrics: Which method better predicts the scholarly impact of publications?" .
+
+<http://www.sdm-lab.com/#10.5465%2FAMR.2009.0402This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:46850105  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Smriti Anand" .
+
+sdm:7773084  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Gukdo Byun" .
+
+sdm:4773784  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:a713ea4d4c48afc79abea40af006e420e8547802 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1108%2FCDI-05-2013-0063This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:Physics  rdf:type         sdm:Keyword ;
+        sdm:KeywordRelatedTo  sdm:Physics ;
+        sdm:domain            "dummy domain" .
+
+sdm:3912536  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:748ab9fcc4fdfd82cd22e0a1360ad852c15a4c64 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.15458%2F2335-4216.1004This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:4381864  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "R. Liden" .
+
+sdm:6cc1c4b8cb5daac2984bf82c043f82fd53d75af0
+        rdf:type             sdm:DemoPaper ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1177%2F0018726715597481This+paper+is+rejected%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2269%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Human+Relations> ;
+        sdm:WrittenBy        sdm:14510610 , sdm:2027364952 , sdm:49991622 , sdm:2152886813 ;
+        sdm:doi              "10.1177%2F0018726715597481" ;
+        sdm:title            "Leader–member exchange differentiation and team creativity: An investigation of nonlinearity" .
+
+sdm:issn  rdf:type   owl:DatatypeProperty ;
+        rdfs:domain  sdm:Publication ;
+        rdfs:label   "A publication has an issn ( identifier)"@en ;
+        rdfs:range   xsd:string .
+
+<http://www.sdm-lab.com/#10.1037%2Fa0038922This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:9593910  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "M. Zouwen" .
+
+<http://www.sdm-lab.com/#%2219%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Career+Development+International> ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:2065362201  rdf:type  sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:37d0ee300bd42ec99c986b538760066ff0dea56d ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.4337%2F9781786439017This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:40178401  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Yves R. F. Guillaume" .
+
+sdm:bab5c537bdef6b5c5b8e82213abc5650fc2ecd03
+        rdf:type             sdm:DemoPaper ;
+        sdm:ContainsKeyword  sdm:Sociology , sdm:Medicine , sdm:Business ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1037%2Fa0038922This+paper+is+accepted%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%22100+3%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#The+Journal+of+applied+psychology> ;
+        sdm:WrittenBy        sdm:2059598628 , sdm:39456927 , sdm:2820282 , sdm:67128030 ;
+        sdm:doi              "10.1037%2Fa0038922" ;
+        sdm:title            "Social network approaches to leadership: an integrative conceptual review." .
+
+sdm:145115681  rdf:type   sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:d49dc28600e0fb85cbedfefe936e1a7a8219af9c ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2018.03.001This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:1398581290  rdf:type  sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:1be6fd34d14addc35a5655955c49baca976ae9f3 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1177%2F21582440221097688This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+<http://www.sdm-lab.com/#10.1037%2Fa0029978This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+sdm:domain  rdf:type  owl:DatatypeProperty ;
+        rdfs:domain  sdm:Keyword ;
+        rdfs:label   "A keyword has a domain"@en ;
+        rdfs:range   xsd:string .
+
+sdm:8894  rdf:type           sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:3912536 , sdm:4131043 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:2152196755  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "X. Zheng" .
+
+sdm:14510610  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Baiyin Yang" .
+
+sdm:7303822  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:bff0c902c546e1e40c38c0575f58c505f45aeb16 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.HRMR.2018.02.004This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:3810  rdf:type           sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:39711839 , sdm:2194885794 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:114484442  rdf:type   sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:3286d652031571d504f78ab989e0263f759e4e12 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1111%2Fj.1035-6851.2001.249-13.xThis+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:4095031  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:eea884adf9a0ba306967e3764320b1664373a4f7 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.28991%2Fesj-2023-07-02-023This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:1491585715  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "John Adeoye" .
+
+<http://www.sdm-lab.com/#%22114%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Journal+of+Business+Ethics> ;
+        sdm:PublicationRelatedTo  <http://www.sdm-lab.com/#Political+Science> , sdm:Business , sdm:Sociology ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:4686536  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:0e32f5cebc15a0ac3ae39f99856037c22eff83f9 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1007%2Fs11192-020-03401-zThis+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+<http://www.sdm-lab.com/#%2268%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Journal+of+the+Association+for+Information+Science+and+Technology> ;
+        sdm:PublicationRelatedTo  sdm:Education , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:2152886813  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Yan Li" .
+
+sdm:34655016  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "S. Kozlowski" .
+
+sdm:15836  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:4095031 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:2115768  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "M. Hakonen" .
+
+sdm:31850558  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "A. Dijmărescu" .
+
+sdm:2144735991  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Lin Wang" .
+
+sdm:47780686  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "B. Wang" .
+
+<http://www.sdm-lab.com/#%2296+3%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#The+Journal+of+applied+psychology> ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Medicine , sdm:Psychology ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:48811537  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "David M. Long" .
+
+<http://www.sdm-lab.com/#ISPRS+International+Journal+of+Geo-Information>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:venueHasHandler   sdm:20243 .
+
+<http://www.sdm-lab.com/#Leadership+Quarterly>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Economics , sdm:Sociology , sdm:Psychology , sdm:Engineering , sdm:Business ;
+        sdm:venueHasHandler   sdm:8058 , sdm:10003 , sdm:3862 , sdm:9968 , sdm:6917 , sdm:16176 , sdm:10450 .
+
+sdm:3286d652031571d504f78ab989e0263f759e4e12
+        rdf:type             sdm:ShortPaper ;
+        sdm:ContainsKeyword  sdm:Psychology , sdm:Medicine ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1111%2Fj.1035-6851.2001.249-13.xThis+paper+is+accepted%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2275%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#MTZ+worldwide> ;
+        sdm:WrittenBy        sdm:15574296 ;
+        sdm:doi              "10.1111%2Fj.1035-6851.2001.249-13.x" ;
+        sdm:title            "Peer Review" .
+
+sdm:1d47b94a81d952f76e1c498de61ae670f12b799e
+        rdf:type             sdm:Fullpaper ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Sociology , <http://www.sdm-lab.com/#Political+Science> ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1007%2FS10551-012-1354-YThis+paper+is+rejected%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%22114%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+Business+Ethics> ;
+        sdm:WrittenBy        sdm:30390541 ;
+        sdm:doi              "10.1007%2FS10551-012-1354-Y" ;
+        sdm:title            "Ethical Analyses of HRM: A Review and Research Agenda" .
+
+sdm:8381772  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Fadel K. Matta" .
+
+sdm:122037404  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "H. Witte" .
+
+sdm:1b241abeac4fa252a3ec59f7b79ff9ee56445d4e
+        rdf:type             sdm:Fullpaper ;
+        sdm:ContainsKeyword  sdm:Psychology ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1002%2FJOB.2268This+paper+is+accepted%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2239%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+Organizational+Behavior> ;
+        sdm:WrittenBy        sdm:47748698 , sdm:29696426 , sdm:7468272 , sdm:40423316 ;
+        sdm:doi              "10.1002%2FJOB.2268" ;
+        sdm:title            "Examining the interpersonal process and consequence of leader–member exchange comparison: The role of procedural justice climate" .
+
+sdm:Bday  rdf:type   owl:DatatypeProperty ;
+        rdfs:domain  sdm:Person ;
+        rdfs:label   "A person has a bDay"@en ;
+        rdfs:range   xsd:string .
+
+sdm:Sociology  rdf:type       sdm:Keyword ;
+        sdm:KeywordRelatedTo  sdm:Sociology ;
+        sdm:domain            "dummy domain" .
+
+sdm:2065919726  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "O. Liu" .
+
+sdm:19896  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:15474964 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:2183277043  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Mr. Pradeep Nayak" .
+
+<http://www.sdm-lab.com/#10.48550%2FarXiv.2301.08841This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:98895639  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Mihai Andronie" .
+
+sdm:f435c4e1a2f549b3a6288520499014769d311a67
+        rdf:type             sdm:Fullpaper ;
+        sdm:ContainsKeyword  sdm:Psychology , sdm:Medicine ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.3389%2Ffpsyg.2022.792599This+paper+is+accepted%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2213%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Frontiers+in+Psychology> ;
+        sdm:WrittenBy        sdm:2179215280 , sdm:52204670 , sdm:51439243 ;
+        sdm:doi              "10.3389%2Ffpsyg.2022.792599" ;
+        sdm:title            "Exploring the past, present, and future of the mindfulness field: A multitechnique bibliometric review" .
+
+sdm:8292575  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Matthew J. Quade" .
+
+sdm:6917  rdf:type           sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:2898986 , sdm:40518290 , sdm:1485643901 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:Biology  rdf:type         sdm:Keyword ;
+        sdm:KeywordRelatedTo  sdm:Biology ;
+        sdm:domain            "dummy domain" .
+
+<http://www.sdm-lab.com/#The+Journal+of+applied+psychology>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Psychology , sdm:Business , sdm:Medicine , sdm:Sociology ;
+        sdm:venueHasHandler   sdm:13862 , sdm:23385 , sdm:13119 .
+
+<http://www.sdm-lab.com/#%2296+1%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#The+Journal+of+applied+psychology> ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Medicine , sdm:Psychology ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:2027364952  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Feng-huan Fu" .
+
+sdm:40041524  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:1a928939f8663da3c1c46a01da7e315f91df3af1 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.12659%2FMSM.938835This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:64ea9a1a6677325d07b44753f13e0bce8f605acf
+        rdf:type             sdm:Fullpaper ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.2224%2FSBP.2015.43.8.1273%E2%80%931286This+paper+is+rejected%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2243%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Social+Behavior+and+Personality> ;
+        sdm:WrittenBy        sdm:2144735991 , sdm:49649535 , sdm:2143950738 , sdm:2109971529 ;
+        sdm:doi              "10.2224%2FSBP.2015.43.8.1273%E2%80%931286" ;
+        sdm:title            "Leader–member exchange social comparison and employee deviant behavior: Evidence from a Chinese context" .
+
+sdm:5910610  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "M. Dasborough" .
+
+sdm:8170  rdf:type           sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:2405956 , sdm:1402893968 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:7574885  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "A. Seers" .
+
+sdm:1486062441  rdf:type  sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:e6ebc91a221d1d0d822b68ea6f269e888873ef1a ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.5465%2FAMR.2016.0264This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:2107601477  rdf:type  sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:9ae8a63742aae79c94a86ab0661a7d8c2971c433 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1177%2F1742715012455130This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:Workshop  rdf:type   owl:Class ;
+        rdfs:subClassOf  sdm:Conference .
+
+sdm:2143950738  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Jun Xie" .
+
+sdm:ShortPaper  rdf:type  owl:Class ;
+        rdfs:subClassOf  sdm:Paper .
+
+sdm:20572  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:47202106 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:40403474  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "D. N. Hartog" .
+
+sdm:cc5d004f90bb2ef05cdc2d28f87f462d57754d72
+        rdf:type             sdm:Fullpaper ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2FJ.ERAP.2017.05.005This+paper+is+rejected%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2267%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Revue+Europ%C3%A9enne+de+Psychologie+Appliqu%C3%A9e> ;
+        sdm:WrittenBy        sdm:144676228 , sdm:49200540 ;
+        sdm:doi              "10.1016%2FJ.ERAP.2017.05.005" ;
+        sdm:title            "The relationship between abusive supervision, distributive justice and job satisfaction: A substitutes for leadership approach" .
+
+<http://www.sdm-lab.com/#10.4337%2F9781786439017.00031This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:3042061  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "James H. Dulebohn" .
+
+sdm:40806683  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "J. Mackey" .
+
+sdm:3553866  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Thomas Rockstuhl" .
+
+sdm:3   rdf:type                  sdm:Volume , sdm:Proceeding ;
+        sdm:BelongsToConference   <http://www.sdm-lab.com/#Voxxed+Days+-+Cern> , <http://www.sdm-lab.com/#Sustainable+UX> ;
+        sdm:BelongsToJournal      sdm:Sustainability , <http://www.sdm-lab.com/#ISPRS+International+Journal+of+Geo-Information> ;
+        sdm:PublicationRelatedTo  sdm:Business , <http://www.sdm-lab.com/#Computer+Science> , sdm:Education , sdm:Sociology , sdm:Psychology , sdm:Medicine ;
+        sdm:edition               "1"^^xsd:int ;
+        sdm:issn                  "0123456" , "123450" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:2152176463  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Ming Zhou" .
+
+sdm:ArXiv  rdf:type           sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Physics , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:venueHasHandler   sdm:16093 .
+
+<http://www.sdm-lab.com/#Emerging+Science+Journal>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Business ;
+        sdm:venueHasHandler   sdm:15836 .
+
+<http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2017.10.002This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:49709153  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Dongyuan Wu" .
+
+sdm:Venue  rdf:type  owl:Class .
+
+sdm:9679912b1386a04b793841ce3fb45de05a938676
+        rdf:type             sdm:Fullpaper ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1080%2F1359432x.2020.1819241This+paper+is+accepted%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2230%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#European+Journal+of+Work+and+Organizational+Psychology> ;
+        sdm:WrittenBy        sdm:1398112513 , sdm:8319240 , sdm:51499126 , sdm:97405037 ;
+        sdm:doi              "10.1080%2F1359432x.2020.1819241" ;
+        sdm:title            "A meta-analysis of the role of trust in the leadership- performance relationship" .
+
+<http://www.sdm-lab.com/#Medical+Science+Monitor+%3A+International+Medical+Journal+of+Experimental+and+Clinical+Research>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Medicine ;
+        sdm:venueHasHandler   sdm:20238 .
+
+sdm:4191459  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:c3bcc1687e84e5ed4d1a9519761f962c78922ef5 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2014.05.003This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:6fa54ce93fd1885d1b612b5c6b9ba3f03cd9974f
+        rdf:type             sdm:Fullpaper ;
+        sdm:ContainsKeyword  sdm:Business , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1177%2F1094428114562629This+paper+is+rejected%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2218%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Organizational+Research+Methods> ;
+        sdm:WrittenBy        sdm:67278043 , sdm:46215353 ;
+        sdm:doi              "10.1177%2F1094428114562629" ;
+        sdm:title            "Bibliometric Methods in Management and Organization" .
+
+sdm:104228748  rdf:type   sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:35b460874243165533df66b6dfc31e9c7aee3fb9 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.3390%2Fmath11040899This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:11527790  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:fdb3307a9e903bacf6632d1013a280db6dcbd0d1 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1177%2F0033294117716465This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:98539811  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Stefano Cirella" .
+
+sdm:40602322  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:c3bcc1687e84e5ed4d1a9519761f962c78922ef5 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2014.05.003This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:2248685  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:cfd0400973b9215ac96ef918c6ea2215b845571a ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.JBUSRES.2021.03.032This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:1402893968  rdf:type  sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:66e46478fc83b19353a5fd67044f2592ff511a9b ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1186%2Fs40537-023-00703-wThis+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:2191394  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "A. McDermott" .
+
+sdm:2067765648  rdf:type  sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:35a4b9e020bfada436755eeef4dfa1354ec98bf4 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.48175%2Fijarsct-8038This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:2096672  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Naveen Donthu" .
+
+sdm:2179215280  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Emilie Lara Schölly" .
+
+sdm:7589039  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Jingzhou Pan" .
+
+sdm:1460041933  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Dario Placencio-Hidalgo" .
+
+sdm:ReviewsPaper  rdf:type  owl:ObjectProperty ;
+        rdfs:domain  sdm:Reviewer ;
+        rdfs:label   "Reviewer reviews a paper"@en ;
+        rdfs:range   sdm:Paper .
+
+sdm:46362397  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Franziska Weber" .
+
+sdm:143634845  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Lorraine Hope" .
+
+<http://www.sdm-lab.com/#SAGE+Open>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Business ;
+        sdm:venueHasHandler   sdm:24613 .
+
+sdm:49536533  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:c8fcd37be1be142bcfc9ef745f204a1d286669d5 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1177%2F0149206320930813This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+<http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2016.10.008This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+<http://www.sdm-lab.com/#10.3390%2Fmath11040899This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:3455874  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "R. Folger" .
+
+<http://www.sdm-lab.com/#Human+Relations>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:venueHasHandler   sdm:20572 .
+
+sdm:Keyword  rdf:type  owl:Class .
+
+sdm:a2126884ac972bc42ac96b1f5a3c9aa7c979cd02
+        rdf:type             sdm:Poster ;
+        sdm:ContainsKeyword  <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2FJ.JBUSRES.2021.04.070This+paper+is+rejected%21> ;
+        sdm:PublishedIn      sdm:2 ;
+        sdm:SubmittedIn      sdm:Jfokus ;
+        sdm:WrittenBy        sdm:3095755 , sdm:2109647517 , sdm:2096672 , sdm:3139520 , sdm:143976706 ;
+        sdm:doi              "10.1016%2FJ.JBUSRES.2021.04.070" ;
+        sdm:title            "How to conduct a bibliometric analysis: An overview and guidelines" .
+
+<http://www.sdm-lab.com/#10.3389%2Ffpsyg.2022.792599This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:5e8c9145855755438ae8f732d2256b92045018f7
+        rdf:type             sdm:Fullpaper ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1093%2FOXFORDHB%2F9780199326174.013.0009This+paper+is+rejected%21> ;
+        sdm:PublishedIn      sdm:1 ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Association+for+Computing+Machinery+%28ACM%29> ;
+        sdm:WrittenBy        sdm:5934403 , sdm:3052094 ;
+        sdm:doi              "10.1093%2FOXFORDHB%2F9780199326174.013.0009" ;
+        sdm:title            "Tracing Structure, Tie Strength, and Cognitive Networks in LMX Theory and Research" .
+
+<http://www.sdm-lab.com/#10.3102%2F0034654319830380This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:Regular  rdf:type    owl:Class ;
+        rdfs:subClassOf  sdm:Conference .
+
+sdm:2202347418  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Lili Feng" .
+
+<http://www.sdm-lab.com/#10.1080%2F1359432x.2020.1819241This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:97405037  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Allan Lee" .
+
+sdm:4005743  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Rick Vogel" .
+
+sdm:153310624  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Soojin Lee" .
+
+sdm:2126812  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Nicoleta Meslec" .
+
+<http://www.sdm-lab.com/#Journal+of+the+Association+for+Information+Science+and+Technology>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Education , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:venueHasHandler   sdm:9872 .
+
+<http://www.sdm-lab.com/#%22120%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Psychological+Reports> ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Medicine , sdm:Psychology ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:2673144  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:7d67c664d625cdeb7f91403ceac15a4496a32396 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1037%2Fa0031757This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:31839425  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:1d47b94a81d952f76e1c498de61ae670f12b799e ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1007%2FS10551-012-1354-YThis+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+<http://www.sdm-lab.com/#UX+Riga>
+        rdf:type                 sdm:Symposium ;
+        sdm:ConferenceRelatedTo  sdm:Medicine , sdm:Psychology ;
+        sdm:name                 "UX Riga" ;
+        sdm:venueHasHandler      sdm:12153 .
+
+<http://www.sdm-lab.com/#Career+Development+International>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:venueHasHandler   sdm:18735 .
+
+<http://www.sdm-lab.com/#%2212%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#SAGE+Open> ;
+        sdm:PublicationRelatedTo  sdm:Business ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+<http://www.sdm-lab.com/#10.12659%2FMSM.938835This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:8319240  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Deanne N. den Hartog" .
+
+<http://www.sdm-lab.com/#Computer+Science>
+        rdf:type              sdm:Keyword ;
+        sdm:KeywordRelatedTo  <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:domain            "dummy domain" .
+
+sdm:49150737  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:779713324245b32c12f1817999ec87bb0511858f ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2009.04.003This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:4240574  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:20bf58363cd91bb483296bc7ed9850ecc73fcb56 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.5465%2FAMBPP.2014.12416ABSTRACTThis+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:10459  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:3795070 , sdm:2205466 , sdm:5155679 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:3340622  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:20bf58363cd91bb483296bc7ed9850ecc73fcb56 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.5465%2FAMBPP.2014.12416ABSTRACTThis+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:c3bcc1687e84e5ed4d1a9519761f962c78922ef5
+        rdf:type             sdm:Fullpaper ;
+        sdm:ContainsKeyword  sdm:Economics , sdm:Engineering ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2014.05.003This+paper+is+accepted%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2225%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Leadership+Quarterly> ;
+        sdm:WrittenBy        sdm:13832498 , sdm:51439243 , sdm:1769770 ;
+        sdm:doi              "10.1016%2FJ.LEAQUA.2014.05.003" ;
+        sdm:title            "I get by with a little help from my supervisor: Creative-idea generation, idea implementation, and perceived supervisor support" .
+
+sdm:49391374  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Sophia V. Marinova" .
+
+sdm:4593  rdf:type           sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:39739637 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:30390541  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "M. Greenwood" .
+
+sdm:12307  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:1398744071 , sdm:2356574 , sdm:2248685 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+<http://www.sdm-lab.com/#%2210%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Journal+of+Big+Data> ;
+        sdm:PublicationRelatedTo  <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:74170690  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Philip Hallinger" .
+
+<http://www.sdm-lab.com/#%2228%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Leadership+Quarterly> ;
+        sdm:PublicationRelatedTo  sdm:Sociology , sdm:Business , sdm:Psychology ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:JournalRelatedTo  rdf:type  owl:ObjectProperty ;
+        rdfs:domain  sdm:Journal ;
+        rdfs:label   "A Journal is related to an area"@en ;
+        rdfs:range   sdm:Area .
+
+sdm:8092765  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:779713324245b32c12f1817999ec87bb0511858f ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2009.04.003This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:46215353  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "I. Zupic" .
+
+sdm:2582168  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "M. Goyanes" .
+
+sdm:ad0beaa0e79a9b95e4de41cd855b7f7f76a8eb7a
+        rdf:type             sdm:Poster ;
+        sdm:ContainsKeyword  sdm:Psychology , sdm:Business ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1111%2FJ.1744-6570.2010.01203.XThis+paper+is+rejected%21> ;
+        sdm:PublishedIn      sdm:2 ;
+        sdm:SubmittedIn      sdm:Webstock ;
+        sdm:WrittenBy        sdm:39581878 , sdm:6329466 , sdm:5939684 ;
+        sdm:doi              "10.1111%2FJ.1744-6570.2010.01203.X" ;
+        sdm:title            "WORK ENGAGEMENT: A QUANTITATIVE REVIEW AND TEST OF ITS RELATIONS WITH TASK AND CONTEXTUAL PERFORMANCE" .
+
+<http://www.sdm-lab.com/#10.5465%2FAMJ.2010.54533176This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+sdm:Engineering  rdf:type     sdm:Keyword ;
+        sdm:KeywordRelatedTo  sdm:Engineering ;
+        sdm:domain            "dummy domain" .
+
+sdm:144597886  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "L. Tagliabue" .
+
+sdm:40232894  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Benjamin D. McLarty" .
+
+sdm:20990  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:1422425649 , sdm:16052649 , sdm:50449730 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:1398112513  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Lisa van der Werff" .
+
+sdm:1415163723  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Daniel Schwalbe-Koda" .
+
+<http://www.sdm-lab.com/#10.5465%2FAMBPP.2014.12416ABSTRACTThis+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:5749406  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "F. Morgeson" .
+
+sdm:71681826  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "J. Muldoon" .
+
+sdm:1769770  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Miha Škerlavaj" .
+
+sdm:Conference  rdf:type  owl:Class ;
+        rdfs:subClassOf  sdm:Venue .
+
+sdm:39711839  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:0700a4314a1c14f1894d58ae8581e265d80158bc ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1002%2FJOB.627This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:102979552  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Renata Kenda" .
+
+sdm:10  rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      sdm:bioRxiv , <http://www.sdm-lab.com/#Emerging+Science+Journal> , <http://www.sdm-lab.com/#Biotechnology+%26+genetic+engineering+reviews> ;
+        sdm:PublicationRelatedTo  sdm:Biology , sdm:Business , sdm:Medicine ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:4aed298f7914d85b71cc96ede1a53a0119dbb966
+        rdf:type             sdm:DemoPaper ;
+        sdm:ContainsKeyword  sdm:Sociology , sdm:Business ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1177%2F0149206314559946This+paper+is+rejected%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2241%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+Management> ;
+        sdm:WrittenBy        sdm:40078267 , sdm:2118263 , sdm:123694439 , sdm:1795386000 , sdm:2115768 ;
+        sdm:doi              "10.1177%2F0149206314559946" ;
+        sdm:title            "Virtual Teams Research" .
+
+sdm:3222019  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:7c4a728d8daebb6ec46b30d81db27fb719fe378e ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1101%2F2023.01.23.525255This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:2155871928  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "J. Li" .
+
+sdm:32bec1f7d14c5767c3f8a8c901d99e3ac26b3264
+        rdf:type             sdm:DemoPaper ;
+        sdm:ContainsKeyword  sdm:Business ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1177%2F15480518211041629This+paper+is+rejected%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2229%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+Leadership+%26+Organizational+Studies> ;
+        sdm:WrittenBy        sdm:2005996770 , sdm:1413517130 , sdm:40068017 ;
+        sdm:doi              "10.1177%2F15480518211041629" ;
+        sdm:title            "Are Leaders and Followers Receiving What They Give? A Long-Term Examination of the Reciprocal Relationship Between Relative LMX and Relative OCB-Helping" .
+
+sdm:47415235  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Ye Dai" .
+
+sdm:1be6fd34d14addc35a5655955c49baca976ae9f3
+        rdf:type             sdm:DemoPaper ;
+        sdm:ContainsKeyword  sdm:Business ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1177%2F21582440221097688This+paper+is+rejected%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2212%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#SAGE+Open> ;
+        sdm:WrittenBy        sdm:2345032 , sdm:51439243 , sdm:117143893 ;
+        sdm:doi              "10.1177%2F21582440221097688" ;
+        sdm:title            "The Road to the Future: A Multi-Technique Bibliometric Review and Development Projections of the Leader–Member Exchange (LMX) Research" .
+
+sdm:38476574  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:7d67c664d625cdeb7f91403ceac15a4496a32396 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1037%2Fa0031757This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+<http://www.sdm-lab.com/#10.1007%2Fs11192-020-03401-zThis+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:BelongsToJournal  rdf:type  owl:ObjectProperty ;
+        rdfs:domain  sdm:Volume ;
+        rdfs:label   "A volume belongs to a journal"@en ;
+        rdfs:range   sdm:Journal .
+
+sdm:17835213  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "T. V. Elst" .
+
+sdm:20238  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:40041524 , sdm:145568464 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:2077080625  rdf:type  sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:f435c4e1a2f549b3a6288520499014769d311a67 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.3389%2Ffpsyg.2022.792599This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:3001948  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "D. Hofmann" .
+
+sdm:39739637  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:6fa54ce93fd1885d1b612b5c6b9ba3f03cd9974f ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1177%2F1094428114562629This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:6113  rdf:type           sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:29825117 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:2057073663  rdf:type  sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:a797c38057fddbf635a2917424f44b5583792813 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1037%2Fa0021484This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:48384596  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "D. Hughes" .
+
+<http://www.sdm-lab.com/#International+Journal+of+Advanced+Research+in+Science%2C+Communication+and+Technology>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  <http://www.sdm-lab.com/#Materials+Science> , <http://www.sdm-lab.com/#Computer+Science> , sdm:Education ;
+        sdm:venueHasHandler   sdm:18704 .
+
+sdm:35b460874243165533df66b6dfc31e9c7aee3fb9
+        rdf:type             sdm:DemoPaper ;
+        sdm:ContainsKeyword  sdm:Business , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.3390%2Fmath11040899This+paper+is+accepted%21> ;
+        sdm:PublishedIn      sdm:7 ;
+        sdm:SubmittedIn      sdm:Mathematics ;
+        sdm:WrittenBy        sdm:2205368622 , sdm:2065919726 , sdm:2108169698 ;
+        sdm:doi              "10.3390%2Fmath11040899" ;
+        sdm:title            "A Review on Business Analytics: Definitions, Techniques, Applications and Challenges" .
+
+<http://www.sdm-lab.com/#%222014%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Association+for+Computing+Machinery+%28ACM%29> ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:7343052  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Claudia Buengeler" .
+
+sdm:144937232  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Brent A. Scott" .
+
+sdm:13119  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:1978193 , sdm:81323357 , sdm:3075483 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:37d0ee300bd42ec99c986b538760066ff0dea56d
+        rdf:type             sdm:DemoPaper ;
+        sdm:ContainsKeyword  sdm:Economics ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.4337%2F9781786439017This+paper+is+rejected%21> ;
+        sdm:PublishedIn      sdm:9 ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#American+Association+for+Cancer+Research+%28AACR%29> ;
+        sdm:WrittenBy        sdm:2191394 , sdm:47526855 , sdm:113607888 , sdm:66373895 ;
+        sdm:doi              "10.4337%2F9781786439017" ;
+        sdm:title            "Elgar Introduction to Theories of Human Resources and Employment Relations" .
+
+<http://www.sdm-lab.com/#%2220%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Leadership+Quarterly> ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:47446991  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Mo Wang" .
+
+sdm:4128787  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:0d105d6281b13c140581198f1a2d42f905585513 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1111%2FJASP.12744This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:3075483  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:bab5c537bdef6b5c5b8e82213abc5650fc2ecd03 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1037%2Fa0038922This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+<http://www.sdm-lab.com/#Organization+Studies>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Business , sdm:Sociology ;
+        sdm:venueHasHandler   sdm:23690 .
+
+sdm:BelongsToConference
+        rdf:type     owl:ObjectProperty ;
+        rdfs:domain  sdm:Proceeding ;
+        rdfs:label   "A proceeding belongs to a conference"@en ;
+        rdfs:range   sdm:Conference .
+
+sdm:0d105d6281b13c140581198f1a2d42f905585513
+        rdf:type             sdm:Poster ;
+        sdm:ContainsKeyword  sdm:Psychology , sdm:Medicine ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1111%2FJASP.12744This+paper+is+rejected%21> ;
+        sdm:PublishedIn      sdm:0 ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#UX+Riga> ;
+        sdm:WrittenBy        sdm:48250810 , sdm:114570655 , sdm:46362397 , sdm:52205524 ;
+        sdm:doi              "10.1111%2FJASP.12744" ;
+        sdm:title            "When and how health‐oriented leadership relates to employee well‐being—The role of expectations, self‐care, and LMX" .
+
+sdm:3058225  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "A. Tezel" .
+
+sdm:70476898  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Judita Peterlin" .
+
+sdm:78143588  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Junchao Zhu" .
+
+<http://www.sdm-lab.com/#Journal+of+Leadership+%26+Organizational+Studies>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Business ;
+        sdm:venueHasHandler   sdm:2581 .
+
+sdm:40595787  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "J. Pollack" .
+
+sdm:2066fe8e700fa0f67ba727386c49c9189260fa8e
+        rdf:type             sdm:Fullpaper ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2Fj.leaqua.2020.101385This+paper+is+rejected%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2231%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Leadership+Quarterly> ;
+        sdm:WrittenBy        sdm:31857231 , sdm:38979717 , sdm:145835903 ;
+        sdm:doi              "10.1016%2Fj.leaqua.2020.101385" ;
+        sdm:title            "A critique of the Leader-Member Exchange construct: Back to square one" .
+
+sdm:Fullpaper  rdf:type  owl:Class ;
+        rdfs:subClassOf  sdm:Paper .
+
+sdm:121546819  rdf:type   sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:9a536eabd4abeb979392cf4c51aa0b7407267f93 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1007%2Fs11192-019-03184-yThis+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+<http://www.sdm-lab.com/#%2236%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Academy+of+Management+Review> ;
+        sdm:PublicationRelatedTo  sdm:Business ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:5   rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Elgar+Introduction+to+Theories+of+Human+Resources+and+Employment+Relations> ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:1851595  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:60be7fab57de6fd77e52812264f6d0073d9e19cb ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.HRMR.2016.09.008This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:748ab9fcc4fdfd82cd22e0a1360ad852c15a4c64
+        rdf:type             sdm:DemoPaper ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Sociology ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.15458%2F2335-4216.1004This+paper+is+accepted%21> ;
+        sdm:PublishedIn      sdm:4 ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Economic+and+Business+Review> ;
+        sdm:WrittenBy        sdm:121775430 , sdm:70476898 ;
+        sdm:doi              "10.15458%2F2335-4216.1004" ;
+        sdm:title            "The Role of Four Life-Story Aspects in a Collaborative Decision-making Process in the Field of Leadership Development" .
+
+sdm:21415  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:5923733 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+<http://www.sdm-lab.com/#%2234%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Journal+of+Organizational+Behavior> ;
+        sdm:PublicationRelatedTo  sdm:Psychology ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:volumenumber  rdf:type  owl:DatatypeProperty ;
+        rdfs:domain  sdm:Volume ;
+        rdfs:label   "A volume has a number"@en ;
+        rdfs:range   xsd:integer .
+
+sdm:7468272  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Catherine K. Lam" .
+
+sdm:77838431  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Bijia Song" .
+
+sdm:40578765  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "A. Broeck" .
+
+sdm:2114271935  rdf:type  sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:e6945a04fcfcd3262f5ecceb03deeb1c3d7ed6f8 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2016.10.008This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:5422191  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:7f6b6ce19d8bc00df9f3ee1060f26222c80e52a2 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2Fj.leaqua.2020.101423This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+<http://www.sdm-lab.com/#%2285%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Journal+of+Business+Research> ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Sociology ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+<http://www.sdm-lab.com/#Journal+of+Business+Ethics>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  <http://www.sdm-lab.com/#Political+Science> , sdm:Business , sdm:Sociology ;
+        sdm:venueHasHandler   sdm:22915 .
+
+sdm:e6ebc91a221d1d0d822b68ea6f269e888873ef1a
+        rdf:type             sdm:ShortPaper ;
+        sdm:ContainsKeyword  sdm:Psychology ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.5465%2FAMR.2016.0264This+paper+is+rejected%21> ;
+        sdm:PublishedIn      sdm:4 ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Academy+of+Management+Review> ;
+        sdm:WrittenBy        sdm:39835700 , sdm:8381772 ;
+        sdm:doi              "10.5465%2FAMR.2016.0264" ;
+        sdm:title            "Understanding the Disparate Behavioral Consequences of LMX Differentiation: The Role of Social Comparison Emotions" .
+
+sdm:2202301317  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Caidi He" .
+
+sdm:12153  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:4128787 , sdm:2239645 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:Paper  rdf:type  owl:Class .
+
+<http://www.sdm-lab.com/#Journal+of+Business+Research>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Sociology , sdm:Business , <http://www.sdm-lab.com/#Political+Science> ;
+        sdm:venueHasHandler   sdm:15220 , sdm:478 .
+
+sdm:164e2afbb0a39993581fa3a05530a67c1e3e6da6
+        rdf:type             sdm:DemoPaper ;
+        sdm:ContainsKeyword  sdm:Education , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1002%2Fasi.23696This+paper+is+rejected%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2268%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+the+Association+for+Information+Science+and+Technology> ;
+        sdm:WrittenBy        sdm:48781924 , sdm:3275586 , sdm:9593910 , sdm:8506433 ;
+        sdm:doi              "10.1002%2Fasi.23696" ;
+        sdm:title            "Mapping science through bibliometric triangulation: An experimental approach applied to water research" .
+
+sdm:1441502197  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Yakov Pichkar" .
+
+sdm:14406742  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "K. Gower" .
+
+sdm:40790271  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Jeremy Brees" .
+
+sdm:17569  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:3545916 , sdm:7783900 , sdm:4267122 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+<http://www.sdm-lab.com/#Voxxed+Days+-+Cern>
+        rdf:type                 sdm:Symposium ;
+        sdm:ConferenceRelatedTo  sdm:Business , sdm:Medicine , sdm:Psychology ;
+        sdm:name                 "Voxxed Days - Cern" ;
+        sdm:venueHasHandler      sdm:496 .
+
+sdm:18356  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:8113436 , sdm:40102157 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:49598271  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "O. Fodor" .
+
+<http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2018.03.001This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+sdm:10620012  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Amy L Collins" .
+
+sdm:a713ea4d4c48afc79abea40af006e420e8547802
+        rdf:type             sdm:ShortPaper ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1108%2FCDI-05-2013-0063This+paper+is+accepted%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2219%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Career+Development+International> ;
+        sdm:WrittenBy        sdm:8257688 , sdm:7653268 , sdm:49067859 , sdm:17835213 , sdm:122037404 , sdm:40578765 ;
+        sdm:doi              "10.1108%2FCDI-05-2013-0063" ;
+        sdm:title            "The mediating role of psychological needs in the relation between qualitative job insecurity and counterproductive work behavior" .
+
+<http://www.sdm-lab.com/#10.3390%2Fsu15043713This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+<http://www.sdm-lab.com/#10.1002%2FJOB.627This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+sdm:39747184  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Rebecca L. Greenbaum" .
+
+sdm:1393567274  rdf:type  sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:a2126884ac972bc42ac96b1f5a3c9aa7c979cd02 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.JBUSRES.2021.04.070This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+<http://www.sdm-lab.com/#%2230%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#European+Journal+of+Work+and+Organizational+Psychology> ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:c8fcd37be1be142bcfc9ef745f204a1d286669d5
+        rdf:type             sdm:DemoPaper ;
+        sdm:ContainsKeyword  sdm:Psychology , sdm:Business ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1177%2F0149206320930813This+paper+is+accepted%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2247%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+Management> ;
+        sdm:WrittenBy        sdm:6038454 , sdm:113032791 , sdm:7343052 ;
+        sdm:doi              "10.1177%2F0149206320930813" ;
+        sdm:title            "LMX Differentiation and Group Outcomes: A Framework and Review Drawing on Group Diversity Insights" .
+
+sdm:bff0c902c546e1e40c38c0575f58c505f45aeb16
+        rdf:type             sdm:ShortPaper ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2FJ.HRMR.2018.02.004This+paper+is+rejected%21> ;
+        sdm:PublishedIn      sdm:4 ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Human+Resource+Management+Review> ;
+        sdm:WrittenBy        sdm:51439243 , sdm:2345032 , sdm:102979552 ;
+        sdm:doi              "10.1016%2FJ.HRMR.2018.02.004" ;
+        sdm:title            "HR systems, attachment styles with leaders, and the creativity–innovation nexus" .
+
+<http://www.sdm-lab.com/#10.1016%2FJ.ERAP.2017.05.005This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+sdm:115926020  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "M. Jaklič" .
+
+sdm:Handlers  rdf:type   owl:Class ;
+        rdfs:subClassOf  sdm:Person .
+
+<http://www.sdm-lab.com/#10.5465%2FAMR.2016.0264This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+<http://www.sdm-lab.com/#Academy+of+Management+Journal>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:venueHasHandler   sdm:6907 .
+
+sdm:0   rdf:type                  sdm:Proceeding ;
+        sdm:BelongsToConference   sdm:Jfokus , <http://www.sdm-lab.com/#The+Lead+Developer+New+York> , <http://www.sdm-lab.com/#Agile+Content+Conf> , <http://www.sdm-lab.com/#UX+Riga> ;
+        sdm:PublicationRelatedTo  sdm:Business , <http://www.sdm-lab.com/#Computer+Science> , sdm:Medicine , sdm:Psychology ;
+        sdm:edition               "1"^^xsd:int ;
+        sdm:issn                  "123450" .
+
+<http://www.sdm-lab.com/#MTZ+worldwide>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Psychology , sdm:Medicine ;
+        sdm:venueHasHandler   sdm:19226 .
+
+<http://www.sdm-lab.com/#10.1093%2FOXFORDHB%2F9780199326174.013.0009This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+sdm:153840586  rdf:type   sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:cc5d004f90bb2ef05cdc2d28f87f462d57754d72 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.ERAP.2017.05.005This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:15574296  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "J. I. Reppun" .
+
+<http://www.sdm-lab.com/#%22100+3%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#The+Journal+of+applied+psychology> ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Medicine , sdm:Sociology ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:2405956  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:66e46478fc83b19353a5fd67044f2592ff511a9b ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1186%2Fs40537-023-00703-wThis+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:Webstock  rdf:type           sdm:Symposium ;
+        sdm:ConferenceRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:name                 "Webstock" ;
+        sdm:venueHasHandler      sdm:18011 .
+
+sdm:Proceeding  rdf:type  owl:Class ;
+        rdfs:subClassOf  sdm:Publication .
+
+sdm:5674814  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:c2c6801d12a32502a4ee691bf1af87e60609a67b ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.3102%2F0034654319830380This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:40423316  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "H. Tse" .
+
+sdm:49176435  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:1b241abeac4fa252a3ec59f7b79ff9ee56445d4e ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1002%2FJOB.2268This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:13b326f5a8869bf72b368fbcdabcb3736f77531c
+        rdf:type             sdm:DemoPaper ;
+        sdm:ContainsKeyword  <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.3390%2Fijgi12020035This+paper+is+rejected%21> ;
+        sdm:PublishedIn      sdm:3 ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#ISPRS+International+Journal+of+Geo-Information> ;
+        sdm:WrittenBy        sdm:31850558 , sdm:113712585 , sdm:98895639 , sdm:2169447913 , sdm:31318811 , sdm:100938668 , sdm:2073665008 ;
+        sdm:doi              "10.3390%2Fijgi12020035" ;
+        sdm:title            "Big Data Management Algorithms, Deep Learning-Based Object Detection Technologies, and Geospatial Simulation and Sensor Fusion Tools in the Internet of Robotic Things" .
+
+sdm:4801448  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "David M. Mayer" .
+
+sdm:13832498  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "A. Dysvik" .
+
+sdm:411dbf4787f7cbd59ca281e7efbb01e14584507a
+        rdf:type             sdm:DemoPaper ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Sociology ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2016.10.007This+paper+is+accepted%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2228%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Leadership+Quarterly> ;
+        sdm:WrittenBy        sdm:51439243 , sdm:2345032 , sdm:34615430 ;
+        sdm:doi              "10.1016%2FJ.LEAQUA.2016.10.007" ;
+        sdm:title            "Just how multi-level is leadership research? A document co-citation analysis 1980–2013 on leadership constructs and outcomes" .
+
+sdm:c2c6801d12a32502a4ee691bf1af87e60609a67b
+        rdf:type             sdm:Poster ;
+        sdm:ContainsKeyword  sdm:Sociology , sdm:Education ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.3102%2F0034654319830380This+paper+is+accepted%21> ;
+        sdm:PublishedIn      sdm:3 ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Sustainable+UX> ;
+        sdm:WrittenBy        sdm:74170690 , sdm:11425813 ;
+        sdm:doi              "10.3102%2F0034654319830380" ;
+        sdm:title            "A Bibliometric Review of Research on Educational Administration: Science Mapping the Literature, 1960 to 2018" .
+
+sdm:eea884adf9a0ba306967e3764320b1664373a4f7
+        rdf:type             sdm:ShortPaper ;
+        sdm:ContainsKeyword  sdm:Business ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.28991%2Fesj-2023-07-02-023This+paper+is+rejected%21> ;
+        sdm:PublishedIn      sdm:10 ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Emerging+Science+Journal> ;
+        sdm:WrittenBy        sdm:145734978 , sdm:1485644529 , sdm:2209917736 ;
+        sdm:doi              "10.28991%2Fesj-2023-07-02-023" ;
+        sdm:title            "Big Data Analytics and Auditing: A Review and Synthesis of Literature" .
+
+sdm:123880806  rdf:type   sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:dae4a6e0d6bf612993b608e2e556a3c91ff8b56f ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1037%2Fa0021452This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:23690  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:3505664 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:51499126  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "A. Legood" .
+
+sdm:145886367  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Soon Ang" .
+
+sdm:40035191  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Beatrice Piccoli" .
+
+sdm:114570655  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Antonia J. Kaluza" .
+
+<http://www.sdm-lab.com/#Typography+Day+2017>
+        rdf:type                 sdm:Regular ;
+        sdm:ConferenceRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:name                 "Typography Day 2017" ;
+        sdm:venueHasHandler      sdm:18443 .
+
+sdm:Sustainability  rdf:type  sdm:Journal ;
+        sdm:JournalRelatedTo  <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:venueHasHandler   sdm:8363 .
+
+sdm:11276337  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:411dbf4787f7cbd59ca281e7efbb01e14584507a ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2016.10.007This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:97660992  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Chenwei Liao" .
+
+sdm:37129844  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:7253454d31e983929e683e2eb9150cc810cedce7 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1002%2FJOB.1885This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:7168826  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "M. Wesson" .
+
+sdm:1403820244  rdf:type  sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:9ae8a63742aae79c94a86ab0661a7d8c2971c433 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1177%2F1742715012455130This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:49067859  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Gabriel Fischmann" .
+
+sdm:40954029  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Hettie A. Richardson" .
+
+sdm:52204670  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Aldijana Bunjak" .
+
+sdm:6099791  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "J. Colquitt" .
+
+sdm:478  rdf:type            sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:3244528 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:47194058  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:60df2c1705ba5bdda4d0ec8a563756f39b90a3a6 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.JBUSRES.2017.12.011This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:21833  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:6203074 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:9996860  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:a797c38057fddbf635a2917424f44b5583792813 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1037%2Fa0021484This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:5155679  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:bf191236573edc2242ff319e4ea1a71fe5125cc7 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.4236%2FJSSM.2016.91009This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:40518290  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:5ea475a81406e5d0ea907fad1ce5be42ad599a15 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2011.08.009This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+<http://www.sdm-lab.com/#10.1016%2FJ.HRMR.2016.09.008This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:47526855  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "K. Townsend" .
+
+sdm:ee7aaba2e911b3a74e0eb97a14d7028db825945b
+        rdf:type             sdm:Poster ;
+        sdm:ContainsKeyword  sdm:Medicine , sdm:Business , sdm:Psychology ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1037%2Fa0029978This+paper+is+rejected%21> ;
+        sdm:PublishedIn      sdm:1 ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Voxxed+Days+-+Zurich> ;
+        sdm:WrittenBy        sdm:33091184 , sdm:145886367 , sdm:3042061 , sdm:3553866 ;
+        sdm:doi              "10.1037%2Fa0029978" ;
+        sdm:title            "Leader-member exchange (LMX) and culture: a meta-analysis of correlates of LMX across 23 countries." .
+
+sdm:5934403  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Cécile Emery" .
+
+sdm:48781924  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Bei Wen" .
+
+sdm:doi  rdf:type    owl:DatatypeProperty ;
+        rdfs:domain  sdm:Paper ;
+        rdfs:label   "A paper has a DOI"@en ;
+        rdfs:range   xsd:string .
+
+sdm:100938668  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Iulian Hurloiu" .
+
+sdm:46916148  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:1d47b94a81d952f76e1c498de61ae670f12b799e ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1007%2FS10551-012-1354-YThis+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:49991622  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "J. Sun" .
+
+sdm:7484553  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "P. Vidyarthi" .
+
+sdm:2118263  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "M. Vartiainen" .
+
+sdm:4343376  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:9c4dfc2f8841a4e80b3407bcd4ae2044ca2722bf ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.48550%2FarXiv.2301.08841This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:8802  rdf:type           sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:4686536 , sdm:48410165 , sdm:13915116 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:2109647517  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Satish Kumar" .
+
+sdm:102898759  rdf:type   sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:c7101e46dc539be171db692c529610dd4faf01fe ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.3390%2Fsu15043713This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:2128105366  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Xiaohong Liu" .
+
+<http://www.sdm-lab.com/#10.1111%2FJ.1744-6570.2010.01203.XThis+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+sdm:70294020  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "N. Ashkanasy" .
+
+sdm:25330  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:153840586 , sdm:144048717 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:9ae8a63742aae79c94a86ab0661a7d8c2971c433
+        rdf:type             sdm:Poster ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1177%2F1742715012455130This+paper+is+accepted%21> ;
+        sdm:PublishedIn      sdm:0 ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Agile+Content+Conf> ;
+        sdm:WrittenBy        sdm:115926020 , sdm:1769770 , sdm:51439243 ;
+        sdm:doi              "10.1177%2F1742715012455130" ;
+        sdm:title            "Authentic leadership, creativity, and innovation: A multilevel perspective" .
+
+<http://www.sdm-lab.com/#Psychological+Reports>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Business , sdm:Medicine , sdm:Psychology ;
+        sdm:venueHasHandler   sdm:12967 .
+
+sdm:2151438  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Junqi Shi" .
+
+sdm:3139520  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Weng Marc Lim" .
+
+sdm:12967  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:11527790 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:2202557717  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Zainooriah Dato' Hj Zakaria" .
+
+sdm:60be7fab57de6fd77e52812264f6d0073d9e19cb
+        rdf:type             sdm:Poster ;
+        sdm:ContainsKeyword  sdm:Psychology ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2FJ.HRMR.2016.09.008This+paper+is+accepted%21> ;
+        sdm:PublishedIn      sdm:2 ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#The+Rolling+Scopes+Conference> ;
+        sdm:WrittenBy        sdm:97660992 , sdm:49709153 , sdm:3042061 ;
+        sdm:doi              "10.1016%2FJ.HRMR.2016.09.008" ;
+        sdm:title            "Does liking explain variance above and beyond LMX? A meta-analysis" .
+
+sdm:50449730  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:7a4e971ceaef48d194abf6d206e6c2855f7d107e ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2Fj.aap.2009.08.009This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:3128421  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "M. Martinko" .
+
+sdm:2059151067  rdf:type  sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:f435c4e1a2f549b3a6288520499014769d311a67 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.3389%2Ffpsyg.2022.792599This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+<http://www.sdm-lab.com/#Journal+of+the+American+Academy+of+Child+and+Adolescent+Psychiatry>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Medicine , sdm:Psychology ;
+        sdm:venueHasHandler   sdm:19896 .
+
+sdm:82126346  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Abigail M. Searfoss" .
+
+sdm:2205368622  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Shiyu Liu" .
+
+sdm:2091646020  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "M. Castillo-Vergara" .
+
+<http://www.sdm-lab.com/#10.1177%2F0170840612448028This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:52205524  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "N. Junker" .
+
+sdm:22797  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:2842899 , sdm:145115681 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+<http://www.sdm-lab.com/#10.1016%2Fj.leaqua.2020.101423This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+sdm:10378489  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:60be7fab57de6fd77e52812264f6d0073d9e19cb ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.HRMR.2016.09.008This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:12377308  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:2066fe8e700fa0f67ba727386c49c9189260fa8e ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2Fj.leaqua.2020.101385This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:2065066749  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "A. Newman" .
+
+<http://www.sdm-lab.com/#Journal+of+Organizational+Behavior>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:venueHasHandler   sdm:3810 , sdm:25835 , sdm:13372 , sdm:25785 , sdm:18356 .
+
+sdm:reviewtext  rdf:type  owl:DatatypeProperty ;
+        rdfs:domain  sdm:Review ;
+        rdfs:label   "A review has a text"@en ;
+        rdfs:range   xsd:string .
+
+sdm:5414759  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:1be6fd34d14addc35a5655955c49baca976ae9f3 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1177%2F21582440221097688This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:60df2c1705ba5bdda4d0ec8a563756f39b90a3a6
+        rdf:type             sdm:DemoPaper ;
+        sdm:ContainsKeyword  sdm:Sociology , sdm:Business ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2FJ.JBUSRES.2017.12.011This+paper+is+rejected%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2285%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+Business+Research> ;
+        sdm:WrittenBy        sdm:2078204993 , sdm:1460041933 , sdm:2091646020 ;
+        sdm:doi              "10.1016%2FJ.JBUSRES.2017.12.011" ;
+        sdm:title            "A bibliometric analysis of creativity in the field of business economics" .
+
+sdm:2239645  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:0d105d6281b13c140581198f1a2d42f905585513 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1111%2FJASP.12744This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:2202343285  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Fang Huang" .
+
+<http://www.sdm-lab.com/#%2243%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Social+Behavior+and+Personality> ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:24613  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:5414759 , sdm:6002266 , sdm:1398581290 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:8363  rdf:type           sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:102898759 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:47321370  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "S. Russo" .
+
+sdm:2056031805  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Mengjie Xia" .
+
+<http://www.sdm-lab.com/#10.1177%2F1742715012455130This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:7   rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Journal+of+Business+Research> , sdm:Mathematics ;
+        sdm:PublicationRelatedTo  <http://www.sdm-lab.com/#Political+Science> , sdm:Business , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:2175394071  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Hui-ping Mao" .
+
+sdm:venueHasHandler  rdf:type  owl:ObjectProperty ;
+        rdfs:domain  sdm:Venue ;
+        rdfs:label   "Each venue has a handler"@en ;
+        rdfs:range   sdm:Handlers .
+
+<http://www.sdm-lab.com/#10.1037%2Fa0021452This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:4143816  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:95c7559eabc7c16ca0c2c7fa113a944574547f59 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1002%2FJOB.1888This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:8250249  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "J. Hoobler" .
+
+sdm:25785  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:49176435 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:7989587  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "J. Rodell" .
+
+sdm:7783900  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:4aed298f7914d85b71cc96ede1a53a0119dbb966 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1177%2F0149206314559946This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:6861  rdf:type           sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:40206711 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+<http://www.sdm-lab.com/#%2241%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Journal+of+Management> ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Sociology ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:32820173  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:9679912b1386a04b793841ce3fb45de05a938676 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1080%2F1359432x.2020.1819241This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:19232  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:5740228 , sdm:32820173 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:5275773  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:ad0beaa0e79a9b95e4de41cd855b7f7f76a8eb7a ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1111%2FJ.1744-6570.2010.01203.XThis+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:8506433  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "P. V. D. Besselaar" .
+
+sdm:4267122  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:4aed298f7914d85b71cc96ede1a53a0119dbb966 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1177%2F0149206314559946This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:32508883  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "S. Seibert" .
+
+sdm:66485074  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:e5dd05fd5bbf4e4ace0cb2bf20e4695abbf36a01 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2017.10.002This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:12639  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:5674814 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:Medicine  rdf:type        sdm:Keyword ;
+        sdm:KeywordRelatedTo  sdm:Medicine ;
+        sdm:domain            "dummy domain" .
+
+sdm:115195611  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "A. F. Marstand" .
+
+<http://www.sdm-lab.com/#Personnel+Psychology>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:venueHasHandler   sdm:21415 .
+
+sdm:94943d22fce7877f2089f0a9afb90eb7fc2352ee
+        rdf:type             sdm:DemoPaper ;
+        sdm:ContainsKeyword  sdm:Medicine ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1080%2F02648725.2023.2168910This+paper+is+rejected%21> ;
+        sdm:PublishedIn      sdm:10 ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Biotechnology+%26+genetic+engineering+reviews> ;
+        sdm:WrittenBy        sdm:2202301317 , sdm:2128105366 , sdm:2202557717 , sdm:2202243185 , sdm:2056031805 , sdm:2202343285 , sdm:2175394071 , sdm:2155813745 , sdm:2202347418 , sdm:2202163148 , sdm:3626548 ;
+        sdm:doi              "10.1080%2F02648725.2023.2168910" ;
+        sdm:title            "Predictors of job burnout among Chinese nurses: a systematic review based on big data analysis." .
+
+sdm:13915116  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:0e32f5cebc15a0ac3ae39f99856037c22eff83f9 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1007%2Fs11192-020-03401-zThis+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:role  rdf:type   owl:DatatypeProperty ;
+        rdfs:domain  sdm:Handlers ;
+        rdfs:label   "A handler has a role"@en ;
+        rdfs:range   xsd:string .
+
+sdm:HasReview  rdf:type  owl:ObjectProperty ;
+        rdfs:domain  sdm:Paper ;
+        rdfs:label   "A paper has a review"@en ;
+        rdfs:range   sdm:Review .
+
+sdm:6329466  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Adela S. Garza" .
+
+sdm:5939684  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "J. Slaughter" .
+
+sdm:20bf58363cd91bb483296bc7ed9850ecc73fcb56
+        rdf:type             sdm:Fullpaper ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.5465%2FAMBPP.2014.12416ABSTRACTThis+paper+is+accepted%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%222014%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Association+for+Computing+Machinery+%28ACM%29> ;
+        sdm:WrittenBy        sdm:40178401 , sdm:4986923 , sdm:87796254 , sdm:48287585 , sdm:97405037 ;
+        sdm:doi              "10.5465%2FAMBPP.2014.12416ABSTRACT" ;
+        sdm:title            "Leader-member Exchange (LMX) and Performance: A Meta-Analytic Review" .
+
+<http://www.sdm-lab.com/#Political+Science>
+        rdf:type              sdm:Keyword ;
+        sdm:KeywordRelatedTo  <http://www.sdm-lab.com/#Political+Science> ;
+        sdm:domain            "dummy domain" .
+
+sdm:40633362  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Cindy P. Zapata" .
+
+sdm:1401569491  rdf:type  sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:64ea9a1a6677325d07b44753f13e0bce8f605acf ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.2224%2FSBP.2015.43.8.1273%E2%80%931286This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+<http://www.sdm-lab.com/#The+Lead+Developer+New+York>
+        rdf:type                 sdm:Symposium ;
+        sdm:ConferenceRelatedTo  sdm:Sociology , sdm:Business , sdm:Psychology , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:name                 "The Lead Developer New York" ;
+        sdm:venueHasHandler      sdm:20876 .
+
+sdm:48410165  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:0e32f5cebc15a0ac3ae39f99856037c22eff83f9 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1007%2Fs11192-020-03401-zThis+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:2640  rdf:type           sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:3222019 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:3484325  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "M. Ford" .
+
+<http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2011.08.009This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+<http://www.sdm-lab.com/#10.1016%2FJ.JBUSRES.2021.04.070This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+sdm:40018541  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:20bf58363cd91bb483296bc7ed9850ecc73fcb56 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.5465%2FAMBPP.2014.12416ABSTRACTThis+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+<http://www.sdm-lab.com/#Materials+Science>
+        rdf:type              sdm:Keyword ;
+        sdm:KeywordRelatedTo  <http://www.sdm-lab.com/#Materials+Science> ;
+        sdm:domain            "dummy domain" .
+
+sdm:9968  rdf:type           sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:40602322 , sdm:3729856 , sdm:4191459 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:1400987196  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "A. Bos‐Nehles" .
+
+<http://www.sdm-lab.com/#%2255%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Academy+of+Management+Journal> ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:3545916  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:4aed298f7914d85b71cc96ede1a53a0119dbb966 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1177%2F0149206314559946This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+<http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2014.05.003This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:Psychology  rdf:type      sdm:Keyword ;
+        sdm:KeywordRelatedTo  sdm:Psychology ;
+        sdm:domain            "dummy domain" .
+
+sdm:1422425649  rdf:type  sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:7a4e971ceaef48d194abf6d206e6c2855f7d107e ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2Fj.aap.2009.08.009This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:2   rdf:type                  sdm:Volume , sdm:Proceeding ;
+        sdm:BelongsToConference   sdm:Script17 , sdm:Webstock , sdm:Jfokus , <http://www.sdm-lab.com/#The+Rolling+Scopes+Conference> , <http://www.sdm-lab.com/#The+Lead+Developer+New+York> ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Journal+of+Organizational+Behavior> ;
+        sdm:PublicationRelatedTo  sdm:Sociology , sdm:Medicine , sdm:Psychology , sdm:Business , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:edition               "1"^^xsd:int ;
+        sdm:issn                  "0123456" , "123450" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:3505664  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:8507ff8f866fbe01eb784f23d3bcf84f686c0300 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1177%2F0170840612448028This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:2152334609  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Yu-xiong Su" .
+
+sdm:7308371  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:3286d652031571d504f78ab989e0263f759e4e12 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1111%2Fj.1035-6851.2001.249-13.xThis+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:6002266  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:1be6fd34d14addc35a5655955c49baca976ae9f3 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1177%2F21582440221097688This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:29696426  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Xiaosong Lin" .
+
+sdm:7653268  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Coralia Sulea" .
+
+sdm:18704  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:2067765648 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:2155813745  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Jing Luo" .
+
+sdm:17963  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:104228748 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:3275586  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "E. Horlings" .
+
+sdm:0e32f5cebc15a0ac3ae39f99856037c22eff83f9
+        rdf:type             sdm:ShortPaper ;
+        sdm:ContainsKeyword  sdm:Sociology , <http://www.sdm-lab.com/#Computer+Science> , sdm:Education ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1007%2Fs11192-020-03401-zThis+paper+is+accepted%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%22123%22> ;
+        sdm:SubmittedIn      sdm:Scientometrics ;
+        sdm:WrittenBy        sdm:1807504 , sdm:2582168 ;
+        sdm:doi              "10.1007%2Fs11192-020-03401-z" ;
+        sdm:title            "Academic influence and invisible colleges through editorial board interlocking in communication sciences: a social network analysis of leading journals" .
+
+sdm:114130900  rdf:type   sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:ec745a805f894c86df005615de7a98a257b88c6b ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1037%2Fa0030264This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:13862  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:9996860 , sdm:118224089 , sdm:2057073663 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:5949814  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:3286d652031571d504f78ab989e0263f759e4e12 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1111%2Fj.1035-6851.2001.249-13.xThis+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+<http://www.sdm-lab.com/#%2218%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Organizational+Research+Methods> ;
+        sdm:PublicationRelatedTo  sdm:Business , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:122403081  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "A. Shani" .
+
+sdm:10003  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:2114271935 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:100693056  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Brian C. Glibkowski" .
+
+sdm:688  rdf:type            sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:1796135 , sdm:10378489 , sdm:1851595 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+<http://www.sdm-lab.com/#10.1016%2Fj.jbusres.2019.09.052This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+sdm:15390666  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:a713ea4d4c48afc79abea40af006e420e8547802 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1108%2FCDI-05-2013-0063This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:25835  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:4143816 , sdm:2870936 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+<http://www.sdm-lab.com/#10.1002%2FJOB.1888This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+sdm:a797c38057fddbf635a2917424f44b5583792813
+        rdf:type             sdm:Fullpaper ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Psychology , sdm:Medicine ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1037%2Fa0021484This+paper+is+accepted%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2296+1%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#The+Journal+of+applied+psychology> ;
+        sdm:WrittenBy        sdm:3001948 , sdm:5749406 , sdm:34312385 ;
+        sdm:doi              "10.1037%2Fa0021484" ;
+        sdm:title            "Safety at work: a meta-analytic investigation of the link between job demands, job resources, burnout, engagement, and safety outcomes." .
+
+sdm:edition  rdf:type  owl:DatatypeProperty ;
+        rdfs:domain  sdm:Proceeding ;
+        rdfs:label   "A proceeding has an edition "@en ;
+        rdfs:range   xsd:integer .
+
+sdm:4261209  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:7253454d31e983929e683e2eb9150cc810cedce7 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1002%2FJOB.1885This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+<http://www.sdm-lab.com/#%2269%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Human+Relations> ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:ConferenceRelatedTo
+        rdf:type     owl:ObjectProperty ;
+        rdfs:domain  sdm:Conference ;
+        rdfs:label   "A Conference is related to an area"@en ;
+        rdfs:range   sdm:Area .
+
+sdm:3956702  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:e5dd05fd5bbf4e4ace0cb2bf20e4695abbf36a01 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2017.10.002This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:3056908  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:2066fe8e700fa0f67ba727386c49c9189260fa8e ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2Fj.leaqua.2020.101385This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:dae4a6e0d6bf612993b608e2e556a3c91ff8b56f
+        rdf:type             sdm:DemoPaper ;
+        sdm:ContainsKeyword  sdm:Psychology , sdm:Business , sdm:Medicine ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1037%2Fa0021452This+paper+is+accepted%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2296+3%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#The+Journal+of+applied+psychology> ;
+        sdm:WrittenBy        sdm:32508883 , sdm:4381864 , sdm:16219820 , sdm:115434713 , sdm:8572229 ;
+        sdm:doi              "10.1037%2Fa0021452" ;
+        sdm:title            "Antecedents and outcomes of organizational support for development: the critical role of career opportunities." .
+
+<http://www.sdm-lab.com/#American+Association+for+Cancer+Research+%28AACR%29>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Economics ;
+        sdm:venueHasHandler   sdm:14043 .
+
+<http://www.sdm-lab.com/#Biotechnology+%26+genetic+engineering+reviews>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Medicine ;
+        sdm:venueHasHandler   sdm:6861 .
+
+sdm:18011  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:50744658 , sdm:27581584 , sdm:5275773 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+<http://www.sdm-lab.com/#Agile+Content+Conf>
+        rdf:type                 sdm:Workshop ;
+        sdm:ConferenceRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:name                 "Agile Content Conf" ;
+        sdm:venueHasHandler      sdm:6562 .
+
+sdm:19226  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:5949814 , sdm:114484442 , sdm:7308371 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+<http://www.sdm-lab.com/#Academy+of+Management+Review>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:venueHasHandler   sdm:9981 , sdm:3231 .
+
+sdm:2533  rdf:type           sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:2059505766 , sdm:49536533 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+<http://www.sdm-lab.com/#10.1016%2FJ.JBUSRES.2021.03.032This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+<http://www.sdm-lab.com/#%2267%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Revue+Europ%C3%A9enne+de+Psychologie+Appliqu%C3%A9e> ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:2202243185  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Junqiang Wang" .
+
+sdm:3626548  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "R. Nordin" .
+
+sdm:2870936  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:95c7559eabc7c16ca0c2c7fa113a944574547f59 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1002%2FJOB.1888This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:8257688  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "D. Iliescu" .
+
+sdm:20243  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:48792606 , sdm:50660087 , sdm:1403390172 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:121775430  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Sokol Loci" .
+
+sdm:Journal  rdf:type    owl:Class ;
+        rdfs:subClassOf  sdm:Venue .
+
+sdm:4387556  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:15e10871bd34d61742790ca8c3e90ae45c486689 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.5465%2FAMR.2009.0402This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:3231  rdf:type           sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:1486062441 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:8572229  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "M. Kraimer" .
+
+sdm:47600386  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "David J. Henderson" .
+
+sdm:143976706  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Nitesh Pandey" .
+
+<http://www.sdm-lab.com/#Journal+of+Management>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Sociology , sdm:Business , sdm:Psychology ;
+        sdm:venueHasHandler   sdm:17569 , sdm:2533 .
+
+<http://www.sdm-lab.com/#%2265%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Personnel+Psychology> ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:47748698  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Jun Gu" .
+
+sdm:39456927  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Dorothy R. Carter" .
+
+sdm:bioRxiv  rdf:type         sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Biology ;
+        sdm:venueHasHandler   sdm:2640 .
+
+sdm:40345999  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "E. Reale" .
+
+sdm:Education  rdf:type       sdm:Keyword ;
+        sdm:KeywordRelatedTo  sdm:Education ;
+        sdm:domain            "dummy domain" .
+
+sdm:144558668  rdf:type   sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:37d0ee300bd42ec99c986b538760066ff0dea56d ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.4337%2F9781786439017This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:3862  rdf:type           sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:5011222 , sdm:11276337 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:14043  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:144558668 , sdm:14745040 , sdm:2065362201 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:23484  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:1401569491 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+<http://www.sdm-lab.com/#10.1002%2FJOB.1885This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:16176  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:3056908 , sdm:12377308 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:cfd0400973b9215ac96ef918c6ea2215b845571a
+        rdf:type             sdm:Poster ;
+        sdm:ContainsKeyword  sdm:Psychology , sdm:Business ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2FJ.JBUSRES.2021.03.032This+paper+is+accepted%21> ;
+        sdm:PublishedIn      sdm:1 ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#O%27Reilly+Velocity+Conference> ;
+        sdm:WrittenBy        sdm:49453512 , sdm:71681826 , sdm:8292575 , sdm:40232894 ;
+        sdm:doi              "10.1016%2FJ.JBUSRES.2021.03.032" ;
+        sdm:title            "Your boss is the problem and solution: How supervisor-induced hindrance stressors and LMX influence employee job neglect and subsequent performance" .
+
+sdm:144229104  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "P. Harvey" .
+
+sdm:2069916496  rdf:type  sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:55bb71c7283c13cafa0950b988c1a73e802045ce ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.5465%2FAMJ.2009.0865This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:salary  rdf:type  owl:DatatypeProperty ;
+        rdfs:domain  sdm:Handlers ;
+        rdfs:label   "A handler has a salary"@en ;
+        rdfs:range   xsd:string .
+
+sdm:152245072  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "A. Troth" .
+
+sdm:WritesReview  rdf:type  owl:ObjectProperty ;
+        rdfs:domain  sdm:Reviewer ;
+        rdfs:label   "Reviewer write a review"@en ;
+        rdfs:range   sdm:Review .
+
+sdm:6015019  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:ec745a805f894c86df005615de7a98a257b88c6b ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1037%2Fa0030264This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+<http://www.sdm-lab.com/#10.1177%2F15480518211041629This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+<http://www.sdm-lab.com/#Journal+of+Big+Data>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:venueHasHandler   sdm:8170 .
+
+sdm:SubmittedIn  rdf:type  owl:ObjectProperty ;
+        rdfs:domain  sdm:Paper ;
+        rdfs:label   "A paper submitted in a venue"@en ;
+        rdfs:range   sdm:Venue .
+
+sdm:Publication  rdf:type  owl:Class .
+
+<http://www.sdm-lab.com/#10.48175%2Fijarsct-8038This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:2107737261  rdf:type  sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:164e2afbb0a39993581fa3a05530a67c1e3e6da6 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1002%2Fasi.23696This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:Area  rdf:type  owl:Class .
+
+sdm:Volume  rdf:type     owl:Class ;
+        rdfs:subClassOf  sdm:Publication .
+
+sdm:48250810  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "R. van Dick" .
+
+sdm:title  rdf:type  owl:DatatypeProperty ;
+        rdfs:domain  sdm:Paper ;
+        rdfs:label   "A paper has a title"@en ;
+        rdfs:range   xsd:string .
+
+sdm:Person  rdf:type  owl:Class .
+
+<http://www.sdm-lab.com/#10.1177%2F1094428114562629This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+<http://www.sdm-lab.com/#10.1186%2Fs40537-023-00703-wThis+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+sdm:222  rdf:type            sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:2077080625 , sdm:2059151067 , sdm:3129735 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+<http://www.sdm-lab.com/#10.1016%2Fj.leaqua.2020.101385This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+sdm:DemoPaper  rdf:type  owl:Class ;
+        rdfs:subClassOf  sdm:Paper .
+
+sdm:13372  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:4261209 , sdm:4671716 , sdm:37129844 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:31318811  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Irina Dijmărescu" .
+
+sdm:2194885794  rdf:type  sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:0700a4314a1c14f1894d58ae8581e265d80158bc ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1002%2FJOB.627This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+<http://www.sdm-lab.com/#%22123%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      sdm:Scientometrics ;
+        sdm:PublicationRelatedTo  sdm:Education , sdm:Sociology , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:15220  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:47194058 , sdm:2433744 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+<http://www.sdm-lab.com/#10.1080%2F02648725.2023.2168910This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+sdm:1485643901  rdf:type  sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:5ea475a81406e5d0ea907fad1ce5be42ad599a15 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2011.08.009This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:WrittenBy  rdf:type  owl:ObjectProperty ;
+        rdfs:domain  sdm:Paper ;
+        rdfs:label   "A paper is written by an author"@en ;
+        rdfs:range   sdm:Author .
+
+sdm:1392514324  rdf:type  sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:32bec1f7d14c5767c3f8a8c901d99e3ac26b3264 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1177%2F15480518211041629This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:9   rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#American+Association+for+Cancer+Research+%28AACR%29> ;
+        sdm:PublicationRelatedTo  sdm:Economics ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:5740228  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:9679912b1386a04b793841ce3fb45de05a938676 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1080%2F1359432x.2020.1819241This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:2183414253  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Mohammed Sufiyan" .
+
+<http://www.sdm-lab.com/#10.1016%2Fj.jaac.2012.01.018This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+sdm:Poster  rdf:type     owl:Class ;
+        rdfs:subClassOf  sdm:Paper .
+
+sdm:KeywordRelatedTo  rdf:type  owl:ObjectProperty ;
+        rdfs:domain  sdm:Keyword ;
+        rdfs:label   "A Keyword is related to an area"@en ;
+        rdfs:range   sdm:Area .
+
+sdm:1485644529  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Lilian Anthonysamy" .
+
+sdm:3095755  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "D. Mukherjee" .
+
+sdm:23843  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:1754942 , sdm:1393567274 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+sdm:2109971529  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Jiaxin Huang" .
+
+<http://www.sdm-lab.com/#%2275%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#MTZ+worldwide> ;
+        sdm:PublicationRelatedTo  sdm:Psychology , sdm:Medicine ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:2073665008  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "George Lăzăroiu" .
+
+sdm:2169447913  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Roxana Stefanescu" .
+
+sdm:95c7559eabc7c16ca0c2c7fa113a944574547f59
+        rdf:type             sdm:Fullpaper ;
+        sdm:ContainsKeyword  sdm:Psychology ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1002%2FJOB.1888This+paper+is+rejected%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2234%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+Organizational+Behavior> ;
+        sdm:WrittenBy        sdm:3128421 , sdm:40790271 , sdm:40806683 , sdm:144229104 ;
+        sdm:doi              "10.1002%2FJOB.1888" ;
+        sdm:title            "A review of abusive supervision research" .
+
+<http://www.sdm-lab.com/#10.1002%2FJOB.2549This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+<http://www.sdm-lab.com/#%2213%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Frontiers+in+Psychology> ;
+        sdm:PublicationRelatedTo  sdm:Psychology , sdm:Medicine ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:3037825  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:340a4d469f33c07ac0108ab882a802235e0a7757 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1002%2FJOB.2202This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:34794000  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "D. Rousseau" .
+
+sdm:50660087  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:13b326f5a8869bf72b368fbcdabcb3736f77531c ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.3390%2Fijgi12020035This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:35180620  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Mieke Audenaert" .
+
+sdm:2614057  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "L. Tetrick" .
+
+sdm:7326d3ac058e5653482a1b5fcdbb46d3484f6ab8
+        rdf:type             sdm:ShortPaper ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1002%2FJOB.2549This+paper+is+accepted%21> ;
+        sdm:PublishedIn      sdm:2 ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+Organizational+Behavior> ;
+        sdm:WrittenBy        sdm:49507320 , sdm:7468272 , sdm:2152196755 , sdm:2155871928 , sdm:7589039 ;
+        sdm:doi              "10.1002%2FJOB.2549" ;
+        sdm:title            "What if my coworker builds a better LMX? The roles of envy and coworker pride for the relationships of LMX social comparison with learning and undermining" .
+
+sdm:afd5014cfb7653a0bb004a2075077c4241c0689b
+        rdf:type   sdm:Fullpaper ;
+        sdm:title  "Advances in bibliometric analysis: research performance assessment and science mapping" .
+
+sdm:16913  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:5422191 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+<http://www.sdm-lab.com/#10.1177%2F0018726715597481This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+sdm:1807504  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Luis de Marcos" .
+
+sdm:1795386000  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Nicole C. Jones Young" .
+
+sdm:90244165  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "G. Sibenik" .
+
+<http://www.sdm-lab.com/#%2229%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Leadership+Quarterly> , <http://www.sdm-lab.com/#Journal+of+Leadership+%26+Organizational+Studies> , <http://www.sdm-lab.com/#Medical+Science+Monitor+%3A+International+Medical+Journal+of+Experimental+and+Clinical+Research> ;
+        sdm:PublicationRelatedTo  sdm:Psychology , sdm:Business , sdm:Medicine ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+<http://www.sdm-lab.com/#European+Journal+of+Work+and+Organizational+Psychology>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:venueHasHandler   sdm:19232 .
+
+sdm:6038454  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Ronald F. Piccolo" .
+
+sdm:AssignsReviewer  rdf:type  owl:ObjectProperty ;
+        rdfs:domain  sdm:Handlers ;
+        rdfs:label   "Handlers assigns reviewer for a paper"@en ;
+        rdfs:range   sdm:Reviewer .
+
+<http://www.sdm-lab.com/#10.1037%2Fa0030264This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
+
+<http://www.sdm-lab.com/#10.1016%2Fj.aap.2009.08.009This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:8507ff8f866fbe01eb784f23d3bcf84f686c0300
+        rdf:type             sdm:ShortPaper ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Sociology ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1177%2F0170840612448028This+paper+is+accepted%21> ;
+        sdm:PublishedIn      <http://www.sdm-lab.com/#%2233%22> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Organization+Studies> ;
+        sdm:WrittenBy        sdm:4005743 ;
+        sdm:doi              "10.1177%2F0170840612448028" ;
+        sdm:title            "The Visible Colleges of Management and Organization Studies: A Bibliometric Analysis of Academic Journals" .
+
+sdm:4   rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Academy+of+Management+Review> , <http://www.sdm-lab.com/#Human+Resource+Management+Review> , <http://www.sdm-lab.com/#Economic+and+Business+Review> ;
+        sdm:PublicationRelatedTo  sdm:Psychology , sdm:Business , sdm:Sociology ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:3795070  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:bf191236573edc2242ff319e4ea1a71fe5125cc7 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.4236%2FJSSM.2016.91009This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:4986923  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "O. Epitropaki" .
+
+sdm:145349578  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "G. Aarons" .
+
+<http://www.sdm-lab.com/#Human+Resource+Management+Review>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:venueHasHandler   sdm:1339 .
+
+sdm:49821654  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Seung-Wan Kang" .
+
+sdm:16052649  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:7a4e971ceaef48d194abf6d206e6c2855f7d107e ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2Fj.aap.2009.08.009This+paper+is+accepted%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:name  rdf:type   owl:DatatypeProperty ;
+        rdfs:domain  [ rdf:type     owl:Class ;
+                       owl:unionOf  ( sdm:Person sdm:Venue )
+                     ] ;
+        rdfs:label   "A person/venue has a name"@en ;
+        rdfs:range   xsd:string .
+
+sdm:7f6b6ce19d8bc00df9f3ee1060f26222c80e52a2
+        rdf:type             sdm:Poster ;
+        sdm:ContainsKeyword  sdm:Psychology , sdm:Business ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2Fj.leaqua.2020.101423This+paper+is+rejected%21> ;
+        sdm:PublishedIn      sdm:0 ;
+        sdm:SubmittedIn      sdm:Jfokus ;
+        sdm:WrittenBy        sdm:2387226 , sdm:102979552 , sdm:2126812 , sdm:49598271 ;
+        sdm:doi              "10.1016%2Fj.leaqua.2020.101423" ;
+        sdm:title            "Effects of charismatic leadership and rewards on individual performance" .
+
+sdm:7619964  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:32bec1f7d14c5767c3f8a8c901d99e3ac26b3264 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1177%2F15480518211041629This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:113607888  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "K. Cafferkey" .
+
+sdm:11425813  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "Jasna Kovačević" .
+
+<http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2009.04.003This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+<http://www.sdm-lab.com/#%2225%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Leadership+Quarterly> ;
+        sdm:PublicationRelatedTo  sdm:Economics , sdm:Engineering ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:46232420  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "John H. Batchelor" .
+
+<http://www.sdm-lab.com/#Social+Behavior+and+Personality>
+        rdf:type              sdm:Journal ;
+        sdm:JournalRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:venueHasHandler   sdm:23484 .
+
+sdm:18443  rdf:type          sdm:Handlers ;
+        sdm:AssignsReviewer  sdm:3037825 , sdm:144241701 ;
+        sdm:h-index          "90"^^xsd:int ;
+        sdm:role             "50,000" , "CTO" .
+
+<http://www.sdm-lab.com/#10.1037%2Fa0021484This+paper+is+accepted%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "ACCEPTED" ;
+        sdm:reviewtext      "This paper is accepted!" .
+
+sdm:2842899  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:d49dc28600e0fb85cbedfefe936e1a7a8219af9c ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2018.03.001This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
+sdm:2062055419  rdf:type  sdm:Author ;
+        sdm:Bday     "6/6/1998" ;
+        sdm:h-index  "12"^^xsd:int ;
+        sdm:name     "F. An" .
