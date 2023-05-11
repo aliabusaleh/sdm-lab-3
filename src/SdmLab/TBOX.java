@@ -125,16 +125,11 @@ public class TBOX {
             reviewsPaper.addRange(paper);
             reviewsPaper.addLabel("Reviewer reviews a paper", "en");
 
-            // Create a cardinality restriction that enforces a minimum of 2 reviwers for a paper
-            OntClass hasMinTwoReviews = model.createMinCardinalityRestriction(null, reviewsPaper, 2);
-
-            // Add the restriction to the paper class
-            paper.addSuperClass(hasMinTwoReviews);
 
             ObjectProperty writtenBy = model.createObjectProperty(Base_url + "WrittenBy");
             writtenBy.addDomain(paper);
             writtenBy.addRange(author);
-            writtenBy.addLabel("A paper is written by a reviewer", "en");
+            writtenBy.addLabel("A paper is written by an author", "en");
 
             ObjectProperty publishedIn = model.createObjectProperty(Base_url + "PublishedIn");
             publishedIn.addDomain(paper);
@@ -237,12 +232,8 @@ public class TBOX {
 
 
             DatatypeProperty reviewdecision = model.createDatatypeProperty(Base_url + "reviewdecision");
-            // enforce values
-            RDFList accepted = model.createList(model.createLiteral("ACCEPTED"));
-            RDFList rejected = model.createList(model.createLiteral("REJECTED"));
-            RDFList allowedValues = model.createList(accepted, rejected);
             reviewdecision.addDomain(review);
-            reviewdecision.addRange(allowedValues);
+            reviewdecision.addRange(XSD.xstring);
             reviewdecision.addLabel("A review has a decision ACCEPTED/REJECTED", "en");
 
             DatatypeProperty reviewtext = model.createDatatypeProperty(Base_url + "reviewtext");
@@ -271,22 +262,9 @@ public class TBOX {
             volumenumber.addRange(XSD.integer);
             volumenumber.addLabel("A volume has a number", "en");
 
-            // Enforce the constraint that posters must be submitted to conferences
-//            poster.addProperty(submittedIn, conference);
-//            model.createHasValueRestriction(null, submittedIn, conference);
 
-//            // Create the restriction
-//            SomeValuesFromRestriction submitToConference = model.createSomeValuesFromRestriction(null, submittedIn, conference);
-//
-//            // Create the intersection of Paper and the restriction
-//            IntersectionClass posterIntersection = model.createIntersectionClass(null, model.createList(paper, submitToConference));
-//
-//            // Set the equivalence between Poster and the intersection class
-//            poster.setEquivalentClass(posterIntersection);
-
-
-            FileOutputStream writerStream = new FileOutputStream("data/Ontology-output.owl");
-            model.write(writerStream, "RDF/XML-ABBREV");
+            FileOutputStream writerStream = new FileOutputStream("data/Tbox-output.ttl");
+            model.write(writerStream, "TTL");
             writerStream.close();
 
         } catch (FileNotFoundException e) {

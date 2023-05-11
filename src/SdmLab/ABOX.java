@@ -31,9 +31,9 @@ public class ABOX {
         try {
             // create models instances
             OntModel model = null;
-                Model m = ModelFactory.createDefaultModel().read("data/Ontology-output.owl");
+                Model m = ModelFactory.createDefaultModel().read("data/Tbox-output.ttl");
                 model = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM, m);
-                model.setNsPrefix("sdm", "https://www.sdm-lab/#");
+                model.setNsPrefix("sdm", "http://www.sdm-lab.com/#");
             String Base_url = "http://www.sdm-lab.com/#";
             // read the JSON file
             JsonReader reader;
@@ -150,12 +150,15 @@ public class ABOX {
                 if (__paper_doi.equals("")) continue; // skip if no doi
                 __paperInstance.addProperty(doi, encodeValue(__paper_doi));
 
+                // handlers #todo
+                String _handler = record.getString("handler");
+                Individual __handler = handlers.createIndividual(Base_url + _handler);
 
+                Individual venueInstance;
                 // venue info
                 // conference
                 if (__journal_exists.equals("null")) {
                     // conference
-                    String __conferencename = record.getString("conference");
                     Integer __editionN = record.getInt("edition");
                     // System.out.println(__conference_name);
                     String __conference_type = record.getString("conference_type");
@@ -182,6 +185,10 @@ public class ABOX {
                             System.out.println("Conference type unkown");
                             continue;
                         }
+                        // add the conference handlers :D
+                        __conferenceInstance.addProperty(venueHasHandler, __handler);
+                        // we need to add property #todo
+//                        __conferenceInstance.addProperty()
                     }
                     //Conference name as attribute #toAdd
                     //Conference edition as attribute #toAdd
@@ -220,6 +227,9 @@ public class ABOX {
                     __paperInstance.addProperty(publishedIn, __volume);
                     // connect journal with volume
                     __volume.addProperty(belongsToJournal, __journal);
+
+                    // add handlers assigned by this journal
+                    __journal.addProperty(venueHasHandler, __handler);
 
                 }
 
@@ -260,23 +270,35 @@ public class ABOX {
                     String __author_id = _author.getString("authorId");
                     String __author_name = _author.getString("name");
 
-                    Individual __author = author.createIndividual(Base_url + __author_id);
-//                    __author.addProperty(name,Base_url+ __author_name);
+                    Individual __author = author.createIndividual( __author_id);
+                    __author.addProperty(name,Base_url+ __author_name);
 
                     __paperInstance.addProperty(writtenBy, __author);
 
                 }
-//
-//
                 //loop through the reviewer of the paper
+                String _reviewText = record.getJsonObject("review").getString("dText");
+                String _reviewDecision = record.getJsonObject("review").getString("decision");
 
+                //Review is missing in data
+                Individual __review = review.createIndividual(Base_url + __paper_doi +_reviewText);
+                __review.addProperty(reviewtext, _reviewText);
+                __review.addProperty(reviewdecision, _reviewDecision);
+                // connect the review with the paper
+                __paperInstance.addProperty(hasReview, __review);
+
+                // reviewer info
                 JsonArray revArray = record.getJsonArray("reviewers");
                 for (int j=0; j < revArray.size()-1; j++){
                     String _reviwer = revArray.getString(j);
                     Individual __reviewer = reviewer.createIndividual(Base_url + _reviwer);
                     __reviewer.addProperty(reviewsPaper, __paperInstance);
-                    //Add reviewer writesreview  #toadd
-                    //Review is missing in data
+                    //Add reviewer writesReview
+                    // we assumed that all reviewers writes 1 review only :D
+                    __reviewer.addProperty(writesReview,__review);
+
+                    // assign that these reviewer assigned by handler
+                    __handler.addProperty(assignsReviewer, __reviewer);
                 }
 
             }
@@ -292,8 +314,8 @@ public class ABOX {
             } else {
                 System.out.println("Ontology is inconsistent");
             }
-            FileWriter  writerStream = new FileWriter("data/Abox-output.owl");
-            model.write(writerStream, "RDF/XML-ABBREV");
+            FileWriter  writerStream = new FileWriter("data/Abox-output.ttl");
+            model.write(writerStream, "ttl");
             writerStream.close();
 
 
