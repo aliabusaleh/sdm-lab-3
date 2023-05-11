@@ -30,13 +30,12 @@ public class ABOX {
         try {
             // create models instances
             OntModel model;
-                Model m = ModelFactory.createDefaultModel().read("data/Tbox-output.ttl");
-                model = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM, m);
-                model.setNsPrefix("sdm", "http://www.sdm-lab.com/#");
+            Model m = ModelFactory.createDefaultModel().read("data/Tbox-output.ttl");
+            model = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM, m);
+            model.setNsPrefix("sdm", "http://www.sdm-lab.com/#");
             String Base_url = "http://www.sdm-lab.com/#";
             // read the JSON file
-            JsonReader reader;
-            reader = Json.createReader(Files.newInputStream(Paths.get("data/papers_json.json")));
+            JsonReader reader; reader = Json.createReader(Files.newInputStream(Paths.get("data/papers_json.json")));
 
             OntClass venue = model.getOntClass( Base_url +"Venue");
             OntClass journal = model.getOntClass(  Base_url +"Journal");
@@ -83,19 +82,20 @@ public class ABOX {
             DatatypeProperty edition = model.getDatatypeProperty(Base_url + "edition");
             DatatypeProperty h_index = model.getDatatypeProperty(Base_url + "h-index");
             DatatypeProperty issn = model.getDatatypeProperty(Base_url + "issn");
-            DatatypeProperty domin = model.getDatatypeProperty(Base_url + "domin");
+            DatatypeProperty domain = model.getDatatypeProperty(Base_url + "domain");
             DatatypeProperty name = model.getDatatypeProperty(Base_url + "name");
             DatatypeProperty bDay = model.getDatatypeProperty(Base_url + "Bday");
-            DatatypeProperty reviewdecision = model.getDatatypeProperty(Base_url + "reviewdecision");
-            DatatypeProperty reviewtext = model.getDatatypeProperty(Base_url + "reviewtext");
+            DatatypeProperty reviewDecision = model.getDatatypeProperty(Base_url + "reviewdecision");
+            DatatypeProperty reviewText = model.getDatatypeProperty(Base_url + "reviewtext");
             DatatypeProperty role = model.getDatatypeProperty(Base_url + "role");
             DatatypeProperty salary = model.getDatatypeProperty(Base_url + "role");
             DatatypeProperty title = model.getDatatypeProperty(Base_url + "title");
             DatatypeProperty topic = model.getDatatypeProperty(Base_url + "topic");
-            DatatypeProperty volumenumber = model.getDatatypeProperty(Base_url + "volumenumber");
+            DatatypeProperty volumeNumber = model.getDatatypeProperty(Base_url + "volumenumber");
 
             JsonArray papersArray = reader.readArray();
             // loop through the papers array and add each paper to the model
+            label:
             for (int i = 0; i < 100; i++) {
                 JsonObject record = papersArray.getJsonObject(i);
 
@@ -110,30 +110,33 @@ public class ABOX {
                 String __paper_id = record.getString("paperId");
                 OntClass __paper;
 
-                if (__paper_type.equals("Fullpaper")) {
-                    // fullpaper
-                     __paper = fullpaper;
+                switch (__paper_type) {
+                    case "Fullpaper":
+                        // fullpaper
+                        __paper = fullpaper;
 
-                } else if (__paper_type.equals("ShortPaper")) {
-                    // ShortPaper
-                    __paper = shortPaper;
-                } else if (__paper_type.equals("DemoPaper")) {
-                    // DemoPaper
-                     __paper = demoPaper;
-                }
-                else if (__paper_type.equals("Poster")) {
-                    // it should be published in a conference, otherwise skip it
-                    if (__journal_exists.equals("null")) {
-                         __paper = poster;
-                    } else {
-                        System.out.println("Problem!, skipping a paper that has Poster type, but not published in a conference.");
                         break;
-                    }
+                    case "ShortPaper":
+                        // ShortPaper
+                        __paper = shortPaper;
+                        break;
+                    case "DemoPaper":
+                        // DemoPaper
+                        __paper = demoPaper;
+                        break;
+                    case "Poster":
+                        // it should be published in a conference, otherwise skip it
+                        if (__journal_exists.equals("null")) {
+                            __paper = poster;
+                        } else {
+                            System.out.println("Problem!, skipping a paper that has Poster type, but not published in a conference.");
+                            break label;
+                        }
 
-                }
-                else {
-                    System.out.println("Problem!, Problem with unknown type!");
-                    continue;
+                        break;
+                    default:
+                        System.out.println("Problem!, Problem with unknown type!");
+                        continue;
                 }
                 // now create the paper
                 Individual __paperInstance = __paper.createIndividual(Base_url + __paper_id);
@@ -141,11 +144,6 @@ public class ABOX {
 
                 String __paper_title = record.getString("title");
                 __paperInstance.addProperty(title, __paper_title);
-
-//                // add doi to schema
-//                Integer __year = record.getInt("year");
-//                //add year as a property to schema #toadd
-
 
                 String __paper_doi = record.getJsonObject("externalIds").getString("DOI", "");
                 if (__paper_doi.equals("")) continue; // skip if no doi
@@ -158,36 +156,39 @@ public class ABOX {
                 __handler.addProperty(salary, "50,000");
                 __handler.addProperty(h_index,  model.createTypedLiteral(Integer.valueOf(90)));
 
-                Individual venueInstance = null;
+                Individual venueInstance;
+                Individual publicationInstance;
                 // venue info
                 // conference
                 if (__journal_exists.equals("null")) {
                     // conference
-                    Integer __editionN = record.getInt("edition");
-                    // System.out.println(__conference_name);
                     String __conference_type = record.getString("conference_type");
                     String __conference_name = record.getString("conference");
                     Individual __conferenceInstance;
                     // try to check of conferance exists
                     __conferenceInstance = model.getIndividual(Base_url + encodeValue(__conference_name));
                     if (__conferenceInstance == null) {
-                        if (__conference_type.equals("Symposium")) {
-                            // Symposium
-                            ;
-                            __conferenceInstance = symposium.createIndividual(Base_url + encodeValue(__conference_name));
+                        switch (__conference_type) {
+                            case "Symposium":
+                                // Symposium
+                                __conferenceInstance = symposium.createIndividual(Base_url + encodeValue(__conference_name));
 
-                        } else if (__conference_type.equals("ExpertGroup")) {
-                            // ExpertGroup
-                            __conferenceInstance = expertGroup.createIndividual(Base_url + encodeValue(__conference_name));
-                        } else if (__conference_type.equals("Workshop")) {
-                            // Workshop
-                            __conferenceInstance = workshop.createIndividual(Base_url + encodeValue(__conference_name));
-                        } else if (__conference_type.equals("Regular")) {
-                            //Regular
-                            __conferenceInstance = regular.createIndividual(Base_url + encodeValue(__conference_name));
-                        } else {
-                            System.out.println("Conference type unkown");
-                            continue;
+                                break;
+                            case "ExpertGroup":
+                                // ExpertGroup
+                                __conferenceInstance = expertGroup.createIndividual(Base_url + encodeValue(__conference_name));
+                                break;
+                            case "Workshop":
+                                // Workshop
+                                __conferenceInstance = workshop.createIndividual(Base_url + encodeValue(__conference_name));
+                                break;
+                            case "Regular":
+                                //Regular
+                                __conferenceInstance = regular.createIndividual(Base_url + encodeValue(__conference_name));
+                                break;
+                            default:
+                                System.out.println("Conference type unkown");
+                                continue;
                         }
                         // add the conference handlers :D
                         __conferenceInstance.addProperty(venueHasHandler, __handler);
@@ -197,17 +198,16 @@ public class ABOX {
                     venueInstance = __conferenceInstance;
                     //Conference name as attribute
                     __conferenceInstance.addProperty(name, __conference_name);
-                    //Conference edition as attribute #toAdd
-
 
                     //Proceeding is missing - should we add the same name as the conference
                     String _proceeding = record.get("edition").toString();
                     Individual __proceeding = proceeding.createIndividual(Base_url + _proceeding);
                     __proceeding.addProperty(issn, "123450");
+                    __proceeding.addProperty(edition, model.createTypedLiteral(Integer.valueOf(1)));
 
                     // connect paper with publication
                     __paperInstance.addProperty(publishedIn, __proceeding);
-
+                    publicationInstance = __proceeding;
 
                     //connect paper with instance
                     __paperInstance.addProperty(submittedIn, __conferenceInstance);
@@ -222,7 +222,7 @@ public class ABOX {
                     JsonObject _journal = record.getJsonObject("journal");
                     String _journal_name = _journal.getString("name");
                     // create journal instance or get existing one
-                    Individual __journal = venueInstance;
+                    Individual __journal;
 
                     __journal = model.getIndividual(Base_url + encodeValue(_journal_name));
                     if (__journal == null) __journal = journal.createIndividual(Base_url + encodeValue(_journal_name));
@@ -233,19 +233,20 @@ public class ABOX {
                     Individual __volume = volume.createIndividual(Base_url + encodeValue(_journal_volume));
                     String _issn = "0123456";
                     __volume.addProperty(issn, _issn);
-                    __volume.addProperty(volumenumber, model.createTypedLiteral(new Integer(5)));
+                    __volume.addProperty(volumeNumber, model.createTypedLiteral(Integer.valueOf(5)));
 
                     // connect paper with publication
                     __paperInstance.addProperty(publishedIn, __volume);
                     // connect journal with volume
                     __volume.addProperty(belongsToJournal, __journal);
 
+                    publicationInstance = __volume;
+
                     // add handlers assigned by this journal
                     __journal.addProperty(venueHasHandler, __handler);
                     venueInstance = __journal;
 
                 }
-
 
                 // loop through the keyword and area and add them to the model
 
@@ -260,10 +261,12 @@ public class ABOX {
                     Individual _keyword__ = model.getIndividual(Base_url + encodeValue(__keywordN));
                     if( _keyword__ == null) {
                         _keyword__ = keyword.createIndividual(Base_url + encodeValue(__keywordN));
+                        _keyword__.addProperty(domain, "dummy domain");
                     }
                     Individual _area__ = model.getIndividual(Base_url + encodeValue(__areaN));
                     if(_area__ == null) {
                         _area__ = area.createIndividual(Base_url + encodeValue(__areaN));
+                        _area__.addProperty(topic, __areaN);
                     }
 
                     // connect keyword with area
@@ -279,6 +282,9 @@ public class ABOX {
                         venueInstance.addProperty(journalRelatedTo, _area__);
                     }
 
+                    // add publication related to
+                    publicationInstance.addProperty(publicationRelatedTo, _area__);
+
                 }
 
                 // loop through the authors and add them to the model
@@ -292,19 +298,19 @@ public class ABOX {
                     Individual __author = author.createIndividual( Base_url + __author_id);
                     __author.addProperty(name, __author_name);
                     __author.addProperty(bDay, "6/6/1998");
-                    __author.addProperty(h_index, model.createTypedLiteral(new Integer(12)));
+                    __author.addProperty(h_index, model.createTypedLiteral(Integer.valueOf(12)));
 
                     __paperInstance.addProperty(writtenBy, __author);
 
                 }
-                //loop through the reviewer of the paper
+                //loop through the (reviewer) of the paper
                 String _reviewText = record.getJsonObject("review").getString("dText");
                 String _reviewDecision = record.getJsonObject("review").getString("decision");
 
                 //Review is missing in data
                 Individual __review = review.createIndividual(Base_url + encodeValue(__paper_doi +_reviewText));
-                __review.addProperty(reviewtext, _reviewText);
-                __review.addProperty(reviewdecision, _reviewDecision);
+                __review.addProperty(reviewText, _reviewText);
+                __review.addProperty(reviewDecision, _reviewDecision);
                 // connect the review with the paper
                 __paperInstance.addProperty(hasReview, __review);
 
@@ -314,7 +320,7 @@ public class ABOX {
                     String _reviwer = revArray.getString(j);
                     Individual __reviewer = reviewer.createIndividual(Base_url + _reviwer);
                     __reviewer.addProperty(reviewsPaper, __paperInstance);
-                    __reviewer.addProperty(h_index,  model.createTypedLiteral(new Integer(60)));
+                    __reviewer.addProperty(h_index,  model.createTypedLiteral(Integer.valueOf(60)));
                     //Add reviewer writesReview
                     // we assumed that all reviewers writes 1 review only :D
                     __reviewer.addProperty(writesReview,__review);

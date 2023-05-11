@@ -218,10 +218,10 @@ public class TBOX {
             issn.addRange(XSD.xstring);
             issn.addLabel("A publication has an issn ( identifier)", "en");
 
-            DatatypeProperty domin = model.createDatatypeProperty(Base_url + "domin");
-            domin.addDomain(keyword);
-            domin.addRange(XSD.xstring);
-            domin.addLabel("A keyword has a domain", "en");
+            DatatypeProperty domain = model.createDatatypeProperty(Base_url + "domain");
+            domain.addDomain(keyword);
+            domain.addRange(XSD.xstring);
+            domain.addLabel("A keyword has a domain", "en");
 
             DatatypeProperty name = model.createDatatypeProperty(Base_url + "name");
             UnionClass unionClass = model.createUnionClass(null, model.createList(person, venue));
