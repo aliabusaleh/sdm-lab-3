@@ -110,7 +110,7 @@ public class TBOX {
             assignsReviewer.addRange(reviewer);
             assignsReviewer.addLabel("Handlers assigns reviewer for a paper", "en");
 
-            ObjectProperty venueHasHandler = model.createObjectProperty( Base_url + "Has");
+            ObjectProperty venueHasHandler = model.createObjectProperty( Base_url + "venueHasHandler");
             venueHasHandler.addDomain(venue);
             venueHasHandler.addRange(handlers);
             venueHasHandler.addLabel("Each venue has a handler", "en");
@@ -229,6 +229,11 @@ public class TBOX {
             name.addRange(XSD.xstring);
             name.addLabel("A person/venue has a name", "en");
 
+            DatatypeProperty Bday = model.createDatatypeProperty(Base_url + "Bday");
+            Bday.addDomain(person);
+            Bday.addRange(XSD.xstring);
+            Bday.addLabel("A person has a bDay", "en");
+
 
 
             DatatypeProperty reviewdecision = model.createDatatypeProperty(Base_url + "reviewdecision");
@@ -246,6 +251,11 @@ public class TBOX {
             role.addDomain(handlers);
             role.addRange(XSD.xstring);
             role.addLabel("A handler has a role", "en");
+
+            DatatypeProperty salary = model.createDatatypeProperty(Base_url + "salary");
+            salary.addDomain(handlers);
+            salary.addRange(XSD.xstring);
+            salary.addLabel("A handler has a salary", "en");
 
             DatatypeProperty title = model.createDatatypeProperty(Base_url + "title");
             title.addDomain(paper);

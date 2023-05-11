@@ -1,19 +1,18 @@
 package SdmLab;
 
-import jakarta.json.*;
+import jakarta.json.Json;
+import jakarta.json.JsonArray;
+import jakarta.json.JsonObject;
+import jakarta.json.JsonReader;
 import org.apache.jena.ontology.*;
-import org.apache.jena.rdf.model.*;
-import org.apache.jena.ontology.OntModel;
-import org.apache.jena.ontology.OntModelSpec;
-import org.apache.jena.ontology.*;
+import org.apache.jena.rdf.model.InfModel;
+import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.reasoner.Reasoner;
 import org.apache.jena.reasoner.ReasonerRegistry;
-import org.apache.jena.vocabulary.*;
 
-import java.io.*;
-
-import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -30,7 +29,7 @@ public class ABOX {
     public static void createAndSaveABOX() {
         try {
             // create models instances
-            OntModel model = null;
+            OntModel model;
                 Model m = ModelFactory.createDefaultModel().read("data/Tbox-output.ttl");
                 model = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM, m);
                 model.setNsPrefix("sdm", "http://www.sdm-lab.com/#");
@@ -64,7 +63,7 @@ public class ABOX {
 
 
             ObjectProperty assignsReviewer = model.getObjectProperty( Base_url +"AssignsReviewer");
-            ObjectProperty venueHasHandler = model.getObjectProperty(Base_url +"Has");
+            ObjectProperty venueHasHandler = model.getObjectProperty(Base_url +"venueHasHandler");
             ObjectProperty writesReview = model.getObjectProperty(Base_url +"WritesReview");
             ObjectProperty reviewsPaper = model.getObjectProperty(Base_url +"ReviewsPaper");
             ObjectProperty writtenBy = model.getObjectProperty(Base_url +"WrittenBy");
@@ -86,9 +85,11 @@ public class ABOX {
             DatatypeProperty issn = model.getDatatypeProperty(Base_url + "issn");
             DatatypeProperty domin = model.getDatatypeProperty(Base_url + "domin");
             DatatypeProperty name = model.getDatatypeProperty(Base_url + "name");
+            DatatypeProperty bDay = model.getDatatypeProperty(Base_url + "Bday");
             DatatypeProperty reviewdecision = model.getDatatypeProperty(Base_url + "reviewdecision");
             DatatypeProperty reviewtext = model.getDatatypeProperty(Base_url + "reviewtext");
             DatatypeProperty role = model.getDatatypeProperty(Base_url + "role");
+            DatatypeProperty salary = model.getDatatypeProperty(Base_url + "role");
             DatatypeProperty title = model.getDatatypeProperty(Base_url + "title");
             DatatypeProperty topic = model.getDatatypeProperty(Base_url + "topic");
             DatatypeProperty volumenumber = model.getDatatypeProperty(Base_url + "volumenumber");
@@ -151,10 +152,13 @@ public class ABOX {
                 __paperInstance.addProperty(doi, encodeValue(__paper_doi));
 
                 // handlers #todo
-                String _handler = record.getString("handler");
+                String _handler = record.get("handler").toString();
                 Individual __handler = handlers.createIndividual(Base_url + _handler);
+                __handler.addProperty(role, "CTO");
+                __handler.addProperty(salary, "50,000");
+                __handler.addProperty(h_index,  model.createTypedLiteral(Integer.valueOf(90)));
 
-                Individual venueInstance;
+                Individual venueInstance = null;
                 // venue info
                 // conference
                 if (__journal_exists.equals("null")) {
@@ -190,13 +194,16 @@ public class ABOX {
                         // we need to add property #todo
 //                        __conferenceInstance.addProperty()
                     }
-                    //Conference name as attribute #toAdd
+                    venueInstance = __conferenceInstance;
+                    //Conference name as attribute
+                    __conferenceInstance.addProperty(name, __conference_name);
                     //Conference edition as attribute #toAdd
 
 
                     //Proceeding is missing - should we add the same name as the conference
                     String _proceeding = record.get("edition").toString();
                     Individual __proceeding = proceeding.createIndividual(Base_url + _proceeding);
+                    __proceeding.addProperty(issn, "123450");
 
                     // connect paper with publication
                     __paperInstance.addProperty(publishedIn, __proceeding);
@@ -215,13 +222,18 @@ public class ABOX {
                     JsonObject _journal = record.getJsonObject("journal");
                     String _journal_name = _journal.getString("name");
                     // create journal instance or get existing one
-                    Individual __journal = model.getIndividual(Base_url + encodeValue(_journal_name));
+                    Individual __journal = venueInstance;
+
+                    __journal = model.getIndividual(Base_url + encodeValue(_journal_name));
                     if (__journal == null) __journal = journal.createIndividual(Base_url + encodeValue(_journal_name));
                     // connect paper with it
                     __paperInstance.addProperty(submittedIn, __journal);
 
                     String _journal_volume = String.valueOf(_journal.get("volume"));
                     Individual __volume = volume.createIndividual(Base_url + encodeValue(_journal_volume));
+                    String _issn = "0123456";
+                    __volume.addProperty(issn, _issn);
+                    __volume.addProperty(volumenumber, model.createTypedLiteral(new Integer(5)));
 
                     // connect paper with publication
                     __paperInstance.addProperty(publishedIn, __volume);
@@ -230,6 +242,7 @@ public class ABOX {
 
                     // add handlers assigned by this journal
                     __journal.addProperty(venueHasHandler, __handler);
+                    venueInstance = __journal;
 
                 }
 
@@ -258,7 +271,13 @@ public class ABOX {
                     // connect them with paper
                     __paperInstance.addProperty(containsKeyword, _keyword__);
 
-                    //area needs to be connected with journal and conference  #toadd
+                    //area needs to be connected with journal and conference
+                    if(__journal_exists.equals("null")) {
+                        venueInstance.addProperty(conferenceRelatedTo, _area__);
+                    }
+                    else{
+                        venueInstance.addProperty(journalRelatedTo, _area__);
+                    }
 
                 }
 
@@ -270,8 +289,10 @@ public class ABOX {
                     String __author_id = _author.getString("authorId");
                     String __author_name = _author.getString("name");
 
-                    Individual __author = author.createIndividual( __author_id);
-                    __author.addProperty(name,Base_url+ __author_name);
+                    Individual __author = author.createIndividual( Base_url + __author_id);
+                    __author.addProperty(name, __author_name);
+                    __author.addProperty(bDay, "6/6/1998");
+                    __author.addProperty(h_index, model.createTypedLiteral(new Integer(12)));
 
                     __paperInstance.addProperty(writtenBy, __author);
 
@@ -281,7 +302,7 @@ public class ABOX {
                 String _reviewDecision = record.getJsonObject("review").getString("decision");
 
                 //Review is missing in data
-                Individual __review = review.createIndividual(Base_url + __paper_doi +_reviewText);
+                Individual __review = review.createIndividual(Base_url + encodeValue(__paper_doi +_reviewText));
                 __review.addProperty(reviewtext, _reviewText);
                 __review.addProperty(reviewdecision, _reviewDecision);
                 // connect the review with the paper
@@ -293,12 +314,14 @@ public class ABOX {
                     String _reviwer = revArray.getString(j);
                     Individual __reviewer = reviewer.createIndividual(Base_url + _reviwer);
                     __reviewer.addProperty(reviewsPaper, __paperInstance);
+                    __reviewer.addProperty(h_index,  model.createTypedLiteral(new Integer(60)));
                     //Add reviewer writesReview
                     // we assumed that all reviewers writes 1 review only :D
                     __reviewer.addProperty(writesReview,__review);
 
                     // assign that these reviewer assigned by handler
                     __handler.addProperty(assignsReviewer, __reviewer);
+
                 }
 
             }
@@ -315,7 +338,7 @@ public class ABOX {
                 System.out.println("Ontology is inconsistent");
             }
             FileWriter  writerStream = new FileWriter("data/Abox-output.ttl");
-            model.write(writerStream, "ttl");
+            model.write(writerStream, "TTL");
             writerStream.close();
 
 
