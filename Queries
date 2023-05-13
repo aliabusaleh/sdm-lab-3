@@ -1,0 +1,94 @@
+     B.4 Querying the ontology
+
+
+     1.	Find all Authors.
+     PREFIX xsd: <http://www.sdm-lab.com/#>
+     PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+     PREFIX owl:<http://www.w3.org/2002/07/owl#>
+     PREFIX j.0: <http://www.sdm-lab.com/#>
+     SELECT DISTINCT ?author
+     WHERE {
+         ?author rdf:type  j.0:Author
+     }
+
+
+
+     2.	Find all properties whose domain is Author.
+     PREFIX xsd: <http://www.sdm-lab.com/#>
+     PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+     PREFIX owl:<http://www.w3.org/2002/07/owl#>
+     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+     SELECT ?prop WHERE {
+       ?prop rdf:type owl:DatatypeProperty .
+       ?prop rdfs:domain xsd:Person .
+     }
+
+     ///////V2///////
+
+
+     PREFIX xsd: <http://www.sdm-lab.com/#>
+     PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+     PREFIX owl:<http://www.w3.org/2002/07/owl#>
+     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+     PREFIX sdm: <http://www.sdm-lab.com/#>
+     SELECT ?prop WHERE {
+         {?prop rdfs:domain sdm:Author}
+
+         UNION
+         {sdm:Author rdfs:subClassOf* ?superC .
+         ?prop rdfs:domain ?superC
+         }
+     }
+
+
+
+
+     3.	Find all properties whose domain is either Conference or Journal.
+     PREFIX xsd: <http://www.sdm-lab.com/#>
+     PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+     PREFIX owl:<http://www.w3.org/2002/07/owl#>
+     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+     SELECT ?prop WHERE {
+          ?prop rdf:type owl:DatatypeProperty .
+         {?prop rdfs:domain xsd:Conference}
+         UNION
+         {?prop rdfs:domain xsd:Journal}
+     }
+
+     ///////V2///////
+
+     PREFIX xsd: <http://www.sdm-lab.com/#>
+     PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+     PREFIX owl:<http://www.w3.org/2002/07/owl#>
+     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+     PREFIX sdm: <http://www.sdm-lab.com/#>
+     SELECT ?prop WHERE {
+         {?prop rdfs:domain sdm:Venue .}
+
+         UNION
+         {?ch_class rdfs:subClassOf* sdm:Venue .
+         ?prop rdfs:domain ?ch_class
+         }
+     }
+
+
+
+
+     #4. Find all the papers written by a given author that where published in database conferences.
+     Note: Since in our database we had no ‘database’ are we used ‘Psychology’ in the same way we would have used databases if we had as a value in our data.
+     PREFIX xsd: <http://www.sdm-lab.com/#>
+     PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+     PREFIX owl:<http://www.w3.org/2002/07/owl#>
+     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+     PREFIX sdm: <http://www.sdm-lab.com/#>
+     SELECT  ?paper WHERE {
+          ?paper rdf:type sdm:Paper;
+              	sdm:WrittenBy sdm:40232894; #enter authors id
+       			sdm:SubmittedIn/sdm:childOf* ?venue; #checks if the paper is submitted in conference or journal
+        			sdm:HasReview ?review.
+       	?review sdm:reviewdecision "ACCEPTED". #checkes if the paper was accepted from reviewers
+         ?venue rdf:type sdm:Conference; #change Conference to journal for type journal
+        		   sdm:ConferenceRelatedTo sdm:Psychology.
+         #enter the area that you are interested on - change Psychology with 'database'
+     }
+
