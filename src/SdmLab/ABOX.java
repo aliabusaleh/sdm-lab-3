@@ -152,7 +152,6 @@ public class ABOX {
                 // handlers #todo
                 String _handler = record.get("handler").toString();
                 Individual __handler = handlers.createIndividual(Base_url + _handler);
-                __handler.addProperty(role, "CTO");
                 __handler.addProperty(salary, "50,000");
                 __handler.addProperty(h_index,  model.createTypedLiteral(Integer.valueOf(90)));
 
@@ -192,6 +191,7 @@ public class ABOX {
                         }
                         // add the conference handlers :D
                         __conferenceInstance.addProperty(venueHasHandler, __handler);
+                        __handler.addProperty(role, "Chair");
                         // we need to add property #todo
 //                        __conferenceInstance.addProperty()
                     }
@@ -244,6 +244,7 @@ public class ABOX {
 
                     // add handlers assigned by this journal
                     __journal.addProperty(venueHasHandler, __handler);
+                    __handler.addProperty(role, "Editor");
                     venueInstance = __journal;
 
                 }
