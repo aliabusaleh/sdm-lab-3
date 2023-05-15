@@ -30,68 +30,66 @@ public class ABOX {
         try {
             // create models instances
             OntModel model;
-            Model m = ModelFactory.createDefaultModel().read("data/Tbox-output.ttl");
+            Model m = ModelFactory.createDefaultModel().read("data/ontology-tbox.owl");
             model = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM, m);
             model.setNsPrefix("sdm", "http://www.sdm-lab.com/#");
-            String Base_url = "http://www.sdm-lab.com/#";
             // read the JSON file
             JsonReader reader; reader = Json.createReader(Files.newInputStream(Paths.get("data/papers_json.json")));
 
-            OntClass venue = model.getOntClass( Base_url +"Venue");
-            OntClass journal = model.getOntClass(  Base_url +"Journal");
-            OntClass conference = model.getOntClass(  Base_url +"Conference");
-            OntClass symposium = model.getOntClass(  Base_url +"Symposium");
-            OntClass expertGroup = model.getOntClass(  Base_url +"ExpertGroup");
-            OntClass workshop = model.getOntClass(  Base_url +"Workshop");
-            OntClass regular = model.getOntClass(  Base_url +"Regular");
-            OntClass person = model.getOntClass(  Base_url +"Person");
-            OntClass handlers = model.getOntClass(  Base_url +"Handlers");
-            OntClass author = model.getOntClass(  Base_url +"Author");
-            OntClass reviewer = model.getOntClass( Base_url + "Reviewer");
-            OntClass paper = model.getOntClass( Base_url + "Paper");
-            OntClass fullpaper = model.getOntClass( Base_url + "Fullpaper");
-            OntClass shortPaper = model.getOntClass( Base_url + "ShortPaper");
-            OntClass demoPaper = model.getOntClass( Base_url + "DemoPaper");
-            OntClass poster = model.getOntClass( Base_url + "Poster");
-            OntClass area = model.getOntClass( Base_url + "Area");
-            OntClass publication = model.getOntClass( Base_url + "Publication");
-            OntClass volume = model.getOntClass( Base_url + "Volume");
-            OntClass proceeding = model.getOntClass( Base_url + "Proceeding");
-            OntClass keyword = model.getOntClass( Base_url + "Keyword");
-            OntClass review = model.getOntClass( Base_url + "Review");
+            OntClass venue = model.getOntClass( model.getNsPrefixURI("sdm") +"Venue");
+            OntClass journal = model.getOntClass(  model.getNsPrefixURI("sdm") +"Journal");
+            OntClass conference = model.getOntClass(  model.getNsPrefixURI("sdm") +"Conference");
+            OntClass symposium = model.getOntClass(  model.getNsPrefixURI("sdm") +"Symposium");
+            OntClass expertGroup = model.getOntClass(  model.getNsPrefixURI("sdm") +"ExpertGroup");
+            OntClass workshop = model.getOntClass(  model.getNsPrefixURI("sdm") +"Workshop");
+            OntClass regular = model.getOntClass(  model.getNsPrefixURI("sdm") +"Regular");
+            OntClass person = model.getOntClass(  model.getNsPrefixURI("sdm") +"Person");
+            OntClass handlers = model.getOntClass(  model.getNsPrefixURI("sdm") +"Handlers");
+            OntClass author = model.getOntClass(  model.getNsPrefixURI("sdm") +"Author");
+            OntClass reviewer = model.getOntClass( model.getNsPrefixURI("sdm") +"Reviewer");
+            OntClass paper = model.getOntClass( model.getNsPrefixURI("sdm") +"Paper");
+            OntClass fullpaper = model.getOntClass( model.getNsPrefixURI("sdm") +"Fullpaper");
+            OntClass shortPaper = model.getOntClass( model.getNsPrefixURI("sdm") +"ShortPaper");
+            OntClass demoPaper = model.getOntClass( model.getNsPrefixURI("sdm") +"DemoPaper");
+            OntClass poster = model.getOntClass( model.getNsPrefixURI("sdm") +"Poster");
+            OntClass area = model.getOntClass( model.getNsPrefixURI("sdm") +"Area");
+            OntClass publication = model.getOntClass( model.getNsPrefixURI("sdm") +"Publication");
+            OntClass volume = model.getOntClass( model.getNsPrefixURI("sdm") +"Volume");
+            OntClass proceeding = model.getOntClass( model.getNsPrefixURI("sdm") +"Proceeding");
+            OntClass keyword = model.getOntClass( model.getNsPrefixURI("sdm") +"Keyword");
+            OntClass review = model.getOntClass( model.getNsPrefixURI("sdm") +"Review");
 
 
-            ObjectProperty assignsReviewer = model.getObjectProperty( Base_url +"AssignsReviewer");
-            ObjectProperty venueHasHandler = model.getObjectProperty(Base_url +"venueHasHandler");
-            ObjectProperty writesReview = model.getObjectProperty(Base_url +"WritesReview");
-            ObjectProperty reviewsPaper = model.getObjectProperty(Base_url +"ReviewsPaper");
-            ObjectProperty writtenBy = model.getObjectProperty(Base_url +"WrittenBy");
-            ObjectProperty publishedIn = model.getObjectProperty(Base_url +"PublishedIn");
-            ObjectProperty publicationRelatedTo = model.getObjectProperty(Base_url +"PublicationRelatedTo");
-            ObjectProperty containsKeyword = model.getObjectProperty(Base_url +"ContainsKeyword");
-            ObjectProperty keywordRelatedTo = model.getObjectProperty(Base_url +"KeywordRelatedTo");
-            ObjectProperty journalRelatedTo = model.getObjectProperty(Base_url +"JournalRelatedTo");
-            ObjectProperty conferenceRelatedTo = model.getObjectProperty(Base_url +"ConferenceRelatedTo");
-            ObjectProperty belongsToJournal = model.getObjectProperty(Base_url +"BelongsToJournal");
-            ObjectProperty belongsToConference = model.getObjectProperty(Base_url +"BelongsToConference");
-            ObjectProperty hasReview = model.getObjectProperty(Base_url +"HasReview");
-            ObjectProperty submittedIn = model.getObjectProperty(Base_url +"SubmittedIn");
+            ObjectProperty assignsReviewer = model.getObjectProperty( model.getNsPrefixURI("sdm")+"AssignsReviewer");
+            ObjectProperty venueHasHandler = model.getObjectProperty(model.getNsPrefixURI("sdm")+"venueHasHandler");
+            ObjectProperty writesReview = model.getObjectProperty(model.getNsPrefixURI("sdm")+"WritesReview");
+            ObjectProperty reviewsPaper = model.getObjectProperty(model.getNsPrefixURI("sdm")+"ReviewsPaper");
+            ObjectProperty writtenBy = model.getObjectProperty(model.getNsPrefixURI("sdm")+"WrittenBy");
+            ObjectProperty publishedIn = model.getObjectProperty(model.getNsPrefixURI("sdm")+"PublishedIn");
+            ObjectProperty publicationRelatedTo = model.getObjectProperty(model.getNsPrefixURI("sdm")+"PublicationRelatedTo");
+            ObjectProperty containsKeyword = model.getObjectProperty(model.getNsPrefixURI("sdm")+"ContainsKeyword");
+            ObjectProperty keywordRelatedTo = model.getObjectProperty(model.getNsPrefixURI("sdm")+"KeywordRelatedTo");
+            ObjectProperty venueRelatedTo = model.getObjectProperty(model.getNsPrefixURI("sdm")+"VenueRelatedTo");
+            ObjectProperty belongsToJournal = model.getObjectProperty(model.getNsPrefixURI("sdm")+"BelongsToJournal");
+            ObjectProperty belongsToConference = model.getObjectProperty(model.getNsPrefixURI("sdm")+"BelongsToConference");
+            ObjectProperty hasReview = model.getObjectProperty(model.getNsPrefixURI("sdm")+"HasReview");
+            ObjectProperty submittedIn = model.getObjectProperty(model.getNsPrefixURI("sdm")+"SubmittedIn");
 
-            DatatypeProperty affiliation = model.getDatatypeProperty(Base_url + "affiliation");
-            DatatypeProperty doi = model.getDatatypeProperty(Base_url + "doi");
-            DatatypeProperty edition = model.getDatatypeProperty(Base_url + "edition");
-            DatatypeProperty h_index = model.getDatatypeProperty(Base_url + "h-index");
-            DatatypeProperty issn = model.getDatatypeProperty(Base_url + "issn");
-            DatatypeProperty domain = model.getDatatypeProperty(Base_url + "domain");
-            DatatypeProperty name = model.getDatatypeProperty(Base_url + "name");
-            DatatypeProperty bDay = model.getDatatypeProperty(Base_url + "Bday");
-            DatatypeProperty reviewDecision = model.getDatatypeProperty(Base_url + "reviewdecision");
-            DatatypeProperty reviewText = model.getDatatypeProperty(Base_url + "reviewtext");
-            DatatypeProperty role = model.getDatatypeProperty(Base_url + "role");
-            DatatypeProperty salary = model.getDatatypeProperty(Base_url + "role");
-            DatatypeProperty title = model.getDatatypeProperty(Base_url + "title");
-            DatatypeProperty topic = model.getDatatypeProperty(Base_url + "topic");
-            DatatypeProperty volumeNumber = model.getDatatypeProperty(Base_url + "volumenumber");
+            DatatypeProperty affiliation = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"affiliation");
+            DatatypeProperty doi = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"doi");
+            DatatypeProperty edition = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"edition");
+            DatatypeProperty h_index = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"h-index");
+            DatatypeProperty issn = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"issn");
+            DatatypeProperty domain = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"domain");
+            DatatypeProperty name = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"name");
+            DatatypeProperty bDay = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"Bday");
+            DatatypeProperty reviewDecision = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"reviewdecision");
+            DatatypeProperty reviewText = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"reviewtext");
+            DatatypeProperty role = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"role");
+            DatatypeProperty salary = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"role");
+            DatatypeProperty title = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"title");
+            DatatypeProperty topic = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"topic");
+            DatatypeProperty volumeNumber = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"volumenumber");
 
             JsonArray papersArray = reader.readArray();
             // loop through the papers array and add each paper to the model
@@ -139,7 +137,7 @@ public class ABOX {
                         continue;
                 }
                 // now create the paper
-                Individual __paperInstance = __paper.createIndividual(Base_url + __paper_id);
+                Individual __paperInstance = __paper.createIndividual(model.getNsPrefixURI("sdm") +__paper_id);
 
 
                 String __paper_title = record.getString("title");
@@ -149,14 +147,42 @@ public class ABOX {
                 if (__paper_doi.equals("")) continue; // skip if no doi
                 __paperInstance.addProperty(doi, encodeValue(__paper_doi));
 
+
                 // handlers #todo
                 String _handler = record.get("handler").toString();
-                Individual __handler = handlers.createIndividual(Base_url + _handler);
+                Individual __handler = handlers.createIndividual(model.getNsPrefixURI("sdm") +_handler);
                 __handler.addProperty(salary, "50,000");
                 __handler.addProperty(h_index,  model.createTypedLiteral(Integer.valueOf(90)));
 
+                //loop through the (reviewer) of the paper
+                String _reviewText = record.getJsonObject("review").getString("dText");
+                String _reviewDecision = record.getJsonObject("review").getString("decision");
+
+                //Review is missing in data
+                Individual __review = review.createIndividual(model.getNsPrefixURI("sdm") +encodeValue(__paper_doi +_reviewText));
+                __review.addProperty(reviewText, _reviewText);
+                __review.addProperty(reviewDecision, _reviewDecision);
+                // connect the review with the paper
+                __paperInstance.addProperty(hasReview, __review);
+
+                // reviewer info
+                JsonArray revArray = record.getJsonArray("reviewers");
+                for (int j=0; j < revArray.size()-1; j++){
+                    String _reviwer = revArray.getString(j);
+                    Individual __reviewer = reviewer.createIndividual(model.getNsPrefixURI("sdm") +_reviwer);
+                    __reviewer.addProperty(reviewsPaper, __paperInstance);
+                    __reviewer.addProperty(h_index,  model.createTypedLiteral(Integer.valueOf(60)));
+                    //Add reviewer writesReview
+                    // we assumed that all reviewers writes 1 review only :D
+                    __reviewer.addProperty(writesReview,__review);
+
+                    // assign that these reviewer assigned by handler
+                    __handler.addProperty(assignsReviewer, __reviewer);
+
+                }
+
                 Individual venueInstance;
-                Individual publicationInstance;
+                Individual publicationInstance = null;
                 // venue info
                 // conference
                 if (__journal_exists.equals("null")) {
@@ -165,25 +191,25 @@ public class ABOX {
                     String __conference_name = record.getString("conference");
                     Individual __conferenceInstance;
                     // try to check of conferance exists
-                    __conferenceInstance = model.getIndividual(Base_url + encodeValue(__conference_name));
+                    __conferenceInstance = model.getIndividual(model.getNsPrefixURI("sdm") +encodeValue(__conference_name));
                     if (__conferenceInstance == null) {
                         switch (__conference_type) {
                             case "Symposium":
                                 // Symposium
-                                __conferenceInstance = symposium.createIndividual(Base_url + encodeValue(__conference_name));
+                                __conferenceInstance = symposium.createIndividual(model.getNsPrefixURI("sdm") +encodeValue(__conference_name));
 
                                 break;
                             case "ExpertGroup":
                                 // ExpertGroup
-                                __conferenceInstance = expertGroup.createIndividual(Base_url + encodeValue(__conference_name));
+                                __conferenceInstance = expertGroup.createIndividual(model.getNsPrefixURI("sdm") +encodeValue(__conference_name));
                                 break;
                             case "Workshop":
                                 // Workshop
-                                __conferenceInstance = workshop.createIndividual(Base_url + encodeValue(__conference_name));
+                                __conferenceInstance = workshop.createIndividual(model.getNsPrefixURI("sdm") +encodeValue(__conference_name));
                                 break;
                             case "Regular":
                                 //Regular
-                                __conferenceInstance = regular.createIndividual(Base_url + encodeValue(__conference_name));
+                                __conferenceInstance = regular.createIndividual(model.getNsPrefixURI("sdm") +encodeValue(__conference_name));
                                 break;
                             default:
                                 System.out.println("Conference type unkown");
@@ -199,21 +225,26 @@ public class ABOX {
                     //Conference name as attribute
                     __conferenceInstance.addProperty(name, __conference_name);
 
-                    //Proceeding is missing - should we add the same name as the conference
-                    String _proceeding = record.get("edition").toString();
-                    Individual __proceeding = proceeding.createIndividual(Base_url + _proceeding);
-                    __proceeding.addProperty(issn, "123450");
-                    __proceeding.addProperty(edition, model.createTypedLiteral(Integer.valueOf(1)));
+                    // if a paper is accepted, we have publication-related only
+                    // else we ignore this part :D
+                    if (_reviewDecision.equals("ACCEPTED")) {
+                        //Proceeding is missing - should we add the same name as the conference
+                        String _proceeding = record.get("edition").toString();
+                        Individual __proceeding = proceeding.createIndividual(model.getNsPrefixURI("sdm") + _proceeding);
+                        __proceeding.addProperty(issn, "123450");
+                        __proceeding.addProperty(edition, model.createTypedLiteral(Integer.valueOf(1)));
 
-                    // connect paper with publication
-                    __paperInstance.addProperty(publishedIn, __proceeding);
-                    publicationInstance = __proceeding;
+                        // connect paper with publication
+                        __paperInstance.addProperty(publishedIn, __proceeding);
+                        publicationInstance = __proceeding;
+
+                        //connect proceeding with conference
+                        __proceeding.addProperty(belongsToConference, __conferenceInstance);
+                    }
 
                     //connect paper with instance
                     __paperInstance.addProperty(submittedIn, __conferenceInstance);
 
-                    //connect proceeding with conference
-                    __proceeding.addProperty(belongsToConference, __conferenceInstance);
 
                 }
                 // journal
@@ -224,23 +255,27 @@ public class ABOX {
                     // create journal instance or get existing one
                     Individual __journal;
 
-                    __journal = model.getIndividual(Base_url + encodeValue(_journal_name));
-                    if (__journal == null) __journal = journal.createIndividual(Base_url + encodeValue(_journal_name));
+                    __journal = model.getIndividual(model.getNsPrefixURI("sdm") +encodeValue(_journal_name));
+                    if (__journal == null) __journal = journal.createIndividual(model.getNsPrefixURI("sdm") +encodeValue(_journal_name));
                     // connect paper with it
                     __paperInstance.addProperty(submittedIn, __journal);
 
-                    String _journal_volume = String.valueOf(_journal.get("volume"));
-                    Individual __volume = volume.createIndividual(Base_url + encodeValue(_journal_volume));
-                    String _issn = "0123456";
-                    __volume.addProperty(issn, _issn);
-                    __volume.addProperty(volumeNumber, model.createTypedLiteral(Integer.valueOf(5)));
+                    // if a paper is accepted, we have publication-related only
+                    // else we ignore this part :D
+                    if (_reviewDecision.equals("ACCEPTED")) {
+                        String _journal_volume = String.valueOf(_journal.get("volume"));
+                        Individual __volume = volume.createIndividual(model.getNsPrefixURI("sdm") + encodeValue(_journal_volume));
+                        String _issn = "0123456";
+                        __volume.addProperty(issn, _issn);
+                        __volume.addProperty(volumeNumber, model.createTypedLiteral(Integer.valueOf(5)));
 
-                    // connect paper with publication
-                    __paperInstance.addProperty(publishedIn, __volume);
-                    // connect journal with volume
-                    __volume.addProperty(belongsToJournal, __journal);
+                        // connect paper with publication
+                        __paperInstance.addProperty(publishedIn, __volume);
+                        // connect journal with volume
+                        __volume.addProperty(belongsToJournal, __journal);
 
-                    publicationInstance = __volume;
+                        publicationInstance = __volume;
+                    }
 
                     // add handlers assigned by this journal
                     __journal.addProperty(venueHasHandler, __handler);
@@ -259,14 +294,14 @@ public class ABOX {
                     String __areaN = _keyword.getString("category");
 
                     // try to find already existing keyword
-                    Individual _keyword__ = model.getIndividual(Base_url + encodeValue(__keywordN));
+                    Individual _keyword__ = model.getIndividual(model.getNsPrefixURI("sdm") +encodeValue(__keywordN));
                     if( _keyword__ == null) {
-                        _keyword__ = keyword.createIndividual(Base_url + encodeValue(__keywordN));
+                        _keyword__ = keyword.createIndividual(model.getNsPrefixURI("sdm") +encodeValue(__keywordN));
                         _keyword__.addProperty(domain, "dummy domain");
                     }
-                    Individual _area__ = model.getIndividual(Base_url + encodeValue(__areaN));
+                    Individual _area__ = model.getIndividual(model.getNsPrefixURI("sdm") +encodeValue(__areaN));
                     if(_area__ == null) {
-                        _area__ = area.createIndividual(Base_url + encodeValue(__areaN));
+                        _area__ = area.createIndividual(model.getNsPrefixURI("sdm") +encodeValue(__areaN));
                         _area__.addProperty(topic, __areaN);
                     }
 
@@ -276,16 +311,14 @@ public class ABOX {
                     __paperInstance.addProperty(containsKeyword, _keyword__);
 
                     //area needs to be connected with journal and conference
-                    if(__journal_exists.equals("null")) {
-                        venueInstance.addProperty(conferenceRelatedTo, _area__);
-                    }
-                    else{
-                        venueInstance.addProperty(journalRelatedTo, _area__);
-                    }
+                        venueInstance.addProperty(venueRelatedTo, _area__);
 
-                    // add publication related to
-                    publicationInstance.addProperty(publicationRelatedTo, _area__);
-
+                    // if a paper is accepted, we have publication-related only
+                    // else we ignore this part :D
+                    if (_reviewDecision.equals("ACCEPTED")) {
+                        // add publication related to
+                        publicationInstance.addProperty(publicationRelatedTo, _area__);
+                    }
                 }
 
                 // loop through the authors and add them to the model
@@ -296,7 +329,7 @@ public class ABOX {
                     String __author_id = _author.getString("authorId");
                     String __author_name = _author.getString("name");
 
-                    Individual __author = author.createIndividual( Base_url + __author_id);
+                    Individual __author = author.createIndividual( model.getNsPrefixURI("sdm") +__author_id);
                     __author.addProperty(name, __author_name);
                     __author.addProperty(bDay, "6/6/1998");
                     __author.addProperty(h_index, model.createTypedLiteral(Integer.valueOf(12)));
@@ -304,32 +337,7 @@ public class ABOX {
                     __paperInstance.addProperty(writtenBy, __author);
 
                 }
-                //loop through the (reviewer) of the paper
-                String _reviewText = record.getJsonObject("review").getString("dText");
-                String _reviewDecision = record.getJsonObject("review").getString("decision");
 
-                //Review is missing in data
-                Individual __review = review.createIndividual(Base_url + encodeValue(__paper_doi +_reviewText));
-                __review.addProperty(reviewText, _reviewText);
-                __review.addProperty(reviewDecision, _reviewDecision);
-                // connect the review with the paper
-                __paperInstance.addProperty(hasReview, __review);
-
-                // reviewer info
-                JsonArray revArray = record.getJsonArray("reviewers");
-                for (int j=0; j < revArray.size()-1; j++){
-                    String _reviwer = revArray.getString(j);
-                    Individual __reviewer = reviewer.createIndividual(Base_url + _reviwer);
-                    __reviewer.addProperty(reviewsPaper, __paperInstance);
-                    __reviewer.addProperty(h_index,  model.createTypedLiteral(Integer.valueOf(60)));
-                    //Add reviewer writesReview
-                    // we assumed that all reviewers writes 1 review only :D
-                    __reviewer.addProperty(writesReview,__review);
-
-                    // assign that these reviewer assigned by handler
-                    __handler.addProperty(assignsReviewer, __reviewer);
-
-                }
 
             }
 
@@ -344,8 +352,8 @@ public class ABOX {
             } else {
                 System.out.println("Ontology is inconsistent");
             }
-            FileWriter  writerStream = new FileWriter("data/Abox-output.ttl");
-            model.write(writerStream, "TTL");
+            FileWriter  writerStream = new FileWriter("data/ontology-abox.ttl");
+            model.writeAll(writerStream, "TTL");
             writerStream.close();
 
 

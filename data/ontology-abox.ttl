@@ -35,7 +35,6 @@ sdm:66e46478fc83b19353a5fd67044f2592ff511a9b
         rdf:type             sdm:Fullpaper ;
         sdm:ContainsKeyword  <http://www.sdm-lab.com/#Computer+Science> ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1186%2Fs40537-023-00703-wThis+paper+is+rejected%21> ;
-        sdm:PublishedIn      <http://www.sdm-lab.com/#%2210%22> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+Big+Data> ;
         sdm:WrittenBy        sdm:2152334609 , sdm:1733364226 , sdm:1491585715 ;
         sdm:doi              "10.1186%2Fs40537-023-00703-w" ;
@@ -78,17 +77,10 @@ sdm:1a928939f8663da3c1c46a01da7e315f91df3af1
         sdm:doi              "10.12659%2FMSM.938835" ;
         sdm:title            "Necessity and Importance of Developing AI in Anesthesia from the Perspective of Clinical Safety and Information Security" .
 
-<http://www.sdm-lab.com/#%2251+4%22>
-        rdf:type                  sdm:Volume ;
-        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Journal+of+the+American+Academy+of+Child+and+Adolescent+Psychiatry> ;
-        sdm:PublicationRelatedTo  sdm:Medicine , sdm:Psychology ;
-        sdm:issn                  "0123456" ;
-        sdm:volumenumber          "5"^^xsd:int .
-
 sdm:1339  rdf:type           sdm:Handlers ;
         sdm:AssignsReviewer  sdm:7303822 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:50744658  rdf:type    sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:ad0beaa0e79a9b95e4de41cd855b7f7f76a8eb7a ;
@@ -103,7 +95,7 @@ sdm:1644707378  rdf:type  sdm:Author ;
 sdm:23385  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:34856590 , sdm:123880806 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:67128030  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -113,7 +105,7 @@ sdm:67128030  rdf:type  sdm:Author ;
 sdm:2581  rdf:type           sdm:Handlers ;
         sdm:AssignsReviewer  sdm:7619964 , sdm:1392514324 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 <http://www.sdm-lab.com/#10.1111%2FJASP.12744This+paper+is+rejected%21>
         rdf:type            sdm:Review ;
@@ -140,13 +132,18 @@ sdm:ContainsKeyword  rdf:type  owl:ObjectProperty ;
 sdm:6562  rdf:type           sdm:Handlers ;
         sdm:AssignsReviewer  sdm:2107601477 , sdm:1403820244 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Chair" , "50,000" .
+
+sdm:VenueRelatedTo  rdf:type  owl:ObjectProperty ;
+        rdfs:domain  sdm:Venue ;
+        rdfs:label   "A Venue is related to an area"@en ;
+        rdfs:range   sdm:Area .
 
 <http://www.sdm-lab.com/#The+Rolling+Scopes+Conference>
-        rdf:type                 sdm:ExpertGroup ;
-        sdm:ConferenceRelatedTo  sdm:Business , sdm:Medicine , sdm:Psychology ;
-        sdm:name                 "The Rolling Scopes Conference" ;
-        sdm:venueHasHandler      sdm:688 .
+        rdf:type             sdm:ExpertGroup ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Medicine , sdm:Psychology ;
+        sdm:name             "The Rolling Scopes Conference" ;
+        sdm:venueHasHandler  sdm:688 .
 
 sdm:67278043  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -166,7 +163,7 @@ sdm:2078204993  rdf:type  sdm:Author ;
 sdm:496  rdf:type            sdm:Handlers ;
         sdm:AssignsReviewer  sdm:114130900 , sdm:6015019 , sdm:12706874 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Chair" , "50,000" .
 
 sdm:3052094  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -176,7 +173,7 @@ sdm:3052094  rdf:type  sdm:Author ;
 sdm:20876  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:121546819 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Chair" , "50,000" .
 
 sdm:108061873  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -202,7 +199,6 @@ sdm:fb13ca4e683932b30d74fcdac4780e1b4bc819a1
         rdf:type             sdm:ShortPaper ;
         sdm:ContainsKeyword  sdm:Business , <http://www.sdm-lab.com/#Political+Science> ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2Fj.jbusres.2019.09.052This+paper+is+rejected%21> ;
-        sdm:PublishedIn      sdm:7 ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+Business+Research> ;
         sdm:WrittenBy        sdm:98539811 , sdm:122403081 , sdm:108061873 , sdm:40035191 ;
         sdm:doi              "10.1016%2Fj.jbusres.2019.09.052" ;
@@ -222,7 +218,6 @@ sdm:55bb71c7283c13cafa0950b988c1a73e802045ce
         rdf:type             sdm:ShortPaper ;
         sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.5465%2FAMJ.2009.0865This+paper+is+rejected%21> ;
-        sdm:PublishedIn      <http://www.sdm-lab.com/#%2255%22> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Academy+of+Management+Journal> ;
         sdm:WrittenBy        sdm:144307804 , sdm:47446991 , sdm:2151438 ;
         sdm:doi              "10.5465%2FAMJ.2009.0865" ;
@@ -231,7 +226,7 @@ sdm:55bb71c7283c13cafa0950b988c1a73e802045ce
 sdm:4705  rdf:type           sdm:Handlers ;
         sdm:AssignsReviewer  sdm:48518439 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:145568464  rdf:type   sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:1a928939f8663da3c1c46a01da7e315f91df3af1 ;
@@ -303,12 +298,12 @@ sdm:reviewdecision  rdf:type  owl:DatatypeProperty ;
 sdm:9872  rdf:type           sdm:Handlers ;
         sdm:AssignsReviewer  sdm:2107737261 , sdm:16713466 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:6907  rdf:type           sdm:Handlers ;
         sdm:AssignsReviewer  sdm:113870042 , sdm:2069916496 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:1401033074  rdf:type  sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:a713ea4d4c48afc79abea40af006e420e8547802 ;
@@ -326,10 +321,10 @@ sdm:144241701  rdf:type   sdm:Reviewer ;
         sdm:reviewtext      "This paper is rejected!" .
 
 <http://www.sdm-lab.com/#Voxxed+Days+-+Zurich>
-        rdf:type                 sdm:Symposium ;
-        sdm:ConferenceRelatedTo  sdm:Business , sdm:Medicine , sdm:Psychology ;
-        sdm:name                 "Voxxed Days - Zurich" ;
-        sdm:venueHasHandler      sdm:23483 .
+        rdf:type             sdm:Symposium ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Medicine , sdm:Psychology ;
+        sdm:name             "Voxxed Days - Zurich" ;
+        sdm:venueHasHandler  sdm:23483 .
 
 <http://www.sdm-lab.com/#10.1002%2FJOB.2202This+paper+is+accepted%21>
         rdf:type            sdm:Review ;
@@ -349,7 +344,7 @@ sdm:8573611  rdf:type  sdm:Author ;
 sdm:10202  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:2673144 , sdm:38476574 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "50,000" .
 
 <http://www.sdm-lab.com/#10.4236%2FJSSM.2016.91009This+paper+is+accepted%21>
         rdf:type            sdm:Review ;
@@ -375,7 +370,6 @@ sdm:0700a4314a1c14f1894d58ae8581e265d80158bc
         rdf:type             sdm:ShortPaper ;
         sdm:ContainsKeyword  sdm:Psychology , sdm:Business ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1002%2FJOB.627This+paper+is+rejected%21> ;
-        sdm:PublishedIn      <http://www.sdm-lab.com/#%2231%22> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+Organizational+Behavior> ;
         sdm:WrittenBy        sdm:40403474 , sdm:3455874 , sdm:39747184 , sdm:6038454 ;
         sdm:doi              "10.1002%2FJOB.627" ;
@@ -385,13 +379,6 @@ sdm:0700a4314a1c14f1894d58ae8581e265d80158bc
         rdf:type            sdm:Review ;
         sdm:reviewdecision  "ACCEPTED" ;
         sdm:reviewtext      "This paper is accepted!" .
-
-<http://www.sdm-lab.com/#%2231%22>
-        rdf:type                  sdm:Volume ;
-        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Journal+of+Organizational+Behavior> , <http://www.sdm-lab.com/#Leadership+Quarterly> ;
-        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology ;
-        sdm:issn                  "0123456" ;
-        sdm:volumenumber          "5"^^xsd:int .
 
 sdm:1413517130  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -416,7 +403,7 @@ sdm:1403390172  rdf:type  sdm:Reviewer ;
 sdm:8058  rdf:type           sdm:Handlers ;
         sdm:AssignsReviewer  sdm:3956702 , sdm:66485074 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:4004192  rdf:type     sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:ee7aaba2e911b3a74e0eb97a14d7028db825945b ;
@@ -454,9 +441,9 @@ sdm:2433744  rdf:type     sdm:Reviewer ;
         sdm:h-index       "60"^^xsd:int .
 
 <http://www.sdm-lab.com/#Organizational+Research+Methods>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Business , <http://www.sdm-lab.com/#Computer+Science> ;
-        sdm:venueHasHandler   sdm:4593 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Business , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:venueHasHandler  sdm:4593 .
 
 <http://www.sdm-lab.com/#10.1177%2F0149206320930813This+paper+is+accepted%21>
         rdf:type            sdm:Review ;
@@ -483,7 +470,6 @@ sdm:e6945a04fcfcd3262f5ecceb03deeb1c3d7ed6f8
         rdf:type             sdm:Fullpaper ;
         sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2016.10.008This+paper+is+rejected%21> ;
-        sdm:PublishedIn      <http://www.sdm-lab.com/#%2228%22> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Leadership+Quarterly> ;
         sdm:WrittenBy        sdm:4986923 , sdm:48287585 , sdm:115195611 ;
         sdm:doi              "10.1016%2FJ.LEAQUA.2016.10.008" ;
@@ -512,10 +498,10 @@ sdm:fdb3307a9e903bacf6632d1013a280db6dcbd0d1
         sdm:doi              "10.1177%2F0033294117716465" ;
         sdm:title            "Leader Trust, Competence, LMX, and Member Performance: A Moderated Mediation Framework" .
 
-sdm:Jfokus  rdf:type             sdm:ExpertGroup ;
-        sdm:ConferenceRelatedTo  sdm:Business , sdm:Psychology , <http://www.sdm-lab.com/#Computer+Science> ;
-        sdm:name                 "Jfokus" ;
-        sdm:venueHasHandler      sdm:23843 .
+sdm:Jfokus  rdf:type         sdm:ExpertGroup ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:name             "Jfokus" ;
+        sdm:venueHasHandler  sdm:23843 .
 
 sdm:3129735  rdf:type     sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:f435c4e1a2f549b3a6288520499014769d311a67 ;
@@ -533,7 +519,7 @@ sdm:0c5108cc2b1cceff12808219b16ac5f8f11dd420
         sdm:HasReview        <http://www.sdm-lab.com/#10.1111%2FJ.1744-6570.2012.01246.XThis+paper+is+accepted%21> ;
         sdm:PublishedIn      <http://www.sdm-lab.com/#%2265%22> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Personnel+Psychology> ;
-        sdm:WrittenBy        sdm:4801448 , sdm:8573611 , sdm:8250249 , sdm:49391374 , sdm:16219820 ;
+        sdm:WrittenBy        sdm:4801448 , sdm:8250249 , sdm:8573611 , sdm:49391374 , sdm:16219820 ;
         sdm:doi              "10.1111%2FJ.1744-6570.2012.01246.X" ;
         sdm:title            "A TRICKLE-DOWN MODEL OF ABUSIVE SUPERVISION" .
 
@@ -546,7 +532,6 @@ sdm:7c4a728d8daebb6ec46b30d81db27fb719fe378e
         rdf:type             sdm:DemoPaper ;
         sdm:ContainsKeyword  sdm:Biology ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1101%2F2023.01.23.525255This+paper+is+rejected%21> ;
-        sdm:PublishedIn      sdm:10 ;
         sdm:SubmittedIn      sdm:bioRxiv ;
         sdm:WrittenBy        sdm:4681485 , sdm:82126346 , sdm:1441502197 ;
         sdm:doi              "10.1101%2F2023.01.23.525255" ;
@@ -580,7 +565,7 @@ sdm:113712585  rdf:type  sdm:Author ;
 sdm:10450  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:49150737 , sdm:12077660 , sdm:8092765 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:8113436  rdf:type     sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:7326d3ac058e5653482a1b5fcdbb46d3484f6ab8 ;
@@ -595,10 +580,10 @@ sdm:8113436  rdf:type     sdm:Reviewer ;
         sdm:volumenumber          "5"^^xsd:int .
 
 <http://www.sdm-lab.com/#Sustainable+UX>
-        rdf:type                 sdm:Workshop ;
-        sdm:ConferenceRelatedTo  sdm:Medicine , sdm:Psychology , sdm:Education , sdm:Sociology ;
-        sdm:name                 "Sustainable UX" ;
-        sdm:venueHasHandler      sdm:12639 .
+        rdf:type             sdm:Workshop ;
+        sdm:VenueRelatedTo   sdm:Medicine , sdm:Psychology , sdm:Education , sdm:Sociology ;
+        sdm:name             "Sustainable UX" ;
+        sdm:venueHasHandler  sdm:12639 .
 
 sdm:40078267  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -622,9 +607,9 @@ sdm:48792606  rdf:type    sdm:Reviewer ;
         sdm:h-index       "60"^^xsd:int .
 
 <http://www.sdm-lab.com/#Elgar+Introduction+to+Theories+of+Human+Resources+and+Employment+Relations>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Business , sdm:Psychology ;
-        sdm:venueHasHandler   sdm:6113 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:venueHasHandler  sdm:6113 .
 
 sdm:2207946432  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -760,7 +745,6 @@ sdm:ec745a805f894c86df005615de7a98a257b88c6b
         rdf:type             sdm:Poster ;
         sdm:ContainsKeyword  sdm:Medicine , sdm:Business , sdm:Psychology ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1037%2Fa0030264This+paper+is+rejected%21> ;
-        sdm:PublishedIn      sdm:3 ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Voxxed+Days+-+Cern> ;
         sdm:WrittenBy        sdm:34655016 , sdm:1928997 ;
         sdm:doi              "10.1037%2Fa0030264" ;
@@ -787,20 +771,18 @@ sdm:1754942  rdf:type     sdm:Reviewer ;
 sdm:25512  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:40018541 , sdm:3340622 , sdm:4240574 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:9981  rdf:type           sdm:Handlers ;
         sdm:AssignsReviewer  sdm:3569648 , sdm:4387556 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
-sdm:1   rdf:type                  sdm:Proceeding , sdm:Volume ;
-        sdm:BelongsToConference   <http://www.sdm-lab.com/#O%27Reilly+Velocity+Conference> , <http://www.sdm-lab.com/#Sustainable+UX> , <http://www.sdm-lab.com/#The+Lead+Developer+New+York> , <http://www.sdm-lab.com/#Voxxed+Days+-+Zurich> , <http://www.sdm-lab.com/#Typography+Day+2017> ;
-        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Association+for+Computing+Machinery+%28ACM%29> ;
+sdm:1   rdf:type                  sdm:Proceeding ;
+        sdm:BelongsToConference   <http://www.sdm-lab.com/#O%27Reilly+Velocity+Conference> , <http://www.sdm-lab.com/#Sustainable+UX> , <http://www.sdm-lab.com/#The+Lead+Developer+New+York> , <http://www.sdm-lab.com/#Typography+Day+2017> ;
         sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology , sdm:Medicine ;
         sdm:edition               "1"^^xsd:int ;
-        sdm:issn                  "123450" , "0123456" ;
-        sdm:volumenumber          "5"^^xsd:int .
+        sdm:issn                  "123450" .
 
 sdm:49507320  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -810,7 +792,7 @@ sdm:49507320  rdf:type  sdm:Author ;
 sdm:18735  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:15390666 , sdm:4773784 , sdm:1401033074 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:2155095  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -825,7 +807,7 @@ sdm:2187329458  rdf:type  sdm:Author ;
 sdm:16093  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:4343376 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:2209917736  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -856,7 +838,6 @@ sdm:d49dc28600e0fb85cbedfefe936e1a7a8219af9c
         rdf:type             sdm:Poster ;
         sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2018.03.001This+paper+is+rejected%21> ;
-        sdm:PublishedIn      sdm:2 ;
         sdm:SubmittedIn      sdm:Script17 ;
         sdm:WrittenBy        sdm:97405037 , sdm:51499126 , sdm:48384596 , sdm:2065066749 , sdm:38353251 ;
         sdm:doi              "10.1016%2FJ.LEAQUA.2018.03.001" ;
@@ -883,9 +864,9 @@ sdm:115478194  rdf:type  sdm:Author ;
         sdm:name     "Ernest H. O’Boyle" .
 
 <http://www.sdm-lab.com/#Economic+and+Business+Review>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Business , sdm:Sociology ;
-        sdm:venueHasHandler   sdm:8894 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Sociology ;
+        sdm:venueHasHandler  sdm:8894 .
 
 sdm:35a4b9e020bfada436755eeef4dfa1354ec98bf4
         rdf:type             sdm:ShortPaper ;
@@ -928,8 +909,8 @@ sdm:2356574  rdf:type     sdm:Reviewer ;
         sdm:h-index       "60"^^xsd:int .
 
 sdm:Scientometrics  rdf:type  sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Education , sdm:Sociology , <http://www.sdm-lab.com/#Computer+Science> ;
-        sdm:venueHasHandler   sdm:8802 .
+        sdm:VenueRelatedTo   sdm:Education , sdm:Sociology , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:venueHasHandler  sdm:8802 .
 
 sdm:144676228  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -964,7 +945,7 @@ sdm:7a4e971ceaef48d194abf6d206e6c2855f7d107e
 sdm:22915  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:31839425 , sdm:4886650 , sdm:46916148 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:49200540  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -987,9 +968,9 @@ sdm:2108169698  rdf:type  sdm:Author ;
         sdm:name     "Junyang Chen" .
 
 <http://www.sdm-lab.com/#Association+for+Computing+Machinery+%28ACM%29>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Business , sdm:Psychology ;
-        sdm:venueHasHandler   sdm:25512 , sdm:4705 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:venueHasHandler  sdm:25512 , sdm:4705 .
 
 sdm:144307804  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -1042,9 +1023,9 @@ sdm:7253454d31e983929e683e2eb9150cc810cedce7
         sdm:reviewtext      "This paper is rejected!" .
 
 <http://www.sdm-lab.com/#Revue+Europ%C3%A9enne+de+Psychologie+Appliqu%C3%A9e>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Business , sdm:Psychology ;
-        sdm:venueHasHandler   sdm:25330 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:venueHasHandler  sdm:25330 .
 
 sdm:4131043  rdf:type     sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:748ab9fcc4fdfd82cd22e0a1360ad852c15a4c64 ;
@@ -1060,7 +1041,6 @@ sdm:0b0556ef543bdf4e0a7b7e9debe11b309bede1ba
         rdf:type             sdm:Poster ;
         sdm:ContainsKeyword  sdm:Sociology , sdm:Business ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.5465%2FAMJ.2010.54533176This+paper+is+rejected%21> ;
-        sdm:PublishedIn      sdm:2 ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#The+Lead+Developer+New+York> ;
         sdm:WrittenBy        sdm:7484553 , sdm:34794000 , sdm:4381864 , sdm:46850105 ;
         sdm:doi              "10.5465%2FAMJ.2010.54533176" ;
@@ -1101,11 +1081,6 @@ sdm:14745040  rdf:type    sdm:Reviewer ;
         sdm:WritesReview  <http://www.sdm-lab.com/#10.4337%2F9781786439017This+paper+is+rejected%21> ;
         sdm:h-index       "60"^^xsd:int .
 
-sdm:34773914  rdf:type    sdm:Reviewer ;
-        sdm:ReviewsPaper  sdm:ee7aaba2e911b3a74e0eb97a14d7028db825945b ;
-        sdm:WritesReview  <http://www.sdm-lab.com/#10.1037%2Fa0029978This+paper+is+rejected%21> ;
-        sdm:h-index       "60"^^xsd:int .
-
 sdm:40206711  rdf:type    sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:94943d22fce7877f2089f0a9afb90eb7fc2352ee ;
         sdm:WritesReview  <http://www.sdm-lab.com/#10.1080%2F02648725.2023.2168910This+paper+is+rejected%21> ;
@@ -1115,6 +1090,11 @@ sdm:40206711  rdf:type    sdm:Reviewer ;
         rdf:type            sdm:Review ;
         sdm:reviewdecision  "ACCEPTED" ;
         sdm:reviewtext      "This paper is accepted!" .
+
+sdm:34773914  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:ee7aaba2e911b3a74e0eb97a14d7028db825945b ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1037%2Fa0029978This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
 
 sdm:12706874  rdf:type    sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:ec745a805f894c86df005615de7a98a257b88c6b ;
@@ -1126,9 +1106,9 @@ sdm:51439243  rdf:type  sdm:Author ;
         sdm:h-index  "12"^^xsd:int ;
         sdm:name     "M. Černe" .
 
-sdm:Mathematics  rdf:type     sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Business , <http://www.sdm-lab.com/#Computer+Science> ;
-        sdm:venueHasHandler   sdm:17963 .
+sdm:Mathematics  rdf:type    sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Business , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:venueHasHandler  sdm:17963 .
 
 <http://www.sdm-lab.com/#10.1016%2FJ.HRMR.2018.02.004This+paper+is+rejected%21>
         rdf:type            sdm:Review ;
@@ -1136,14 +1116,14 @@ sdm:Mathematics  rdf:type     sdm:Journal ;
         sdm:reviewtext      "This paper is rejected!" .
 
 <http://www.sdm-lab.com/#Frontiers+in+Psychology>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Psychology , sdm:Medicine ;
-        sdm:venueHasHandler   sdm:222 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Psychology , sdm:Medicine ;
+        sdm:venueHasHandler  sdm:222 .
 
 sdm:23483  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:4004192 , sdm:34773914 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Chair" , "50,000" .
 
 sdm:49667830  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -1171,10 +1151,10 @@ sdm:2820282  rdf:type  sdm:Author ;
         sdm:name     "Leslie A. DeChurch" .
 
 <http://www.sdm-lab.com/#O%27Reilly+Velocity+Conference>
-        rdf:type                 sdm:Symposium ;
-        sdm:ConferenceRelatedTo  sdm:Business , sdm:Psychology ;
-        sdm:name                 "O'Reilly Velocity Conference" ;
-        sdm:venueHasHandler      sdm:12307 .
+        rdf:type             sdm:Symposium ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:name             "O'Reilly Velocity Conference" ;
+        sdm:venueHasHandler  sdm:12307 .
 
 <http://www.sdm-lab.com/#10.1007%2Fs11192-019-03184-yThis+paper+is+accepted%21>
         rdf:type            sdm:Review ;
@@ -1188,9 +1168,8 @@ sdm:40102157  rdf:type    sdm:Reviewer ;
 
 sdm:36e1912e9be9e1a90a06edd78ea16a429a03fb35
         rdf:type             sdm:Fullpaper ;
-        sdm:ContainsKeyword  sdm:Psychology , sdm:Medicine ;
+        sdm:ContainsKeyword  sdm:Medicine , sdm:Psychology ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2Fj.jaac.2012.01.018This+paper+is+rejected%21> ;
-        sdm:PublishedIn      <http://www.sdm-lab.com/#%2251+4%22> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+the+American+Academy+of+Child+and+Adolescent+Psychiatry> ;
         sdm:WrittenBy        sdm:6677546 , sdm:145349578 ;
         sdm:doi              "10.1016%2Fj.jaac.2012.01.018" ;
@@ -1201,10 +1180,10 @@ sdm:66373895  rdf:type  sdm:Author ;
         sdm:h-index  "12"^^xsd:int ;
         sdm:name     "T. Dundon" .
 
-sdm:Script17  rdf:type           sdm:Regular ;
-        sdm:ConferenceRelatedTo  sdm:Business , sdm:Psychology ;
-        sdm:name                 "Script17" ;
-        sdm:venueHasHandler      sdm:22797 .
+sdm:Script17  rdf:type       sdm:Regular ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:name             "Script17" ;
+        sdm:venueHasHandler  sdm:22797 .
 
 sdm:Business  rdf:type        sdm:Keyword ;
         sdm:KeywordRelatedTo  sdm:Business ;
@@ -1266,7 +1245,6 @@ sdm:6cc1c4b8cb5daac2984bf82c043f82fd53d75af0
         rdf:type             sdm:DemoPaper ;
         sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1177%2F0018726715597481This+paper+is+rejected%21> ;
-        sdm:PublishedIn      <http://www.sdm-lab.com/#%2269%22> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Human+Relations> ;
         sdm:WrittenBy        sdm:14510610 , sdm:2027364952 , sdm:49991622 , sdm:2152886813 ;
         sdm:doi              "10.1177%2F0018726715597481" ;
@@ -1337,7 +1315,7 @@ sdm:domain  rdf:type  owl:DatatypeProperty ;
 sdm:8894  rdf:type           sdm:Handlers ;
         sdm:AssignsReviewer  sdm:3912536 , sdm:4131043 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:2152196755  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -1357,7 +1335,7 @@ sdm:7303822  rdf:type     sdm:Reviewer ;
 sdm:3810  rdf:type           sdm:Handlers ;
         sdm:AssignsReviewer  sdm:39711839 , sdm:2194885794 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:114484442  rdf:type   sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:3286d652031571d504f78ab989e0263f759e4e12 ;
@@ -1374,24 +1352,10 @@ sdm:1491585715  rdf:type  sdm:Author ;
         sdm:h-index  "12"^^xsd:int ;
         sdm:name     "John Adeoye" .
 
-<http://www.sdm-lab.com/#%22114%22>
-        rdf:type                  sdm:Volume ;
-        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Journal+of+Business+Ethics> ;
-        sdm:PublicationRelatedTo  <http://www.sdm-lab.com/#Political+Science> , sdm:Business , sdm:Sociology ;
-        sdm:issn                  "0123456" ;
-        sdm:volumenumber          "5"^^xsd:int .
-
 sdm:4686536  rdf:type     sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:0e32f5cebc15a0ac3ae39f99856037c22eff83f9 ;
         sdm:WritesReview  <http://www.sdm-lab.com/#10.1007%2Fs11192-020-03401-zThis+paper+is+accepted%21> ;
         sdm:h-index       "60"^^xsd:int .
-
-<http://www.sdm-lab.com/#%2268%22>
-        rdf:type                  sdm:Volume ;
-        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Journal+of+the+Association+for+Information+Science+and+Technology> ;
-        sdm:PublicationRelatedTo  sdm:Education , <http://www.sdm-lab.com/#Computer+Science> ;
-        sdm:issn                  "0123456" ;
-        sdm:volumenumber          "5"^^xsd:int .
 
 sdm:2152886813  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -1406,7 +1370,7 @@ sdm:34655016  rdf:type  sdm:Author ;
 sdm:15836  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:4095031 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:2115768  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -1441,14 +1405,14 @@ sdm:48811537  rdf:type  sdm:Author ;
         sdm:name     "David M. Long" .
 
 <http://www.sdm-lab.com/#ISPRS+International+Journal+of+Geo-Information>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  <http://www.sdm-lab.com/#Computer+Science> ;
-        sdm:venueHasHandler   sdm:20243 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:venueHasHandler  sdm:20243 .
 
 <http://www.sdm-lab.com/#Leadership+Quarterly>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Economics , sdm:Sociology , sdm:Psychology , sdm:Engineering , sdm:Business ;
-        sdm:venueHasHandler   sdm:8058 , sdm:10003 , sdm:3862 , sdm:9968 , sdm:6917 , sdm:16176 , sdm:10450 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Sociology , sdm:Psychology , sdm:Engineering , sdm:Economics , sdm:Business ;
+        sdm:venueHasHandler  sdm:8058 , sdm:10003 , sdm:3862 , sdm:9968 , sdm:6917 , sdm:16176 , sdm:10450 .
 
 sdm:3286d652031571d504f78ab989e0263f759e4e12
         rdf:type             sdm:ShortPaper ;
@@ -1462,9 +1426,8 @@ sdm:3286d652031571d504f78ab989e0263f759e4e12
 
 sdm:1d47b94a81d952f76e1c498de61ae670f12b799e
         rdf:type             sdm:Fullpaper ;
-        sdm:ContainsKeyword  sdm:Business , sdm:Sociology , <http://www.sdm-lab.com/#Political+Science> ;
+        sdm:ContainsKeyword  <http://www.sdm-lab.com/#Political+Science> , sdm:Business , sdm:Sociology ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1007%2FS10551-012-1354-YThis+paper+is+rejected%21> ;
-        sdm:PublishedIn      <http://www.sdm-lab.com/#%22114%22> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+Business+Ethics> ;
         sdm:WrittenBy        sdm:30390541 ;
         sdm:doi              "10.1007%2FS10551-012-1354-Y" ;
@@ -1507,7 +1470,7 @@ sdm:2065919726  rdf:type  sdm:Author ;
 sdm:19896  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:15474964 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:2183277043  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -1542,16 +1505,16 @@ sdm:8292575  rdf:type  sdm:Author ;
 sdm:6917  rdf:type           sdm:Handlers ;
         sdm:AssignsReviewer  sdm:2898986 , sdm:40518290 , sdm:1485643901 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:Biology  rdf:type         sdm:Keyword ;
         sdm:KeywordRelatedTo  sdm:Biology ;
         sdm:domain            "dummy domain" .
 
 <http://www.sdm-lab.com/#The+Journal+of+applied+psychology>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Psychology , sdm:Business , sdm:Medicine , sdm:Sociology ;
-        sdm:venueHasHandler   sdm:13862 , sdm:23385 , sdm:13119 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Psychology , sdm:Business , sdm:Medicine , sdm:Sociology ;
+        sdm:venueHasHandler  sdm:13862 , sdm:23385 , sdm:13119 .
 
 <http://www.sdm-lab.com/#%2296+1%22>
         rdf:type                  sdm:Volume ;
@@ -1574,7 +1537,6 @@ sdm:64ea9a1a6677325d07b44753f13e0bce8f605acf
         rdf:type             sdm:Fullpaper ;
         sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.2224%2FSBP.2015.43.8.1273%E2%80%931286This+paper+is+rejected%21> ;
-        sdm:PublishedIn      <http://www.sdm-lab.com/#%2243%22> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Social+Behavior+and+Personality> ;
         sdm:WrittenBy        sdm:2144735991 , sdm:49649535 , sdm:2143950738 , sdm:2109971529 ;
         sdm:doi              "10.2224%2FSBP.2015.43.8.1273%E2%80%931286" ;
@@ -1588,7 +1550,7 @@ sdm:5910610  rdf:type  sdm:Author ;
 sdm:8170  rdf:type           sdm:Handlers ;
         sdm:AssignsReviewer  sdm:2405956 , sdm:1402893968 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:7574885  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -1600,13 +1562,13 @@ sdm:1486062441  rdf:type  sdm:Reviewer ;
         sdm:WritesReview  <http://www.sdm-lab.com/#10.5465%2FAMR.2016.0264This+paper+is+rejected%21> ;
         sdm:h-index       "60"^^xsd:int .
 
+sdm:Workshop  rdf:type   owl:Class ;
+        rdfs:subClassOf  sdm:Conference .
+
 sdm:2107601477  rdf:type  sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:9ae8a63742aae79c94a86ab0661a7d8c2971c433 ;
         sdm:WritesReview  <http://www.sdm-lab.com/#10.1177%2F1742715012455130This+paper+is+accepted%21> ;
         sdm:h-index       "60"^^xsd:int .
-
-sdm:Workshop  rdf:type   owl:Class ;
-        rdfs:subClassOf  sdm:Conference .
 
 sdm:2143950738  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -1619,7 +1581,7 @@ sdm:ShortPaper  rdf:type  owl:Class ;
 sdm:20572  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:47202106 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:40403474  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -1630,7 +1592,6 @@ sdm:cc5d004f90bb2ef05cdc2d28f87f462d57754d72
         rdf:type             sdm:Fullpaper ;
         sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2FJ.ERAP.2017.05.005This+paper+is+rejected%21> ;
-        sdm:PublishedIn      <http://www.sdm-lab.com/#%2267%22> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Revue+Europ%C3%A9enne+de+Psychologie+Appliqu%C3%A9e> ;
         sdm:WrittenBy        sdm:144676228 , sdm:49200540 ;
         sdm:doi              "10.1016%2FJ.ERAP.2017.05.005" ;
@@ -1657,9 +1618,9 @@ sdm:3553866  rdf:type  sdm:Author ;
         sdm:name     "Thomas Rockstuhl" .
 
 sdm:3   rdf:type                  sdm:Volume , sdm:Proceeding ;
-        sdm:BelongsToConference   <http://www.sdm-lab.com/#Voxxed+Days+-+Cern> , <http://www.sdm-lab.com/#Sustainable+UX> ;
-        sdm:BelongsToJournal      sdm:Sustainability , <http://www.sdm-lab.com/#ISPRS+International+Journal+of+Geo-Information> ;
-        sdm:PublicationRelatedTo  sdm:Business , <http://www.sdm-lab.com/#Computer+Science> , sdm:Education , sdm:Sociology , sdm:Psychology , sdm:Medicine ;
+        sdm:BelongsToConference   <http://www.sdm-lab.com/#Sustainable+UX> ;
+        sdm:BelongsToJournal      sdm:Sustainability ;
+        sdm:PublicationRelatedTo  <http://www.sdm-lab.com/#Computer+Science> , sdm:Education , sdm:Sociology ;
         sdm:edition               "1"^^xsd:int ;
         sdm:issn                  "0123456" , "123450" ;
         sdm:volumenumber          "5"^^xsd:int .
@@ -1669,14 +1630,14 @@ sdm:2152176463  rdf:type  sdm:Author ;
         sdm:h-index  "12"^^xsd:int ;
         sdm:name     "Ming Zhou" .
 
-sdm:ArXiv  rdf:type           sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Physics , <http://www.sdm-lab.com/#Computer+Science> ;
-        sdm:venueHasHandler   sdm:16093 .
+sdm:ArXiv  rdf:type          sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Physics , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:venueHasHandler  sdm:16093 .
 
 <http://www.sdm-lab.com/#Emerging+Science+Journal>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Business ;
-        sdm:venueHasHandler   sdm:15836 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Business ;
+        sdm:venueHasHandler  sdm:15836 .
 
 <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2017.10.002This+paper+is+accepted%21>
         rdf:type            sdm:Review ;
@@ -1701,9 +1662,9 @@ sdm:9679912b1386a04b793841ce3fb45de05a938676
         sdm:title            "A meta-analysis of the role of trust in the leadership- performance relationship" .
 
 <http://www.sdm-lab.com/#Medical+Science+Monitor+%3A+International+Medical+Journal+of+Experimental+and+Clinical+Research>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Medicine ;
-        sdm:venueHasHandler   sdm:20238 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Medicine ;
+        sdm:venueHasHandler  sdm:20238 .
 
 sdm:4191459  rdf:type     sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:c3bcc1687e84e5ed4d1a9519761f962c78922ef5 ;
@@ -1714,7 +1675,6 @@ sdm:6fa54ce93fd1885d1b612b5c6b9ba3f03cd9974f
         rdf:type             sdm:Fullpaper ;
         sdm:ContainsKeyword  sdm:Business , <http://www.sdm-lab.com/#Computer+Science> ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1177%2F1094428114562629This+paper+is+rejected%21> ;
-        sdm:PublishedIn      <http://www.sdm-lab.com/#%2218%22> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Organizational+Research+Methods> ;
         sdm:WrittenBy        sdm:67278043 , sdm:46215353 ;
         sdm:doi              "10.1177%2F1094428114562629" ;
@@ -1796,9 +1756,9 @@ sdm:143634845  rdf:type  sdm:Author ;
         sdm:name     "Lorraine Hope" .
 
 <http://www.sdm-lab.com/#SAGE+Open>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Business ;
-        sdm:venueHasHandler   sdm:24613 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Business ;
+        sdm:venueHasHandler  sdm:24613 .
 
 sdm:49536533  rdf:type    sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:c8fcd37be1be142bcfc9ef745f204a1d286669d5 ;
@@ -1821,9 +1781,9 @@ sdm:3455874  rdf:type  sdm:Author ;
         sdm:name     "R. Folger" .
 
 <http://www.sdm-lab.com/#Human+Relations>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Business , sdm:Psychology ;
-        sdm:venueHasHandler   sdm:20572 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:venueHasHandler  sdm:20572 .
 
 sdm:Keyword  rdf:type  owl:Class .
 
@@ -1831,7 +1791,6 @@ sdm:a2126884ac972bc42ac96b1f5a3c9aa7c979cd02
         rdf:type             sdm:Poster ;
         sdm:ContainsKeyword  <http://www.sdm-lab.com/#Computer+Science> ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2FJ.JBUSRES.2021.04.070This+paper+is+rejected%21> ;
-        sdm:PublishedIn      sdm:2 ;
         sdm:SubmittedIn      sdm:Jfokus ;
         sdm:WrittenBy        sdm:3095755 , sdm:2109647517 , sdm:2096672 , sdm:3139520 , sdm:143976706 ;
         sdm:doi              "10.1016%2FJ.JBUSRES.2021.04.070" ;
@@ -1846,7 +1805,6 @@ sdm:5e8c9145855755438ae8f732d2256b92045018f7
         rdf:type             sdm:Fullpaper ;
         sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1093%2FOXFORDHB%2F9780199326174.013.0009This+paper+is+rejected%21> ;
-        sdm:PublishedIn      sdm:1 ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Association+for+Computing+Machinery+%28ACM%29> ;
         sdm:WrittenBy        sdm:5934403 , sdm:3052094 ;
         sdm:doi              "10.1093%2FOXFORDHB%2F9780199326174.013.0009" ;
@@ -1891,9 +1849,9 @@ sdm:2126812  rdf:type  sdm:Author ;
         sdm:name     "Nicoleta Meslec" .
 
 <http://www.sdm-lab.com/#Journal+of+the+Association+for+Information+Science+and+Technology>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Education , <http://www.sdm-lab.com/#Computer+Science> ;
-        sdm:venueHasHandler   sdm:9872 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Education , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:venueHasHandler  sdm:9872 .
 
 <http://www.sdm-lab.com/#%22120%22>
         rdf:type                  sdm:Volume ;
@@ -1913,22 +1871,15 @@ sdm:31839425  rdf:type    sdm:Reviewer ;
         sdm:h-index       "60"^^xsd:int .
 
 <http://www.sdm-lab.com/#UX+Riga>
-        rdf:type                 sdm:Symposium ;
-        sdm:ConferenceRelatedTo  sdm:Medicine , sdm:Psychology ;
-        sdm:name                 "UX Riga" ;
-        sdm:venueHasHandler      sdm:12153 .
+        rdf:type             sdm:Symposium ;
+        sdm:VenueRelatedTo   sdm:Medicine , sdm:Psychology ;
+        sdm:name             "UX Riga" ;
+        sdm:venueHasHandler  sdm:12153 .
 
 <http://www.sdm-lab.com/#Career+Development+International>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Business , sdm:Psychology ;
-        sdm:venueHasHandler   sdm:18735 .
-
-<http://www.sdm-lab.com/#%2212%22>
-        rdf:type                  sdm:Volume ;
-        sdm:BelongsToJournal      <http://www.sdm-lab.com/#SAGE+Open> ;
-        sdm:PublicationRelatedTo  sdm:Business ;
-        sdm:issn                  "0123456" ;
-        sdm:volumenumber          "5"^^xsd:int .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:venueHasHandler  sdm:18735 .
 
 <http://www.sdm-lab.com/#10.12659%2FMSM.938835This+paper+is+accepted%21>
         rdf:type            sdm:Review ;
@@ -1958,7 +1909,7 @@ sdm:4240574  rdf:type     sdm:Reviewer ;
 sdm:10459  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:3795070 , sdm:2205466 , sdm:5155679 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "50,000" .
 
 sdm:3340622  rdf:type     sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:20bf58363cd91bb483296bc7ed9850ecc73fcb56 ;
@@ -1983,7 +1934,7 @@ sdm:49391374  rdf:type  sdm:Author ;
 sdm:4593  rdf:type           sdm:Handlers ;
         sdm:AssignsReviewer  sdm:39739637 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:30390541  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -1993,14 +1944,7 @@ sdm:30390541  rdf:type  sdm:Author ;
 sdm:12307  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:1398744071 , sdm:2356574 , sdm:2248685 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
-
-<http://www.sdm-lab.com/#%2210%22>
-        rdf:type                  sdm:Volume ;
-        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Journal+of+Big+Data> ;
-        sdm:PublicationRelatedTo  <http://www.sdm-lab.com/#Computer+Science> ;
-        sdm:issn                  "0123456" ;
-        sdm:volumenumber          "5"^^xsd:int .
+        sdm:role             "Chair" , "50,000" .
 
 sdm:74170690  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -2010,14 +1954,9 @@ sdm:74170690  rdf:type  sdm:Author ;
 <http://www.sdm-lab.com/#%2228%22>
         rdf:type                  sdm:Volume ;
         sdm:BelongsToJournal      <http://www.sdm-lab.com/#Leadership+Quarterly> ;
-        sdm:PublicationRelatedTo  sdm:Sociology , sdm:Business , sdm:Psychology ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Sociology ;
         sdm:issn                  "0123456" ;
         sdm:volumenumber          "5"^^xsd:int .
-
-sdm:JournalRelatedTo  rdf:type  owl:ObjectProperty ;
-        rdfs:domain  sdm:Journal ;
-        rdfs:label   "A Journal is related to an area"@en ;
-        rdfs:range   sdm:Area .
 
 sdm:8092765  rdf:type     sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:779713324245b32c12f1817999ec87bb0511858f ;
@@ -2038,7 +1977,6 @@ sdm:ad0beaa0e79a9b95e4de41cd855b7f7f76a8eb7a
         rdf:type             sdm:Poster ;
         sdm:ContainsKeyword  sdm:Psychology , sdm:Business ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1111%2FJ.1744-6570.2010.01203.XThis+paper+is+rejected%21> ;
-        sdm:PublishedIn      sdm:2 ;
         sdm:SubmittedIn      sdm:Webstock ;
         sdm:WrittenBy        sdm:39581878 , sdm:6329466 , sdm:5939684 ;
         sdm:doi              "10.1111%2FJ.1744-6570.2010.01203.X" ;
@@ -2066,7 +2004,7 @@ sdm:40232894  rdf:type  sdm:Author ;
 sdm:20990  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:1422425649 , sdm:16052649 , sdm:50449730 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "50,000" .
 
 sdm:1398112513  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -2111,17 +2049,10 @@ sdm:102979552  rdf:type  sdm:Author ;
         sdm:h-index  "12"^^xsd:int ;
         sdm:name     "Renata Kenda" .
 
-sdm:10  rdf:type                  sdm:Volume ;
-        sdm:BelongsToJournal      sdm:bioRxiv , <http://www.sdm-lab.com/#Emerging+Science+Journal> , <http://www.sdm-lab.com/#Biotechnology+%26+genetic+engineering+reviews> ;
-        sdm:PublicationRelatedTo  sdm:Biology , sdm:Business , sdm:Medicine ;
-        sdm:issn                  "0123456" ;
-        sdm:volumenumber          "5"^^xsd:int .
-
 sdm:4aed298f7914d85b71cc96ede1a53a0119dbb966
         rdf:type             sdm:DemoPaper ;
         sdm:ContainsKeyword  sdm:Sociology , sdm:Business ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1177%2F0149206314559946This+paper+is+rejected%21> ;
-        sdm:PublishedIn      <http://www.sdm-lab.com/#%2241%22> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+Management> ;
         sdm:WrittenBy        sdm:40078267 , sdm:2118263 , sdm:123694439 , sdm:1795386000 , sdm:2115768 ;
         sdm:doi              "10.1177%2F0149206314559946" ;
@@ -2141,7 +2072,6 @@ sdm:32bec1f7d14c5767c3f8a8c901d99e3ac26b3264
         rdf:type             sdm:DemoPaper ;
         sdm:ContainsKeyword  sdm:Business ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1177%2F15480518211041629This+paper+is+rejected%21> ;
-        sdm:PublishedIn      <http://www.sdm-lab.com/#%2229%22> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+Leadership+%26+Organizational+Studies> ;
         sdm:WrittenBy        sdm:2005996770 , sdm:1413517130 , sdm:40068017 ;
         sdm:doi              "10.1177%2F15480518211041629" ;
@@ -2156,7 +2086,6 @@ sdm:1be6fd34d14addc35a5655955c49baca976ae9f3
         rdf:type             sdm:DemoPaper ;
         sdm:ContainsKeyword  sdm:Business ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1177%2F21582440221097688This+paper+is+rejected%21> ;
-        sdm:PublishedIn      <http://www.sdm-lab.com/#%2212%22> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#SAGE+Open> ;
         sdm:WrittenBy        sdm:2345032 , sdm:51439243 , sdm:117143893 ;
         sdm:doi              "10.1177%2F21582440221097688" ;
@@ -2185,7 +2114,7 @@ sdm:17835213  rdf:type  sdm:Author ;
 sdm:20238  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:40041524 , sdm:145568464 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:2077080625  rdf:type  sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:f435c4e1a2f549b3a6288520499014769d311a67 ;
@@ -2205,7 +2134,7 @@ sdm:39739637  rdf:type    sdm:Reviewer ;
 sdm:6113  rdf:type           sdm:Handlers ;
         sdm:AssignsReviewer  sdm:29825117 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:2057073663  rdf:type  sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:a797c38057fddbf635a2917424f44b5583792813 ;
@@ -2218,9 +2147,9 @@ sdm:48384596  rdf:type  sdm:Author ;
         sdm:name     "D. Hughes" .
 
 <http://www.sdm-lab.com/#International+Journal+of+Advanced+Research+in+Science%2C+Communication+and+Technology>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  <http://www.sdm-lab.com/#Materials+Science> , <http://www.sdm-lab.com/#Computer+Science> , sdm:Education ;
-        sdm:venueHasHandler   sdm:18704 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   <http://www.sdm-lab.com/#Materials+Science> , <http://www.sdm-lab.com/#Computer+Science> , sdm:Education ;
+        sdm:venueHasHandler  sdm:18704 .
 
 sdm:35b460874243165533df66b6dfc31e9c7aee3fb9
         rdf:type             sdm:DemoPaper ;
@@ -2252,13 +2181,12 @@ sdm:144937232  rdf:type  sdm:Author ;
 sdm:13119  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:1978193 , sdm:81323357 , sdm:3075483 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:37d0ee300bd42ec99c986b538760066ff0dea56d
         rdf:type             sdm:DemoPaper ;
         sdm:ContainsKeyword  sdm:Economics ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.4337%2F9781786439017This+paper+is+rejected%21> ;
-        sdm:PublishedIn      sdm:9 ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#American+Association+for+Cancer+Research+%28AACR%29> ;
         sdm:WrittenBy        sdm:2191394 , sdm:47526855 , sdm:113607888 , sdm:66373895 ;
         sdm:doi              "10.4337%2F9781786439017" ;
@@ -2287,9 +2215,9 @@ sdm:3075483  rdf:type     sdm:Reviewer ;
         sdm:h-index       "60"^^xsd:int .
 
 <http://www.sdm-lab.com/#Organization+Studies>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Business , sdm:Sociology ;
-        sdm:venueHasHandler   sdm:23690 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Sociology ;
+        sdm:venueHasHandler  sdm:23690 .
 
 sdm:BelongsToConference
         rdf:type     owl:ObjectProperty ;
@@ -2301,7 +2229,6 @@ sdm:0d105d6281b13c140581198f1a2d42f905585513
         rdf:type             sdm:Poster ;
         sdm:ContainsKeyword  sdm:Psychology , sdm:Medicine ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1111%2FJASP.12744This+paper+is+rejected%21> ;
-        sdm:PublishedIn      sdm:0 ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#UX+Riga> ;
         sdm:WrittenBy        sdm:48250810 , sdm:114570655 , sdm:46362397 , sdm:52205524 ;
         sdm:doi              "10.1111%2FJASP.12744" ;
@@ -2323,9 +2250,9 @@ sdm:78143588  rdf:type  sdm:Author ;
         sdm:name     "Junchao Zhu" .
 
 <http://www.sdm-lab.com/#Journal+of+Leadership+%26+Organizational+Studies>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Business ;
-        sdm:venueHasHandler   sdm:2581 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Business ;
+        sdm:venueHasHandler  sdm:2581 .
 
 sdm:40595787  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -2336,7 +2263,6 @@ sdm:2066fe8e700fa0f67ba727386c49c9189260fa8e
         rdf:type             sdm:Fullpaper ;
         sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2Fj.leaqua.2020.101385This+paper+is+rejected%21> ;
-        sdm:PublishedIn      <http://www.sdm-lab.com/#%2231%22> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Leadership+Quarterly> ;
         sdm:WrittenBy        sdm:31857231 , sdm:38979717 , sdm:145835903 ;
         sdm:doi              "10.1016%2Fj.leaqua.2020.101385" ;
@@ -2381,14 +2307,7 @@ sdm:748ab9fcc4fdfd82cd22e0a1360ad852c15a4c64
 sdm:21415  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:5923733 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
-
-<http://www.sdm-lab.com/#%2234%22>
-        rdf:type                  sdm:Volume ;
-        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Journal+of+Organizational+Behavior> ;
-        sdm:PublicationRelatedTo  sdm:Psychology ;
-        sdm:issn                  "0123456" ;
-        sdm:volumenumber          "5"^^xsd:int .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:volumenumber  rdf:type  owl:DatatypeProperty ;
         rdfs:domain  sdm:Volume ;
@@ -2420,23 +2339,15 @@ sdm:5422191  rdf:type     sdm:Reviewer ;
         sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2Fj.leaqua.2020.101423This+paper+is+rejected%21> ;
         sdm:h-index       "60"^^xsd:int .
 
-<http://www.sdm-lab.com/#%2285%22>
-        rdf:type                  sdm:Volume ;
-        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Journal+of+Business+Research> ;
-        sdm:PublicationRelatedTo  sdm:Business , sdm:Sociology ;
-        sdm:issn                  "0123456" ;
-        sdm:volumenumber          "5"^^xsd:int .
-
 <http://www.sdm-lab.com/#Journal+of+Business+Ethics>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  <http://www.sdm-lab.com/#Political+Science> , sdm:Business , sdm:Sociology ;
-        sdm:venueHasHandler   sdm:22915 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   <http://www.sdm-lab.com/#Political+Science> , sdm:Business , sdm:Sociology ;
+        sdm:venueHasHandler  sdm:22915 .
 
 sdm:e6ebc91a221d1d0d822b68ea6f269e888873ef1a
         rdf:type             sdm:ShortPaper ;
         sdm:ContainsKeyword  sdm:Psychology ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.5465%2FAMR.2016.0264This+paper+is+rejected%21> ;
-        sdm:PublishedIn      sdm:4 ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Academy+of+Management+Review> ;
         sdm:WrittenBy        sdm:39835700 , sdm:8381772 ;
         sdm:doi              "10.5465%2FAMR.2016.0264" ;
@@ -2450,20 +2361,19 @@ sdm:2202301317  rdf:type  sdm:Author ;
 sdm:12153  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:4128787 , sdm:2239645 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Chair" , "50,000" .
 
 sdm:Paper  rdf:type  owl:Class .
 
 <http://www.sdm-lab.com/#Journal+of+Business+Research>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Sociology , sdm:Business , <http://www.sdm-lab.com/#Political+Science> ;
-        sdm:venueHasHandler   sdm:15220 , sdm:478 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Sociology , sdm:Business , <http://www.sdm-lab.com/#Political+Science> ;
+        sdm:venueHasHandler  sdm:15220 , sdm:478 .
 
 sdm:164e2afbb0a39993581fa3a05530a67c1e3e6da6
         rdf:type             sdm:DemoPaper ;
         sdm:ContainsKeyword  sdm:Education , <http://www.sdm-lab.com/#Computer+Science> ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1002%2Fasi.23696This+paper+is+rejected%21> ;
-        sdm:PublishedIn      <http://www.sdm-lab.com/#%2268%22> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+the+Association+for+Information+Science+and+Technology> ;
         sdm:WrittenBy        sdm:48781924 , sdm:3275586 , sdm:9593910 , sdm:8506433 ;
         sdm:doi              "10.1002%2Fasi.23696" ;
@@ -2487,18 +2397,18 @@ sdm:40790271  rdf:type  sdm:Author ;
 sdm:17569  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:3545916 , sdm:7783900 , sdm:4267122 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 <http://www.sdm-lab.com/#Voxxed+Days+-+Cern>
-        rdf:type                 sdm:Symposium ;
-        sdm:ConferenceRelatedTo  sdm:Business , sdm:Medicine , sdm:Psychology ;
-        sdm:name                 "Voxxed Days - Cern" ;
-        sdm:venueHasHandler      sdm:496 .
+        rdf:type             sdm:Symposium ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Medicine , sdm:Psychology ;
+        sdm:name             "Voxxed Days - Cern" ;
+        sdm:venueHasHandler  sdm:496 .
 
 sdm:18356  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:8113436 , sdm:40102157 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:49598271  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -2566,7 +2476,6 @@ sdm:bff0c902c546e1e40c38c0575f58c505f45aeb16
         rdf:type             sdm:ShortPaper ;
         sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2FJ.HRMR.2018.02.004This+paper+is+rejected%21> ;
-        sdm:PublishedIn      sdm:4 ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Human+Resource+Management+Review> ;
         sdm:WrittenBy        sdm:51439243 , sdm:2345032 , sdm:102979552 ;
         sdm:doi              "10.1016%2FJ.HRMR.2018.02.004" ;
@@ -2591,20 +2500,20 @@ sdm:Handlers  rdf:type   owl:Class ;
         sdm:reviewtext      "This paper is rejected!" .
 
 <http://www.sdm-lab.com/#Academy+of+Management+Journal>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Business , sdm:Psychology ;
-        sdm:venueHasHandler   sdm:6907 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:venueHasHandler  sdm:6907 .
 
 sdm:0   rdf:type                  sdm:Proceeding ;
-        sdm:BelongsToConference   sdm:Jfokus , <http://www.sdm-lab.com/#The+Lead+Developer+New+York> , <http://www.sdm-lab.com/#Agile+Content+Conf> , <http://www.sdm-lab.com/#UX+Riga> ;
-        sdm:PublicationRelatedTo  sdm:Business , <http://www.sdm-lab.com/#Computer+Science> , sdm:Medicine , sdm:Psychology ;
+        sdm:BelongsToConference   <http://www.sdm-lab.com/#Agile+Content+Conf> , <http://www.sdm-lab.com/#The+Lead+Developer+New+York> ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology , <http://www.sdm-lab.com/#Computer+Science> ;
         sdm:edition               "1"^^xsd:int ;
         sdm:issn                  "123450" .
 
 <http://www.sdm-lab.com/#MTZ+worldwide>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Psychology , sdm:Medicine ;
-        sdm:venueHasHandler   sdm:19226 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Psychology , sdm:Medicine ;
+        sdm:venueHasHandler  sdm:19226 .
 
 <http://www.sdm-lab.com/#10.1093%2FOXFORDHB%2F9780199326174.013.0009This+paper+is+rejected%21>
         rdf:type            sdm:Review ;
@@ -2633,13 +2542,16 @@ sdm:2405956  rdf:type     sdm:Reviewer ;
         sdm:WritesReview  <http://www.sdm-lab.com/#10.1186%2Fs40537-023-00703-wThis+paper+is+rejected%21> ;
         sdm:h-index       "60"^^xsd:int .
 
-sdm:Webstock  rdf:type           sdm:Symposium ;
-        sdm:ConferenceRelatedTo  sdm:Business , sdm:Psychology ;
-        sdm:name                 "Webstock" ;
-        sdm:venueHasHandler      sdm:18011 .
+sdm:Webstock  rdf:type       sdm:Symposium ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:name             "Webstock" ;
+        sdm:venueHasHandler  sdm:18011 .
 
 sdm:Proceeding  rdf:type  owl:Class ;
         rdfs:subClassOf  sdm:Publication .
+
+sdm:NamedConcepts  rdf:type  owl:Class ;
+        owl:unionOf  ( sdm:Person sdm:Venue ) .
 
 sdm:5674814  rdf:type     sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:c2c6801d12a32502a4ee691bf1af87e60609a67b ;
@@ -2660,7 +2572,6 @@ sdm:13b326f5a8869bf72b368fbcdabcb3736f77531c
         rdf:type             sdm:DemoPaper ;
         sdm:ContainsKeyword  <http://www.sdm-lab.com/#Computer+Science> ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.3390%2Fijgi12020035This+paper+is+rejected%21> ;
-        sdm:PublishedIn      sdm:3 ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#ISPRS+International+Journal+of+Geo-Information> ;
         sdm:WrittenBy        sdm:31850558 , sdm:113712585 , sdm:98895639 , sdm:2169447913 , sdm:31318811 , sdm:100938668 , sdm:2073665008 ;
         sdm:doi              "10.3390%2Fijgi12020035" ;
@@ -2700,7 +2611,6 @@ sdm:eea884adf9a0ba306967e3764320b1664373a4f7
         rdf:type             sdm:ShortPaper ;
         sdm:ContainsKeyword  sdm:Business ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.28991%2Fesj-2023-07-02-023This+paper+is+rejected%21> ;
-        sdm:PublishedIn      sdm:10 ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Emerging+Science+Journal> ;
         sdm:WrittenBy        sdm:145734978 , sdm:1485644529 , sdm:2209917736 ;
         sdm:doi              "10.28991%2Fesj-2023-07-02-023" ;
@@ -2714,7 +2624,7 @@ sdm:123880806  rdf:type   sdm:Reviewer ;
 sdm:23690  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:3505664 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:51499126  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -2737,14 +2647,14 @@ sdm:114570655  rdf:type  sdm:Author ;
         sdm:name     "Antonia J. Kaluza" .
 
 <http://www.sdm-lab.com/#Typography+Day+2017>
-        rdf:type                 sdm:Regular ;
-        sdm:ConferenceRelatedTo  sdm:Business , sdm:Psychology ;
-        sdm:name                 "Typography Day 2017" ;
-        sdm:venueHasHandler      sdm:18443 .
+        rdf:type             sdm:Regular ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:name             "Typography Day 2017" ;
+        sdm:venueHasHandler  sdm:18443 .
 
 sdm:Sustainability  rdf:type  sdm:Journal ;
-        sdm:JournalRelatedTo  <http://www.sdm-lab.com/#Computer+Science> ;
-        sdm:venueHasHandler   sdm:8363 .
+        sdm:VenueRelatedTo   <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:venueHasHandler  sdm:8363 .
 
 sdm:11276337  rdf:type    sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:411dbf4787f7cbd59ca281e7efbb01e14584507a ;
@@ -2794,7 +2704,7 @@ sdm:6099791  rdf:type  sdm:Author ;
 sdm:478  rdf:type            sdm:Handlers ;
         sdm:AssignsReviewer  sdm:3244528 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:47194058  rdf:type    sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:60df2c1705ba5bdda4d0ec8a563756f39b90a3a6 ;
@@ -2804,7 +2714,7 @@ sdm:47194058  rdf:type    sdm:Reviewer ;
 sdm:21833  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:6203074 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "50,000" .
 
 sdm:9996860  rdf:type     sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:a797c38057fddbf635a2917424f44b5583792813 ;
@@ -2831,20 +2741,19 @@ sdm:47526855  rdf:type  sdm:Author ;
         sdm:h-index  "12"^^xsd:int ;
         sdm:name     "K. Townsend" .
 
-sdm:ee7aaba2e911b3a74e0eb97a14d7028db825945b
-        rdf:type             sdm:Poster ;
-        sdm:ContainsKeyword  sdm:Medicine , sdm:Business , sdm:Psychology ;
-        sdm:HasReview        <http://www.sdm-lab.com/#10.1037%2Fa0029978This+paper+is+rejected%21> ;
-        sdm:PublishedIn      sdm:1 ;
-        sdm:SubmittedIn      <http://www.sdm-lab.com/#Voxxed+Days+-+Zurich> ;
-        sdm:WrittenBy        sdm:33091184 , sdm:145886367 , sdm:3042061 , sdm:3553866 ;
-        sdm:doi              "10.1037%2Fa0029978" ;
-        sdm:title            "Leader-member exchange (LMX) and culture: a meta-analysis of correlates of LMX across 23 countries." .
-
 sdm:5934403  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
         sdm:h-index  "12"^^xsd:int ;
         sdm:name     "Cécile Emery" .
+
+sdm:ee7aaba2e911b3a74e0eb97a14d7028db825945b
+        rdf:type             sdm:Poster ;
+        sdm:ContainsKeyword  sdm:Medicine , sdm:Business , sdm:Psychology ;
+        sdm:HasReview        <http://www.sdm-lab.com/#10.1037%2Fa0029978This+paper+is+rejected%21> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Voxxed+Days+-+Zurich> ;
+        sdm:WrittenBy        sdm:33091184 , sdm:145886367 , sdm:3042061 , sdm:3553866 ;
+        sdm:doi              "10.1037%2Fa0029978" ;
+        sdm:title            "Leader-member exchange (LMX) and culture: a meta-analysis of correlates of LMX across 23 countries." .
 
 sdm:48781924  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -2889,7 +2798,7 @@ sdm:4343376  rdf:type     sdm:Reviewer ;
 sdm:8802  rdf:type           sdm:Handlers ;
         sdm:AssignsReviewer  sdm:4686536 , sdm:48410165 , sdm:13915116 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:2109647517  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -2919,7 +2828,7 @@ sdm:70294020  rdf:type  sdm:Author ;
 sdm:25330  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:153840586 , sdm:144048717 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:9ae8a63742aae79c94a86ab0661a7d8c2971c433
         rdf:type             sdm:Poster ;
@@ -2932,9 +2841,9 @@ sdm:9ae8a63742aae79c94a86ab0661a7d8c2971c433
         sdm:title            "Authentic leadership, creativity, and innovation: A multilevel perspective" .
 
 <http://www.sdm-lab.com/#Psychological+Reports>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Business , sdm:Medicine , sdm:Psychology ;
-        sdm:venueHasHandler   sdm:12967 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Medicine , sdm:Psychology ;
+        sdm:venueHasHandler  sdm:12967 .
 
 sdm:2151438  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -2949,7 +2858,7 @@ sdm:3139520  rdf:type  sdm:Author ;
 sdm:12967  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:11527790 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:2202557717  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -2982,9 +2891,9 @@ sdm:2059151067  rdf:type  sdm:Reviewer ;
         sdm:h-index       "60"^^xsd:int .
 
 <http://www.sdm-lab.com/#Journal+of+the+American+Academy+of+Child+and+Adolescent+Psychiatry>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Medicine , sdm:Psychology ;
-        sdm:venueHasHandler   sdm:19896 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Medicine , sdm:Psychology ;
+        sdm:venueHasHandler  sdm:19896 .
 
 sdm:82126346  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -3014,7 +2923,7 @@ sdm:52205524  rdf:type  sdm:Author ;
 sdm:22797  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:2842899 , sdm:145115681 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Chair" , "50,000" .
 
 <http://www.sdm-lab.com/#10.1016%2Fj.leaqua.2020.101423This+paper+is+rejected%21>
         rdf:type            sdm:Review ;
@@ -3037,9 +2946,9 @@ sdm:2065066749  rdf:type  sdm:Author ;
         sdm:name     "A. Newman" .
 
 <http://www.sdm-lab.com/#Journal+of+Organizational+Behavior>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Business , sdm:Psychology ;
-        sdm:venueHasHandler   sdm:3810 , sdm:25835 , sdm:13372 , sdm:25785 , sdm:18356 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:venueHasHandler  sdm:3810 , sdm:25835 , sdm:13372 , sdm:25785 , sdm:18356 .
 
 sdm:reviewtext  rdf:type  owl:DatatypeProperty ;
         rdfs:domain  sdm:Review ;
@@ -3055,38 +2964,30 @@ sdm:60df2c1705ba5bdda4d0ec8a563756f39b90a3a6
         rdf:type             sdm:DemoPaper ;
         sdm:ContainsKeyword  sdm:Sociology , sdm:Business ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2FJ.JBUSRES.2017.12.011This+paper+is+rejected%21> ;
-        sdm:PublishedIn      <http://www.sdm-lab.com/#%2285%22> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+Business+Research> ;
         sdm:WrittenBy        sdm:2078204993 , sdm:1460041933 , sdm:2091646020 ;
         sdm:doi              "10.1016%2FJ.JBUSRES.2017.12.011" ;
         sdm:title            "A bibliometric analysis of creativity in the field of business economics" .
-
-sdm:2239645  rdf:type     sdm:Reviewer ;
-        sdm:ReviewsPaper  sdm:0d105d6281b13c140581198f1a2d42f905585513 ;
-        sdm:WritesReview  <http://www.sdm-lab.com/#10.1111%2FJASP.12744This+paper+is+rejected%21> ;
-        sdm:h-index       "60"^^xsd:int .
 
 sdm:2202343285  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
         sdm:h-index  "12"^^xsd:int ;
         sdm:name     "Fang Huang" .
 
-<http://www.sdm-lab.com/#%2243%22>
-        rdf:type                  sdm:Volume ;
-        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Social+Behavior+and+Personality> ;
-        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology ;
-        sdm:issn                  "0123456" ;
-        sdm:volumenumber          "5"^^xsd:int .
+sdm:2239645  rdf:type     sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:0d105d6281b13c140581198f1a2d42f905585513 ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1111%2FJASP.12744This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
 
 sdm:24613  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:5414759 , sdm:6002266 , sdm:1398581290 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:8363  rdf:type           sdm:Handlers ;
         sdm:AssignsReviewer  sdm:102898759 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:47321370  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -3104,8 +3005,8 @@ sdm:2056031805  rdf:type  sdm:Author ;
         sdm:reviewtext      "This paper is accepted!" .
 
 sdm:7   rdf:type                  sdm:Volume ;
-        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Journal+of+Business+Research> , sdm:Mathematics ;
-        sdm:PublicationRelatedTo  <http://www.sdm-lab.com/#Political+Science> , sdm:Business , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:BelongsToJournal      sdm:Mathematics ;
+        sdm:PublicationRelatedTo  sdm:Business , <http://www.sdm-lab.com/#Computer+Science> ;
         sdm:issn                  "0123456" ;
         sdm:volumenumber          "5"^^xsd:int .
 
@@ -3137,7 +3038,7 @@ sdm:8250249  rdf:type  sdm:Author ;
 sdm:25785  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:49176435 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:7989587  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -3152,14 +3053,7 @@ sdm:7783900  rdf:type     sdm:Reviewer ;
 sdm:6861  rdf:type           sdm:Handlers ;
         sdm:AssignsReviewer  sdm:40206711 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
-
-<http://www.sdm-lab.com/#%2241%22>
-        rdf:type                  sdm:Volume ;
-        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Journal+of+Management> ;
-        sdm:PublicationRelatedTo  sdm:Business , sdm:Sociology ;
-        sdm:issn                  "0123456" ;
-        sdm:volumenumber          "5"^^xsd:int .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:32820173  rdf:type    sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:9679912b1386a04b793841ce3fb45de05a938676 ;
@@ -3169,7 +3063,7 @@ sdm:32820173  rdf:type    sdm:Reviewer ;
 sdm:19232  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:5740228 , sdm:32820173 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:5275773  rdf:type     sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:ad0beaa0e79a9b95e4de41cd855b7f7f76a8eb7a ;
@@ -3199,7 +3093,7 @@ sdm:66485074  rdf:type    sdm:Reviewer ;
 sdm:12639  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:5674814 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Chair" , "50,000" .
 
 sdm:Medicine  rdf:type        sdm:Keyword ;
         sdm:KeywordRelatedTo  sdm:Medicine ;
@@ -3211,15 +3105,14 @@ sdm:115195611  rdf:type  sdm:Author ;
         sdm:name     "A. F. Marstand" .
 
 <http://www.sdm-lab.com/#Personnel+Psychology>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Business , sdm:Psychology ;
-        sdm:venueHasHandler   sdm:21415 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:venueHasHandler  sdm:21415 .
 
 sdm:94943d22fce7877f2089f0a9afb90eb7fc2352ee
         rdf:type             sdm:DemoPaper ;
         sdm:ContainsKeyword  sdm:Medicine ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1080%2F02648725.2023.2168910This+paper+is+rejected%21> ;
-        sdm:PublishedIn      sdm:10 ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Biotechnology+%26+genetic+engineering+reviews> ;
         sdm:WrittenBy        sdm:2202301317 , sdm:2128105366 , sdm:2202557717 , sdm:2202243185 , sdm:2056031805 , sdm:2202343285 , sdm:2175394071 , sdm:2155813745 , sdm:2202347418 , sdm:2202163148 , sdm:3626548 ;
         sdm:doi              "10.1080%2F02648725.2023.2168910" ;
@@ -3276,10 +3169,10 @@ sdm:1401569491  rdf:type  sdm:Reviewer ;
         sdm:h-index       "60"^^xsd:int .
 
 <http://www.sdm-lab.com/#The+Lead+Developer+New+York>
-        rdf:type                 sdm:Symposium ;
-        sdm:ConferenceRelatedTo  sdm:Sociology , sdm:Business , sdm:Psychology , <http://www.sdm-lab.com/#Computer+Science> ;
-        sdm:name                 "The Lead Developer New York" ;
-        sdm:venueHasHandler      sdm:20876 .
+        rdf:type             sdm:Symposium ;
+        sdm:VenueRelatedTo   sdm:Sociology , sdm:Business , sdm:Psychology , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:name             "The Lead Developer New York" ;
+        sdm:venueHasHandler  sdm:20876 .
 
 sdm:48410165  rdf:type    sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:0e32f5cebc15a0ac3ae39f99856037c22eff83f9 ;
@@ -3289,7 +3182,7 @@ sdm:48410165  rdf:type    sdm:Reviewer ;
 sdm:2640  rdf:type           sdm:Handlers ;
         sdm:AssignsReviewer  sdm:3222019 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:3484325  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -3319,19 +3212,12 @@ sdm:40018541  rdf:type    sdm:Reviewer ;
 sdm:9968  rdf:type           sdm:Handlers ;
         sdm:AssignsReviewer  sdm:40602322 , sdm:3729856 , sdm:4191459 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:1400987196  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
         sdm:h-index  "12"^^xsd:int ;
         sdm:name     "A. Bos‐Nehles" .
-
-<http://www.sdm-lab.com/#%2255%22>
-        rdf:type                  sdm:Volume ;
-        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Academy+of+Management+Journal> ;
-        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology ;
-        sdm:issn                  "0123456" ;
-        sdm:volumenumber          "5"^^xsd:int .
 
 sdm:3545916  rdf:type     sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:4aed298f7914d85b71cc96ede1a53a0119dbb966 ;
@@ -3353,9 +3239,9 @@ sdm:1422425649  rdf:type  sdm:Reviewer ;
         sdm:h-index       "60"^^xsd:int .
 
 sdm:2   rdf:type                  sdm:Volume , sdm:Proceeding ;
-        sdm:BelongsToConference   sdm:Script17 , sdm:Webstock , sdm:Jfokus , <http://www.sdm-lab.com/#The+Rolling+Scopes+Conference> , <http://www.sdm-lab.com/#The+Lead+Developer+New+York> ;
+        sdm:BelongsToConference   <http://www.sdm-lab.com/#The+Rolling+Scopes+Conference> ;
         sdm:BelongsToJournal      <http://www.sdm-lab.com/#Journal+of+Organizational+Behavior> ;
-        sdm:PublicationRelatedTo  sdm:Sociology , sdm:Medicine , sdm:Psychology , sdm:Business , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:PublicationRelatedTo  sdm:Medicine , sdm:Psychology , sdm:Business ;
         sdm:edition               "1"^^xsd:int ;
         sdm:issn                  "0123456" , "123450" ;
         sdm:volumenumber          "5"^^xsd:int .
@@ -3393,7 +3279,7 @@ sdm:7653268  rdf:type  sdm:Author ;
 sdm:18704  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:2067765648 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:2155813745  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -3403,7 +3289,7 @@ sdm:2155813745  rdf:type  sdm:Author ;
 sdm:17963  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:104228748 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:3275586  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -3428,19 +3314,12 @@ sdm:114130900  rdf:type   sdm:Reviewer ;
 sdm:13862  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:9996860 , sdm:118224089 , sdm:2057073663 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:5949814  rdf:type     sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:3286d652031571d504f78ab989e0263f759e4e12 ;
         sdm:WritesReview  <http://www.sdm-lab.com/#10.1111%2Fj.1035-6851.2001.249-13.xThis+paper+is+accepted%21> ;
         sdm:h-index       "60"^^xsd:int .
-
-<http://www.sdm-lab.com/#%2218%22>
-        rdf:type                  sdm:Volume ;
-        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Organizational+Research+Methods> ;
-        sdm:PublicationRelatedTo  sdm:Business , <http://www.sdm-lab.com/#Computer+Science> ;
-        sdm:issn                  "0123456" ;
-        sdm:volumenumber          "5"^^xsd:int .
 
 sdm:122403081  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -3450,7 +3329,7 @@ sdm:122403081  rdf:type  sdm:Author ;
 sdm:10003  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:2114271935 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:100693056  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -3460,7 +3339,7 @@ sdm:100693056  rdf:type  sdm:Author ;
 sdm:688  rdf:type            sdm:Handlers ;
         sdm:AssignsReviewer  sdm:1796135 , sdm:10378489 , sdm:1851595 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Chair" , "50,000" .
 
 <http://www.sdm-lab.com/#10.1016%2Fj.jbusres.2019.09.052This+paper+is+rejected%21>
         rdf:type            sdm:Review ;
@@ -3475,7 +3354,7 @@ sdm:15390666  rdf:type    sdm:Reviewer ;
 sdm:25835  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:4143816 , sdm:2870936 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 <http://www.sdm-lab.com/#10.1002%2FJOB.1888This+paper+is+rejected%21>
         rdf:type            sdm:Review ;
@@ -3502,19 +3381,6 @@ sdm:4261209  rdf:type     sdm:Reviewer ;
         sdm:WritesReview  <http://www.sdm-lab.com/#10.1002%2FJOB.1885This+paper+is+accepted%21> ;
         sdm:h-index       "60"^^xsd:int .
 
-<http://www.sdm-lab.com/#%2269%22>
-        rdf:type                  sdm:Volume ;
-        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Human+Relations> ;
-        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology ;
-        sdm:issn                  "0123456" ;
-        sdm:volumenumber          "5"^^xsd:int .
-
-sdm:ConferenceRelatedTo
-        rdf:type     owl:ObjectProperty ;
-        rdfs:domain  sdm:Conference ;
-        rdfs:label   "A Conference is related to an area"@en ;
-        rdfs:range   sdm:Area .
-
 sdm:3956702  rdf:type     sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:e5dd05fd5bbf4e4ace0cb2bf20e4695abbf36a01 ;
         sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2017.10.002This+paper+is+accepted%21> ;
@@ -3536,52 +3402,45 @@ sdm:dae4a6e0d6bf612993b608e2e556a3c91ff8b56f
         sdm:title            "Antecedents and outcomes of organizational support for development: the critical role of career opportunities." .
 
 <http://www.sdm-lab.com/#American+Association+for+Cancer+Research+%28AACR%29>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Economics ;
-        sdm:venueHasHandler   sdm:14043 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Economics ;
+        sdm:venueHasHandler  sdm:14043 .
 
 <http://www.sdm-lab.com/#Biotechnology+%26+genetic+engineering+reviews>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Medicine ;
-        sdm:venueHasHandler   sdm:6861 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Medicine ;
+        sdm:venueHasHandler  sdm:6861 .
 
 sdm:18011  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:50744658 , sdm:27581584 , sdm:5275773 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Chair" , "50,000" .
 
 <http://www.sdm-lab.com/#Agile+Content+Conf>
-        rdf:type                 sdm:Workshop ;
-        sdm:ConferenceRelatedTo  sdm:Business , sdm:Psychology ;
-        sdm:name                 "Agile Content Conf" ;
-        sdm:venueHasHandler      sdm:6562 .
+        rdf:type             sdm:Workshop ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:name             "Agile Content Conf" ;
+        sdm:venueHasHandler  sdm:6562 .
 
 sdm:19226  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:5949814 , sdm:114484442 , sdm:7308371 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 <http://www.sdm-lab.com/#Academy+of+Management+Review>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Business , sdm:Psychology ;
-        sdm:venueHasHandler   sdm:9981 , sdm:3231 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:venueHasHandler  sdm:9981 , sdm:3231 .
 
 sdm:2533  rdf:type           sdm:Handlers ;
         sdm:AssignsReviewer  sdm:2059505766 , sdm:49536533 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 <http://www.sdm-lab.com/#10.1016%2FJ.JBUSRES.2021.03.032This+paper+is+accepted%21>
         rdf:type            sdm:Review ;
         sdm:reviewdecision  "ACCEPTED" ;
         sdm:reviewtext      "This paper is accepted!" .
-
-<http://www.sdm-lab.com/#%2267%22>
-        rdf:type                  sdm:Volume ;
-        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Revue+Europ%C3%A9enne+de+Psychologie+Appliqu%C3%A9e> ;
-        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology ;
-        sdm:issn                  "0123456" ;
-        sdm:volumenumber          "5"^^xsd:int .
 
 sdm:2202243185  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -3606,7 +3465,7 @@ sdm:8257688  rdf:type  sdm:Author ;
 sdm:20243  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:48792606 , sdm:50660087 , sdm:1403390172 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:121775430  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -3624,7 +3483,7 @@ sdm:4387556  rdf:type     sdm:Reviewer ;
 sdm:3231  rdf:type           sdm:Handlers ;
         sdm:AssignsReviewer  sdm:1486062441 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:8572229  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -3642,9 +3501,9 @@ sdm:143976706  rdf:type  sdm:Author ;
         sdm:name     "Nitesh Pandey" .
 
 <http://www.sdm-lab.com/#Journal+of+Management>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Sociology , sdm:Business , sdm:Psychology ;
-        sdm:venueHasHandler   sdm:17569 , sdm:2533 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Sociology , sdm:Business , sdm:Psychology ;
+        sdm:venueHasHandler  sdm:17569 , sdm:2533 .
 
 <http://www.sdm-lab.com/#%2265%22>
         rdf:type                  sdm:Volume ;
@@ -3663,9 +3522,9 @@ sdm:39456927  rdf:type  sdm:Author ;
         sdm:h-index  "12"^^xsd:int ;
         sdm:name     "Dorothy R. Carter" .
 
-sdm:bioRxiv  rdf:type         sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Biology ;
-        sdm:venueHasHandler   sdm:2640 .
+sdm:bioRxiv  rdf:type        sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Biology ;
+        sdm:venueHasHandler  sdm:2640 .
 
 sdm:40345999  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -3684,17 +3543,17 @@ sdm:144558668  rdf:type   sdm:Reviewer ;
 sdm:3862  rdf:type           sdm:Handlers ;
         sdm:AssignsReviewer  sdm:5011222 , sdm:11276337 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:14043  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:144558668 , sdm:14745040 , sdm:2065362201 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:23484  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:1401569491 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 <http://www.sdm-lab.com/#10.1002%2FJOB.1885This+paper+is+accepted%21>
         rdf:type            sdm:Review ;
@@ -3704,7 +3563,7 @@ sdm:23484  rdf:type          sdm:Handlers ;
 sdm:16176  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:3056908 , sdm:12377308 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:cfd0400973b9215ac96ef918c6ea2215b845571a
         rdf:type             sdm:Poster ;
@@ -3752,9 +3611,9 @@ sdm:6015019  rdf:type     sdm:Reviewer ;
         sdm:reviewtext      "This paper is rejected!" .
 
 <http://www.sdm-lab.com/#Journal+of+Big+Data>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  <http://www.sdm-lab.com/#Computer+Science> ;
-        sdm:venueHasHandler   sdm:8170 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:venueHasHandler  sdm:8170 .
 
 sdm:SubmittedIn  rdf:type  owl:ObjectProperty ;
         rdfs:domain  sdm:Paper ;
@@ -3803,7 +3662,7 @@ sdm:Person  rdf:type  owl:Class .
 sdm:222  rdf:type            sdm:Handlers ;
         sdm:AssignsReviewer  sdm:2077080625 , sdm:2059151067 , sdm:3129735 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 <http://www.sdm-lab.com/#10.1016%2Fj.leaqua.2020.101385This+paper+is+rejected%21>
         rdf:type            sdm:Review ;
@@ -3816,7 +3675,7 @@ sdm:DemoPaper  rdf:type  owl:Class ;
 sdm:13372  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:4261209 , sdm:4671716 , sdm:37129844 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 sdm:31318811  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -3838,7 +3697,7 @@ sdm:2194885794  rdf:type  sdm:Reviewer ;
 sdm:15220  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:47194058 , sdm:2433744 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Editor" , "50,000" .
 
 <http://www.sdm-lab.com/#10.1080%2F02648725.2023.2168910This+paper+is+rejected%21>
         rdf:type            sdm:Review ;
@@ -3859,12 +3718,6 @@ sdm:1392514324  rdf:type  sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:32bec1f7d14c5767c3f8a8c901d99e3ac26b3264 ;
         sdm:WritesReview  <http://www.sdm-lab.com/#10.1177%2F15480518211041629This+paper+is+rejected%21> ;
         sdm:h-index       "60"^^xsd:int .
-
-sdm:9   rdf:type                  sdm:Volume ;
-        sdm:BelongsToJournal      <http://www.sdm-lab.com/#American+Association+for+Cancer+Research+%28AACR%29> ;
-        sdm:PublicationRelatedTo  sdm:Economics ;
-        sdm:issn                  "0123456" ;
-        sdm:volumenumber          "5"^^xsd:int .
 
 sdm:5740228  rdf:type     sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:9679912b1386a04b793841ce3fb45de05a938676 ;
@@ -3902,7 +3755,7 @@ sdm:3095755  rdf:type  sdm:Author ;
 sdm:23843  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:1754942 , sdm:1393567274 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Chair" , "50,000" .
 
 sdm:2109971529  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -3930,7 +3783,6 @@ sdm:95c7559eabc7c16ca0c2c7fa113a944574547f59
         rdf:type             sdm:Fullpaper ;
         sdm:ContainsKeyword  sdm:Psychology ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1002%2FJOB.1888This+paper+is+rejected%21> ;
-        sdm:PublishedIn      <http://www.sdm-lab.com/#%2234%22> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+Organizational+Behavior> ;
         sdm:WrittenBy        sdm:3128421 , sdm:40790271 , sdm:40806683 , sdm:144229104 ;
         sdm:doi              "10.1002%2FJOB.1888" ;
@@ -3990,7 +3842,7 @@ sdm:afd5014cfb7653a0bb004a2075077c4241c0689b
 sdm:16913  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:5422191 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "50,000" .
 
 <http://www.sdm-lab.com/#10.1177%2F0018726715597481This+paper+is+rejected%21>
         rdf:type            sdm:Review ;
@@ -4014,15 +3866,15 @@ sdm:90244165  rdf:type  sdm:Author ;
 
 <http://www.sdm-lab.com/#%2229%22>
         rdf:type                  sdm:Volume ;
-        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Leadership+Quarterly> , <http://www.sdm-lab.com/#Journal+of+Leadership+%26+Organizational+Studies> , <http://www.sdm-lab.com/#Medical+Science+Monitor+%3A+International+Medical+Journal+of+Experimental+and+Clinical+Research> ;
-        sdm:PublicationRelatedTo  sdm:Psychology , sdm:Business , sdm:Medicine ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Leadership+Quarterly> , <http://www.sdm-lab.com/#Medical+Science+Monitor+%3A+International+Medical+Journal+of+Experimental+and+Clinical+Research> ;
+        sdm:PublicationRelatedTo  sdm:Psychology , sdm:Medicine ;
         sdm:issn                  "0123456" ;
         sdm:volumenumber          "5"^^xsd:int .
 
 <http://www.sdm-lab.com/#European+Journal+of+Work+and+Organizational+Psychology>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Business , sdm:Psychology ;
-        sdm:venueHasHandler   sdm:19232 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:venueHasHandler  sdm:19232 .
 
 sdm:6038454  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -4055,8 +3907,8 @@ sdm:8507ff8f866fbe01eb784f23d3bcf84f686c0300
         sdm:title            "The Visible Colleges of Management and Organization Studies: A Bibliometric Analysis of Academic Journals" .
 
 sdm:4   rdf:type                  sdm:Volume ;
-        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Academy+of+Management+Review> , <http://www.sdm-lab.com/#Human+Resource+Management+Review> , <http://www.sdm-lab.com/#Economic+and+Business+Review> ;
-        sdm:PublicationRelatedTo  sdm:Psychology , sdm:Business , sdm:Sociology ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Economic+and+Business+Review> ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Sociology ;
         sdm:issn                  "0123456" ;
         sdm:volumenumber          "5"^^xsd:int .
 
@@ -4076,9 +3928,9 @@ sdm:145349578  rdf:type  sdm:Author ;
         sdm:name     "G. Aarons" .
 
 <http://www.sdm-lab.com/#Human+Resource+Management+Review>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Business , sdm:Psychology ;
-        sdm:venueHasHandler   sdm:1339 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:venueHasHandler  sdm:1339 .
 
 sdm:49821654  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -4091,9 +3943,7 @@ sdm:16052649  rdf:type    sdm:Reviewer ;
         sdm:h-index       "60"^^xsd:int .
 
 sdm:name  rdf:type   owl:DatatypeProperty ;
-        rdfs:domain  [ rdf:type     owl:Class ;
-                       owl:unionOf  ( sdm:Person sdm:Venue )
-                     ] ;
+        rdfs:domain  sdm:NamedConcepts ;
         rdfs:label   "A person/venue has a name"@en ;
         rdfs:range   xsd:string .
 
@@ -4101,7 +3951,6 @@ sdm:7f6b6ce19d8bc00df9f3ee1060f26222c80e52a2
         rdf:type             sdm:Poster ;
         sdm:ContainsKeyword  sdm:Psychology , sdm:Business ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2Fj.leaqua.2020.101423This+paper+is+rejected%21> ;
-        sdm:PublishedIn      sdm:0 ;
         sdm:SubmittedIn      sdm:Jfokus ;
         sdm:WrittenBy        sdm:2387226 , sdm:102979552 , sdm:2126812 , sdm:49598271 ;
         sdm:doi              "10.1016%2Fj.leaqua.2020.101423" ;
@@ -4140,14 +3989,14 @@ sdm:46232420  rdf:type  sdm:Author ;
         sdm:name     "John H. Batchelor" .
 
 <http://www.sdm-lab.com/#Social+Behavior+and+Personality>
-        rdf:type              sdm:Journal ;
-        sdm:JournalRelatedTo  sdm:Business , sdm:Psychology ;
-        sdm:venueHasHandler   sdm:23484 .
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:venueHasHandler  sdm:23484 .
 
 sdm:18443  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:3037825 , sdm:144241701 ;
         sdm:h-index          "90"^^xsd:int ;
-        sdm:role             "50,000" , "CTO" .
+        sdm:role             "Chair" , "50,000" .
 
 <http://www.sdm-lab.com/#10.1037%2Fa0021484This+paper+is+accepted%21>
         rdf:type            sdm:Review ;

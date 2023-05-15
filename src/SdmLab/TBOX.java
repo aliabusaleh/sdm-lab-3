@@ -15,24 +15,25 @@ public class TBOX {
     public static void createAndSaveTBOX() {
 
         try {
-            OntModel model = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM);
+            OntModel model = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM);
             String Base_url = "http://www.sdm-lab.com/#";
+            model.setNsPrefix("sdm", Base_url);
 
             /**
              * Venue ontology
              * it's about the Venue and related sub clasees
              */
 
-            OntClass venue = model.createClass(Base_url + "Venue");
+            OntClass venue = model.createClass(model.getNsPrefixURI("sdm") + "Venue");
             // Journal part
-            OntClass journal = model.createClass(Base_url + "Journal");
+            OntClass journal = model.createClass(model.getNsPrefixURI("sdm") + "Journal");
 
             // conference part
-            OntClass conference = model.createClass(Base_url + "Conference");
-            OntClass symposium = model.createClass(Base_url + "Symposium");
-            OntClass expertGroup = model.createClass(Base_url + "ExpertGroup");
-            OntClass workshop = model.createClass(Base_url + "Workshop");
-            OntClass regular = model.createClass(Base_url + "Regular");
+            OntClass conference = model.createClass(model.getNsPrefixURI("sdm") + "Conference");
+            OntClass symposium = model.createClass(model.getNsPrefixURI("sdm") + "Symposium");
+            OntClass expertGroup = model.createClass(model.getNsPrefixURI("sdm") + "ExpertGroup");
+            OntClass workshop = model.createClass(model.getNsPrefixURI("sdm") + "Workshop");
+            OntClass regular = model.createClass(model.getNsPrefixURI("sdm") + "Regular");
 
             // add dependencies between them
             venue.addSubClass(conference);
@@ -49,10 +50,10 @@ public class TBOX {
              */
 
             // main classes
-            OntClass person = model.createClass(Base_url + "Person");
-            OntClass handlers = model.createClass(Base_url + "Handlers");
-            OntClass author = model.createClass(Base_url + "Author");
-            OntClass reviewer = model.createClass(Base_url + "Reviewer");
+            OntClass person = model.createClass(model.getNsPrefixURI("sdm") + "Person");
+            OntClass handlers = model.createClass(model.getNsPrefixURI("sdm") + "Handlers");
+            OntClass author = model.createClass(model.getNsPrefixURI("sdm") + "Author");
+            OntClass reviewer = model.createClass(model.getNsPrefixURI("sdm") + "Reviewer");
 
             // create dependencies
             person.addSubClass(handlers);
@@ -66,11 +67,11 @@ public class TBOX {
              */
 
             // main classes
-            OntClass paper = model.createClass(Base_url + "Paper");
-            OntClass full_paper = model.createClass(Base_url + "Fullpaper");
-            OntClass short_paper = model.createClass(Base_url + "ShortPaper");
-            OntClass demo_paper = model.createClass(Base_url + "DemoPaper");
-            OntClass poster = model.createClass(Base_url + "Poster");
+            OntClass paper = model.createClass(model.getNsPrefixURI("sdm") + "Paper");
+            OntClass full_paper = model.createClass(model.getNsPrefixURI("sdm") + "Fullpaper");
+            OntClass short_paper = model.createClass(model.getNsPrefixURI("sdm") + "ShortPaper");
+            OntClass demo_paper = model.createClass(model.getNsPrefixURI("sdm") + "DemoPaper");
+            OntClass poster = model.createClass(model.getNsPrefixURI("sdm") + "Poster");
 
             // create dependencies
             paper.addSubClass(full_paper);
@@ -82,11 +83,11 @@ public class TBOX {
              * Publication related ontology
              */
             // main classes
-            OntClass area = model.createClass(Base_url + "Area");
-            OntClass publication = model.createClass(Base_url + "Publication");
-            OntClass volume = model.createClass(Base_url + "Volume");
-            OntClass proceeding = model.createClass(Base_url + "Proceeding");
-            OntClass keyword = model.createClass(Base_url + "Keyword");
+            OntClass area = model.createClass(model.getNsPrefixURI("sdm") + "Area");
+            OntClass publication = model.createClass(model.getNsPrefixURI("sdm") + "Publication");
+            OntClass volume = model.createClass(model.getNsPrefixURI("sdm") + "Volume");
+            OntClass proceeding = model.createClass(model.getNsPrefixURI("sdm") + "Proceeding");
+            OntClass keyword = model.createClass(model.getNsPrefixURI("sdm") + "Keyword");
 
             // create dependencies
             publication.addSubClass(volume);
@@ -97,7 +98,7 @@ public class TBOX {
              */
 
             // main classes
-            OntClass review = model.createClass(Base_url + "Review");
+            OntClass review = model.createClass(model.getNsPrefixURI("sdm") + "Review");
 
             /************************************************************************************************************/
 
@@ -105,82 +106,78 @@ public class TBOX {
              * Ontology Properties
              */
 
-            ObjectProperty assignsReviewer = model.createObjectProperty( Base_url + "AssignsReviewer");
+            ObjectProperty assignsReviewer = model.createObjectProperty( model.getNsPrefixURI("sdm") + "AssignsReviewer");
             assignsReviewer.addDomain(handlers);
             assignsReviewer.addRange(reviewer);
             assignsReviewer.addLabel("Handlers assigns reviewer for a paper", "en");
 
-            ObjectProperty venueHasHandler = model.createObjectProperty( Base_url + "venueHasHandler");
+            ObjectProperty venueHasHandler = model.createObjectProperty( model.getNsPrefixURI("sdm") + "venueHasHandler");
             venueHasHandler.addDomain(venue);
             venueHasHandler.addRange(handlers);
             venueHasHandler.addLabel("Each venue has a handler", "en");
 
-            ObjectProperty writesReview = model.createObjectProperty(Base_url + "WritesReview");
+            ObjectProperty writesReview = model.createObjectProperty(model.getNsPrefixURI("sdm") + "WritesReview");
             writesReview.addDomain(reviewer);
             writesReview.addRange(review);
             writesReview.addLabel("Reviewer write a review", "en");
 
-            ObjectProperty reviewsPaper = model.createObjectProperty(Base_url + "ReviewsPaper");
+            ObjectProperty reviewsPaper = model.createObjectProperty(model.getNsPrefixURI("sdm") + "ReviewsPaper");
             reviewsPaper.addDomain(reviewer);
             reviewsPaper.addRange(paper);
             reviewsPaper.addLabel("Reviewer reviews a paper", "en");
 
 
-            ObjectProperty writtenBy = model.createObjectProperty(Base_url + "WrittenBy");
+            ObjectProperty writtenBy = model.createObjectProperty(model.getNsPrefixURI("sdm") + "WrittenBy");
             writtenBy.addDomain(paper);
             writtenBy.addRange(author);
             writtenBy.addLabel("A paper is written by an author", "en");
 
-            ObjectProperty publishedIn = model.createObjectProperty(Base_url + "PublishedIn");
+            ObjectProperty publishedIn = model.createObjectProperty(model.getNsPrefixURI("sdm") + "PublishedIn");
             publishedIn.addDomain(paper);
             publishedIn.addRange(publication);
             publishedIn.addLabel("A paper is published in a publication", "en");
 
-            ObjectProperty publicationRelatedTo = model.createObjectProperty(Base_url + "PublicationRelatedTo");
+            ObjectProperty publicationRelatedTo = model.createObjectProperty(model.getNsPrefixURI("sdm") + "PublicationRelatedTo");
             publicationRelatedTo.addDomain(publication);
             publicationRelatedTo.addRange(area);
             publicationRelatedTo.addLabel("A publication is related to an area", "en");
 
-            ObjectProperty containsKeyword = model.createObjectProperty(Base_url + "ContainsKeyword");
+            ObjectProperty containsKeyword = model.createObjectProperty(model.getNsPrefixURI("sdm") + "ContainsKeyword");
             containsKeyword.addDomain(paper);
             containsKeyword.addRange(keyword);
             containsKeyword.addLabel("A Paper contains keywords", "en");
 
-            ObjectProperty keywordRelatedTo = model.createObjectProperty(Base_url + "KeywordRelatedTo");
+            ObjectProperty keywordRelatedTo = model.createObjectProperty(model.getNsPrefixURI("sdm") + "KeywordRelatedTo");
             keywordRelatedTo.addDomain(keyword);
             keywordRelatedTo.addRange(area);
             keywordRelatedTo.addLabel("A Keyword is related to an area", "en");
 
 
-            ObjectProperty journalRelatedTo = model.createObjectProperty(Base_url + "JournalRelatedTo");
-            journalRelatedTo.addDomain(journal);
-            journalRelatedTo.addRange(area);
-            journalRelatedTo.addLabel("A Journal is related to an area", "en");
+            ObjectProperty venueRelatedTo = model.createObjectProperty(model.getNsPrefixURI("sdm") + "VenueRelatedTo");
+            venueRelatedTo.addDomain(venue);
+            venueRelatedTo.addRange(area);
+            venueRelatedTo.addLabel("A Venue is related to an area", "en");
 
-            ObjectProperty conferenceRelatedTo = model.createObjectProperty(Base_url + "ConferenceRelatedTo");
-            conferenceRelatedTo.addDomain(conference);
-            conferenceRelatedTo.addRange(area);
-            conferenceRelatedTo.addLabel("A Conference is related to an area", "en");
 
-            ObjectProperty belongsToJournal = model.createObjectProperty(Base_url + "BelongsToJournal");
+            ObjectProperty belongsToJournal = model.createObjectProperty(model.getNsPrefixURI("sdm") + "BelongsToJournal");
             belongsToJournal.addDomain(volume);
             belongsToJournal.addRange(journal);
             belongsToJournal.addLabel("A volume belongs to a journal", "en");
 
-            ObjectProperty belongsToConference = model.createObjectProperty(Base_url + "BelongsToConference");
+            ObjectProperty belongsToConference = model.createObjectProperty(model.getNsPrefixURI("sdm") + "BelongsToConference");
             belongsToConference.addDomain(proceeding);
             belongsToConference.addRange(conference);
             belongsToConference.addLabel("A proceeding belongs to a conference", "en");
 
 
-            ObjectProperty hasReview = model.createObjectProperty(Base_url + "HasReview");
+            ObjectProperty hasReview = model.createObjectProperty(model.getNsPrefixURI("sdm") + "HasReview");
             hasReview.addDomain(paper);
             hasReview.addRange(review);
             hasReview.addLabel("A paper has a review", "en");
 
 
 
-            ObjectProperty submittedIn = model.createObjectProperty(Base_url + "SubmittedIn");
+            ObjectProperty submittedIn = model.createObjectProperty(model.getNsPrefixURI("sdm") + "SubmittedIn");
             submittedIn.addDomain(paper);
             submittedIn.addRange(venue);
             submittedIn.addLabel("A paper submitted in a venue", "en");
@@ -192,89 +189,89 @@ public class TBOX {
              * DatatypeProperty
              */
 
-            DatatypeProperty affiliation = model.createDatatypeProperty( Base_url + "affiliation");
+            DatatypeProperty affiliation = model.createDatatypeProperty( model.getNsPrefixURI("sdm") + "affiliation");
             affiliation.addDomain(person);
             affiliation.addRange(XSD.xstring);
             affiliation.addLabel("A person is affiliated to some organization/university ..etc", "en");
 
-            DatatypeProperty doi = model.createDatatypeProperty(Base_url + "doi");
+            DatatypeProperty doi = model.createDatatypeProperty(model.getNsPrefixURI("sdm") + "doi");
             doi.addDomain(paper);
             doi.addRange(XSD.xstring);
             doi.addLabel("A paper has a DOI", "en");
 
 
-            DatatypeProperty edition = model.createDatatypeProperty(Base_url + "edition");
+            DatatypeProperty edition = model.createDatatypeProperty(model.getNsPrefixURI("sdm") + "edition");
             edition.addDomain(proceeding);
             edition.addRange(XSD.integer);
             edition.addLabel("A proceeding has an edition ", "en");
 
-            DatatypeProperty h_index = model.createDatatypeProperty(Base_url + "h-index");
+            DatatypeProperty h_index = model.createDatatypeProperty(model.getNsPrefixURI("sdm") + "h-index");
             h_index.addDomain(person);
             h_index.addRange(XSD.integer);
             h_index.addLabel("A person has an h-index", "en");
 
-            DatatypeProperty issn = model.createDatatypeProperty(Base_url + "issn");
+            DatatypeProperty issn = model.createDatatypeProperty(model.getNsPrefixURI("sdm") + "issn");
             issn.addDomain(publication);
             issn.addRange(XSD.xstring);
             issn.addLabel("A publication has an issn ( identifier)", "en");
 
-            DatatypeProperty domain = model.createDatatypeProperty(Base_url + "domain");
+            DatatypeProperty domain = model.createDatatypeProperty(model.getNsPrefixURI("sdm") + "domain");
             domain.addDomain(keyword);
             domain.addRange(XSD.xstring);
             domain.addLabel("A keyword has a domain", "en");
 
-            DatatypeProperty name = model.createDatatypeProperty(Base_url + "name");
-            UnionClass unionClass = model.createUnionClass(null, model.createList(person, venue));
+            DatatypeProperty name = model.createDatatypeProperty(model.getNsPrefixURI("sdm") + "name");
+            UnionClass unionClass = model.createUnionClass(model.getNsPrefixURI("sdm")  + "NamedConcepts", model.createList(person, venue));
             name.addDomain(unionClass);
             name.addRange(XSD.xstring);
             name.addLabel("A person/venue has a name", "en");
 
-            DatatypeProperty Bday = model.createDatatypeProperty(Base_url + "Bday");
+            DatatypeProperty Bday = model.createDatatypeProperty(model.getNsPrefixURI("sdm") + "Bday");
             Bday.addDomain(person);
             Bday.addRange(XSD.xstring);
             Bday.addLabel("A person has a bDay", "en");
 
 
 
-            DatatypeProperty reviewdecision = model.createDatatypeProperty(Base_url + "reviewdecision");
+            DatatypeProperty reviewdecision = model.createDatatypeProperty(model.getNsPrefixURI("sdm") + "reviewdecision");
             reviewdecision.addDomain(review);
             reviewdecision.addRange(XSD.xstring);
             reviewdecision.addLabel("A review has a decision ACCEPTED/REJECTED", "en");
 
-            DatatypeProperty reviewtext = model.createDatatypeProperty(Base_url + "reviewtext");
+            DatatypeProperty reviewtext = model.createDatatypeProperty(model.getNsPrefixURI("sdm") + "reviewtext");
             reviewtext.addDomain(review);
             reviewtext.addRange(XSD.xstring);
             reviewtext.addLabel("A review has a text", "en");
 
 
-            DatatypeProperty role = model.createDatatypeProperty(Base_url + "role");
+            DatatypeProperty role = model.createDatatypeProperty(model.getNsPrefixURI("sdm") + "role");
             role.addDomain(handlers);
             role.addRange(XSD.xstring);
             role.addLabel("A handler has a role", "en");
 
-            DatatypeProperty salary = model.createDatatypeProperty(Base_url + "salary");
+            DatatypeProperty salary = model.createDatatypeProperty(model.getNsPrefixURI("sdm") + "salary");
             salary.addDomain(handlers);
             salary.addRange(XSD.xstring);
             salary.addLabel("A handler has a salary", "en");
 
-            DatatypeProperty title = model.createDatatypeProperty(Base_url + "title");
+            DatatypeProperty title = model.createDatatypeProperty(model.getNsPrefixURI("sdm") + "title");
             title.addDomain(paper);
             title.addRange(XSD.xstring);
             title.addLabel("A paper has a title", "en");
 
-            DatatypeProperty topic = model.createDatatypeProperty(Base_url + "topic");
+            DatatypeProperty topic = model.createDatatypeProperty(model.getNsPrefixURI("sdm") + "topic");
             topic.addDomain(area);
             topic.addRange(XSD.xstring);
             topic.addLabel("An area has a topic", "en");
 
-            DatatypeProperty volumenumber = model.createDatatypeProperty(Base_url + "volumenumber");
+            DatatypeProperty volumenumber = model.createDatatypeProperty(model.getNsPrefixURI("sdm") + "volumenumber");
             volumenumber.addDomain(volume);
             volumenumber.addRange(XSD.integer);
             volumenumber.addLabel("A volume has a number", "en");
 
 
-            FileOutputStream writerStream = new FileOutputStream("data/Tbox-output.ttl");
-            model.write(writerStream, "TTL");
+            FileOutputStream writerStream = new FileOutputStream("data/ontology-tbox.owl");
+            model.write(writerStream, "RDF/XML");
             writerStream.close();
 
         } catch (FileNotFoundException e) {
