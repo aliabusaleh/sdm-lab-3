@@ -143,7 +143,8 @@ sdm:VenueRelatedTo  rdf:type  owl:ObjectProperty ;
         rdf:type             sdm:ExpertGroup ;
         sdm:VenueRelatedTo   sdm:Business , sdm:Medicine , sdm:Psychology ;
         sdm:name             "The Rolling Scopes Conference" ;
-        sdm:venueHasHandler  sdm:688 .
+        sdm:venueHasHandler  sdm:688 ;
+        sdm:year             "2010" , "2017" .
 
 sdm:67278043  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -324,7 +325,8 @@ sdm:144241701  rdf:type   sdm:Reviewer ;
         rdf:type             sdm:Symposium ;
         sdm:VenueRelatedTo   sdm:Business , sdm:Medicine , sdm:Psychology ;
         sdm:name             "Voxxed Days - Zurich" ;
-        sdm:venueHasHandler  sdm:23483 .
+        sdm:venueHasHandler  sdm:23483 ;
+        sdm:year             "2012" .
 
 <http://www.sdm-lab.com/#10.1002%2FJOB.2202This+paper+is+accepted%21>
         rdf:type            sdm:Review ;
@@ -443,7 +445,8 @@ sdm:2433744  rdf:type     sdm:Reviewer ;
 <http://www.sdm-lab.com/#Organizational+Research+Methods>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Business , <http://www.sdm-lab.com/#Computer+Science> ;
-        sdm:venueHasHandler  sdm:4593 .
+        sdm:venueHasHandler  sdm:4593 ;
+        sdm:year             "2014" .
 
 <http://www.sdm-lab.com/#10.1177%2F0149206320930813This+paper+is+accepted%21>
         rdf:type            sdm:Review ;
@@ -501,7 +504,8 @@ sdm:fdb3307a9e903bacf6632d1013a280db6dcbd0d1
 sdm:Jfokus  rdf:type         sdm:ExpertGroup ;
         sdm:VenueRelatedTo   sdm:Business , sdm:Psychology , <http://www.sdm-lab.com/#Computer+Science> ;
         sdm:name             "Jfokus" ;
-        sdm:venueHasHandler  sdm:23843 .
+        sdm:venueHasHandler  sdm:23843 ;
+        sdm:year             "2020" , "2021" .
 
 sdm:3129735  rdf:type     sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:f435c4e1a2f549b3a6288520499014769d311a67 ;
@@ -583,7 +587,8 @@ sdm:8113436  rdf:type     sdm:Reviewer ;
         rdf:type             sdm:Workshop ;
         sdm:VenueRelatedTo   sdm:Medicine , sdm:Psychology , sdm:Education , sdm:Sociology ;
         sdm:name             "Sustainable UX" ;
-        sdm:venueHasHandler  sdm:12639 .
+        sdm:venueHasHandler  sdm:12639 ;
+        sdm:year             "2013" , "2019" .
 
 sdm:40078267  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -609,7 +614,8 @@ sdm:48792606  rdf:type    sdm:Reviewer ;
 <http://www.sdm-lab.com/#Elgar+Introduction+to+Theories+of+Human+Resources+and+Employment+Relations>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
-        sdm:venueHasHandler  sdm:6113 .
+        sdm:venueHasHandler  sdm:6113 ;
+        sdm:year             "2019" .
 
 sdm:2207946432  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -866,7 +872,8 @@ sdm:115478194  rdf:type  sdm:Author ;
 <http://www.sdm-lab.com/#Economic+and+Business+Review>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Business , sdm:Sociology ;
-        sdm:venueHasHandler  sdm:8894 .
+        sdm:venueHasHandler  sdm:8894 ;
+        sdm:year             "2021" .
 
 sdm:35a4b9e020bfada436755eeef4dfa1354ec98bf4
         rdf:type             sdm:ShortPaper ;
@@ -910,7 +917,8 @@ sdm:2356574  rdf:type     sdm:Reviewer ;
 
 sdm:Scientometrics  rdf:type  sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Education , sdm:Sociology , <http://www.sdm-lab.com/#Computer+Science> ;
-        sdm:venueHasHandler  sdm:8802 .
+        sdm:venueHasHandler  sdm:8802 ;
+        sdm:year             "2020" .
 
 sdm:144676228  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -970,7 +978,8 @@ sdm:2108169698  rdf:type  sdm:Author ;
 <http://www.sdm-lab.com/#Association+for+Computing+Machinery+%28ACM%29>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
-        sdm:venueHasHandler  sdm:25512 , sdm:4705 .
+        sdm:venueHasHandler  sdm:25512 , sdm:4705 ;
+        sdm:year             "2016" , "2015" .
 
 sdm:144307804  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -1025,7 +1034,8 @@ sdm:7253454d31e983929e683e2eb9150cc810cedce7
 <http://www.sdm-lab.com/#Revue+Europ%C3%A9enne+de+Psychologie+Appliqu%C3%A9e>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
-        sdm:venueHasHandler  sdm:25330 .
+        sdm:venueHasHandler  sdm:25330 ;
+        sdm:year             "2017" .
 
 sdm:4131043  rdf:type     sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:748ab9fcc4fdfd82cd22e0a1360ad852c15a4c64 ;
@@ -1081,6 +1091,11 @@ sdm:14745040  rdf:type    sdm:Reviewer ;
         sdm:WritesReview  <http://www.sdm-lab.com/#10.4337%2F9781786439017This+paper+is+rejected%21> ;
         sdm:h-index       "60"^^xsd:int .
 
+sdm:34773914  rdf:type    sdm:Reviewer ;
+        sdm:ReviewsPaper  sdm:ee7aaba2e911b3a74e0eb97a14d7028db825945b ;
+        sdm:WritesReview  <http://www.sdm-lab.com/#10.1037%2Fa0029978This+paper+is+rejected%21> ;
+        sdm:h-index       "60"^^xsd:int .
+
 sdm:40206711  rdf:type    sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:94943d22fce7877f2089f0a9afb90eb7fc2352ee ;
         sdm:WritesReview  <http://www.sdm-lab.com/#10.1080%2F02648725.2023.2168910This+paper+is+rejected%21> ;
@@ -1090,11 +1105,6 @@ sdm:40206711  rdf:type    sdm:Reviewer ;
         rdf:type            sdm:Review ;
         sdm:reviewdecision  "ACCEPTED" ;
         sdm:reviewtext      "This paper is accepted!" .
-
-sdm:34773914  rdf:type    sdm:Reviewer ;
-        sdm:ReviewsPaper  sdm:ee7aaba2e911b3a74e0eb97a14d7028db825945b ;
-        sdm:WritesReview  <http://www.sdm-lab.com/#10.1037%2Fa0029978This+paper+is+rejected%21> ;
-        sdm:h-index       "60"^^xsd:int .
 
 sdm:12706874  rdf:type    sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:ec745a805f894c86df005615de7a98a257b88c6b ;
@@ -1108,7 +1118,8 @@ sdm:51439243  rdf:type  sdm:Author ;
 
 sdm:Mathematics  rdf:type    sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Business , <http://www.sdm-lab.com/#Computer+Science> ;
-        sdm:venueHasHandler  sdm:17963 .
+        sdm:venueHasHandler  sdm:17963 ;
+        sdm:year             "2023" .
 
 <http://www.sdm-lab.com/#10.1016%2FJ.HRMR.2018.02.004This+paper+is+rejected%21>
         rdf:type            sdm:Review ;
@@ -1118,7 +1129,8 @@ sdm:Mathematics  rdf:type    sdm:Journal ;
 <http://www.sdm-lab.com/#Frontiers+in+Psychology>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Psychology , sdm:Medicine ;
-        sdm:venueHasHandler  sdm:222 .
+        sdm:venueHasHandler  sdm:222 ;
+        sdm:year             "2022" .
 
 sdm:23483  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:4004192 , sdm:34773914 ;
@@ -1154,7 +1166,8 @@ sdm:2820282  rdf:type  sdm:Author ;
         rdf:type             sdm:Symposium ;
         sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
         sdm:name             "O'Reilly Velocity Conference" ;
-        sdm:venueHasHandler  sdm:12307 .
+        sdm:venueHasHandler  sdm:12307 ;
+        sdm:year             "2021" .
 
 <http://www.sdm-lab.com/#10.1007%2Fs11192-019-03184-yThis+paper+is+accepted%21>
         rdf:type            sdm:Review ;
@@ -1183,7 +1196,8 @@ sdm:66373895  rdf:type  sdm:Author ;
 sdm:Script17  rdf:type       sdm:Regular ;
         sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
         sdm:name             "Script17" ;
-        sdm:venueHasHandler  sdm:22797 .
+        sdm:venueHasHandler  sdm:22797 ;
+        sdm:year             "2018" .
 
 sdm:Business  rdf:type        sdm:Keyword ;
         sdm:KeywordRelatedTo  sdm:Business ;
@@ -1407,12 +1421,14 @@ sdm:48811537  rdf:type  sdm:Author ;
 <http://www.sdm-lab.com/#ISPRS+International+Journal+of+Geo-Information>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   <http://www.sdm-lab.com/#Computer+Science> ;
-        sdm:venueHasHandler  sdm:20243 .
+        sdm:venueHasHandler  sdm:20243 ;
+        sdm:year             "2023" .
 
 <http://www.sdm-lab.com/#Leadership+Quarterly>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Sociology , sdm:Psychology , sdm:Engineering , sdm:Economics , sdm:Business ;
-        sdm:venueHasHandler  sdm:8058 , sdm:10003 , sdm:3862 , sdm:9968 , sdm:6917 , sdm:16176 , sdm:10450 .
+        sdm:venueHasHandler  sdm:8058 , sdm:10003 , sdm:3862 , sdm:9968 , sdm:6917 , sdm:16176 , sdm:10450 ;
+        sdm:year             "2009" , "2020" , "2017" , "2012" , "2014" .
 
 sdm:3286d652031571d504f78ab989e0263f759e4e12
         rdf:type             sdm:ShortPaper ;
@@ -1513,8 +1529,9 @@ sdm:Biology  rdf:type         sdm:Keyword ;
 
 <http://www.sdm-lab.com/#The+Journal+of+applied+psychology>
         rdf:type             sdm:Journal ;
-        sdm:VenueRelatedTo   sdm:Psychology , sdm:Business , sdm:Medicine , sdm:Sociology ;
-        sdm:venueHasHandler  sdm:13862 , sdm:23385 , sdm:13119 .
+        sdm:VenueRelatedTo   sdm:Psychology , sdm:Sociology , sdm:Business , sdm:Medicine ;
+        sdm:venueHasHandler  sdm:13119 , sdm:13862 , sdm:23385 ;
+        sdm:year             "2011" , "2015" .
 
 <http://www.sdm-lab.com/#%2296+1%22>
         rdf:type                  sdm:Volume ;
@@ -1632,12 +1649,14 @@ sdm:2152176463  rdf:type  sdm:Author ;
 
 sdm:ArXiv  rdf:type          sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Physics , <http://www.sdm-lab.com/#Computer+Science> ;
-        sdm:venueHasHandler  sdm:16093 .
+        sdm:venueHasHandler  sdm:16093 ;
+        sdm:year             "2023" .
 
 <http://www.sdm-lab.com/#Emerging+Science+Journal>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Business ;
-        sdm:venueHasHandler  sdm:15836 .
+        sdm:venueHasHandler  sdm:15836 ;
+        sdm:year             "2023" .
 
 <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2017.10.002This+paper+is+accepted%21>
         rdf:type            sdm:Review ;
@@ -1664,7 +1683,8 @@ sdm:9679912b1386a04b793841ce3fb45de05a938676
 <http://www.sdm-lab.com/#Medical+Science+Monitor+%3A+International+Medical+Journal+of+Experimental+and+Clinical+Research>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Medicine ;
-        sdm:venueHasHandler  sdm:20238 .
+        sdm:venueHasHandler  sdm:20238 ;
+        sdm:year             "2023" .
 
 sdm:4191459  rdf:type     sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:c3bcc1687e84e5ed4d1a9519761f962c78922ef5 ;
@@ -1758,7 +1778,8 @@ sdm:143634845  rdf:type  sdm:Author ;
 <http://www.sdm-lab.com/#SAGE+Open>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Business ;
-        sdm:venueHasHandler  sdm:24613 .
+        sdm:venueHasHandler  sdm:24613 ;
+        sdm:year             "2022" .
 
 sdm:49536533  rdf:type    sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:c8fcd37be1be142bcfc9ef745f204a1d286669d5 ;
@@ -1783,7 +1804,8 @@ sdm:3455874  rdf:type  sdm:Author ;
 <http://www.sdm-lab.com/#Human+Relations>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
-        sdm:venueHasHandler  sdm:20572 .
+        sdm:venueHasHandler  sdm:20572 ;
+        sdm:year             "2016" .
 
 sdm:Keyword  rdf:type  owl:Class .
 
@@ -1851,7 +1873,8 @@ sdm:2126812  rdf:type  sdm:Author ;
 <http://www.sdm-lab.com/#Journal+of+the+Association+for+Information+Science+and+Technology>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Education , <http://www.sdm-lab.com/#Computer+Science> ;
-        sdm:venueHasHandler  sdm:9872 .
+        sdm:venueHasHandler  sdm:9872 ;
+        sdm:year             "2017" .
 
 <http://www.sdm-lab.com/#%22120%22>
         rdf:type                  sdm:Volume ;
@@ -1874,12 +1897,14 @@ sdm:31839425  rdf:type    sdm:Reviewer ;
         rdf:type             sdm:Symposium ;
         sdm:VenueRelatedTo   sdm:Medicine , sdm:Psychology ;
         sdm:name             "UX Riga" ;
-        sdm:venueHasHandler  sdm:12153 .
+        sdm:venueHasHandler  sdm:12153 ;
+        sdm:year             "2021" .
 
 <http://www.sdm-lab.com/#Career+Development+International>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
-        sdm:venueHasHandler  sdm:18735 .
+        sdm:venueHasHandler  sdm:18735 ;
+        sdm:year             "2014" .
 
 <http://www.sdm-lab.com/#10.12659%2FMSM.938835This+paper+is+accepted%21>
         rdf:type            sdm:Review ;
@@ -2149,7 +2174,8 @@ sdm:48384596  rdf:type  sdm:Author ;
 <http://www.sdm-lab.com/#International+Journal+of+Advanced+Research+in+Science%2C+Communication+and+Technology>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   <http://www.sdm-lab.com/#Materials+Science> , <http://www.sdm-lab.com/#Computer+Science> , sdm:Education ;
-        sdm:venueHasHandler  sdm:18704 .
+        sdm:venueHasHandler  sdm:18704 ;
+        sdm:year             "2023" .
 
 sdm:35b460874243165533df66b6dfc31e9c7aee3fb9
         rdf:type             sdm:DemoPaper ;
@@ -2217,7 +2243,8 @@ sdm:3075483  rdf:type     sdm:Reviewer ;
 <http://www.sdm-lab.com/#Organization+Studies>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Business , sdm:Sociology ;
-        sdm:venueHasHandler  sdm:23690 .
+        sdm:venueHasHandler  sdm:23690 ;
+        sdm:year             "2012" .
 
 sdm:BelongsToConference
         rdf:type     owl:ObjectProperty ;
@@ -2252,7 +2279,8 @@ sdm:78143588  rdf:type  sdm:Author ;
 <http://www.sdm-lab.com/#Journal+of+Leadership+%26+Organizational+Studies>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Business ;
-        sdm:venueHasHandler  sdm:2581 .
+        sdm:venueHasHandler  sdm:2581 ;
+        sdm:year             "2021" .
 
 sdm:40595787  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -2342,7 +2370,8 @@ sdm:5422191  rdf:type     sdm:Reviewer ;
 <http://www.sdm-lab.com/#Journal+of+Business+Ethics>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   <http://www.sdm-lab.com/#Political+Science> , sdm:Business , sdm:Sociology ;
-        sdm:venueHasHandler  sdm:22915 .
+        sdm:venueHasHandler  sdm:22915 ;
+        sdm:year             "2013" .
 
 sdm:e6ebc91a221d1d0d822b68ea6f269e888873ef1a
         rdf:type             sdm:ShortPaper ;
@@ -2368,7 +2397,8 @@ sdm:Paper  rdf:type  owl:Class .
 <http://www.sdm-lab.com/#Journal+of+Business+Research>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Sociology , sdm:Business , <http://www.sdm-lab.com/#Political+Science> ;
-        sdm:venueHasHandler  sdm:15220 , sdm:478 .
+        sdm:venueHasHandler  sdm:15220 , sdm:478 ;
+        sdm:year             "2018" , "2020" .
 
 sdm:164e2afbb0a39993581fa3a05530a67c1e3e6da6
         rdf:type             sdm:DemoPaper ;
@@ -2403,7 +2433,8 @@ sdm:17569  rdf:type          sdm:Handlers ;
         rdf:type             sdm:Symposium ;
         sdm:VenueRelatedTo   sdm:Business , sdm:Medicine , sdm:Psychology ;
         sdm:name             "Voxxed Days - Cern" ;
-        sdm:venueHasHandler  sdm:496 .
+        sdm:venueHasHandler  sdm:496 ;
+        sdm:year             "2014" .
 
 sdm:18356  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:8113436 , sdm:40102157 ;
@@ -2502,7 +2533,8 @@ sdm:Handlers  rdf:type   owl:Class ;
 <http://www.sdm-lab.com/#Academy+of+Management+Journal>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
-        sdm:venueHasHandler  sdm:6907 .
+        sdm:venueHasHandler  sdm:6907 ;
+        sdm:year             "2012" .
 
 sdm:0   rdf:type                  sdm:Proceeding ;
         sdm:BelongsToConference   <http://www.sdm-lab.com/#Agile+Content+Conf> , <http://www.sdm-lab.com/#The+Lead+Developer+New+York> ;
@@ -2513,7 +2545,8 @@ sdm:0   rdf:type                  sdm:Proceeding ;
 <http://www.sdm-lab.com/#MTZ+worldwide>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Psychology , sdm:Medicine ;
-        sdm:venueHasHandler  sdm:19226 .
+        sdm:venueHasHandler  sdm:19226 ;
+        sdm:year             "2014" .
 
 <http://www.sdm-lab.com/#10.1093%2FOXFORDHB%2F9780199326174.013.0009This+paper+is+rejected%21>
         rdf:type            sdm:Review ;
@@ -2545,7 +2578,8 @@ sdm:2405956  rdf:type     sdm:Reviewer ;
 sdm:Webstock  rdf:type       sdm:Symposium ;
         sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
         sdm:name             "Webstock" ;
-        sdm:venueHasHandler  sdm:18011 .
+        sdm:venueHasHandler  sdm:18011 ;
+        sdm:year             "2011" .
 
 sdm:Proceeding  rdf:type  owl:Class ;
         rdfs:subClassOf  sdm:Publication .
@@ -2650,11 +2684,13 @@ sdm:114570655  rdf:type  sdm:Author ;
         rdf:type             sdm:Regular ;
         sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
         sdm:name             "Typography Day 2017" ;
-        sdm:venueHasHandler  sdm:18443 .
+        sdm:venueHasHandler  sdm:18443 ;
+        sdm:year             "2018" .
 
 sdm:Sustainability  rdf:type  sdm:Journal ;
         sdm:VenueRelatedTo   <http://www.sdm-lab.com/#Computer+Science> ;
-        sdm:venueHasHandler  sdm:8363 .
+        sdm:venueHasHandler  sdm:8363 ;
+        sdm:year             "2023" .
 
 sdm:11276337  rdf:type    sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:411dbf4787f7cbd59ca281e7efbb01e14584507a ;
@@ -2843,7 +2879,8 @@ sdm:9ae8a63742aae79c94a86ab0661a7d8c2971c433
 <http://www.sdm-lab.com/#Psychological+Reports>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Business , sdm:Medicine , sdm:Psychology ;
-        sdm:venueHasHandler  sdm:12967 .
+        sdm:venueHasHandler  sdm:12967 ;
+        sdm:year             "2017" .
 
 sdm:2151438  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -2893,7 +2930,8 @@ sdm:2059151067  rdf:type  sdm:Reviewer ;
 <http://www.sdm-lab.com/#Journal+of+the+American+Academy+of+Child+and+Adolescent+Psychiatry>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Medicine , sdm:Psychology ;
-        sdm:venueHasHandler  sdm:19896 .
+        sdm:venueHasHandler  sdm:19896 ;
+        sdm:year             "2012" .
 
 sdm:82126346  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -2948,7 +2986,8 @@ sdm:2065066749  rdf:type  sdm:Author ;
 <http://www.sdm-lab.com/#Journal+of+Organizational+Behavior>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
-        sdm:venueHasHandler  sdm:3810 , sdm:25835 , sdm:13372 , sdm:25785 , sdm:18356 .
+        sdm:venueHasHandler  sdm:18356 , sdm:25785 , sdm:3810 , sdm:13372 , sdm:25835 ;
+        sdm:year             "2018" , "2013" , "2010" , "2014" , "2021" .
 
 sdm:reviewtext  rdf:type  owl:DatatypeProperty ;
         rdfs:domain  sdm:Review ;
@@ -3107,7 +3146,8 @@ sdm:115195611  rdf:type  sdm:Author ;
 <http://www.sdm-lab.com/#Personnel+Psychology>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
-        sdm:venueHasHandler  sdm:21415 .
+        sdm:venueHasHandler  sdm:21415 ;
+        sdm:year             "2012" .
 
 sdm:94943d22fce7877f2089f0a9afb90eb7fc2352ee
         rdf:type             sdm:DemoPaper ;
@@ -3170,9 +3210,10 @@ sdm:1401569491  rdf:type  sdm:Reviewer ;
 
 <http://www.sdm-lab.com/#The+Lead+Developer+New+York>
         rdf:type             sdm:Symposium ;
-        sdm:VenueRelatedTo   sdm:Sociology , sdm:Business , sdm:Psychology , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Sociology , <http://www.sdm-lab.com/#Computer+Science> , sdm:Psychology ;
         sdm:name             "The Lead Developer New York" ;
-        sdm:venueHasHandler  sdm:20876 .
+        sdm:venueHasHandler  sdm:20876 ;
+        sdm:year             "2019" , "2010" , "2016" .
 
 sdm:48410165  rdf:type    sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:0e32f5cebc15a0ac3ae39f99856037c22eff83f9 ;
@@ -3404,12 +3445,14 @@ sdm:dae4a6e0d6bf612993b608e2e556a3c91ff8b56f
 <http://www.sdm-lab.com/#American+Association+for+Cancer+Research+%28AACR%29>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Economics ;
-        sdm:venueHasHandler  sdm:14043 .
+        sdm:venueHasHandler  sdm:14043 ;
+        sdm:year             "2019" .
 
 <http://www.sdm-lab.com/#Biotechnology+%26+genetic+engineering+reviews>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Medicine ;
-        sdm:venueHasHandler  sdm:6861 .
+        sdm:venueHasHandler  sdm:6861 ;
+        sdm:year             "2023" .
 
 sdm:18011  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:50744658 , sdm:27581584 , sdm:5275773 ;
@@ -3420,7 +3463,8 @@ sdm:18011  rdf:type          sdm:Handlers ;
         rdf:type             sdm:Workshop ;
         sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
         sdm:name             "Agile Content Conf" ;
-        sdm:venueHasHandler  sdm:6562 .
+        sdm:venueHasHandler  sdm:6562 ;
+        sdm:year             "2013" .
 
 sdm:19226  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:5949814 , sdm:114484442 , sdm:7308371 ;
@@ -3430,7 +3474,8 @@ sdm:19226  rdf:type          sdm:Handlers ;
 <http://www.sdm-lab.com/#Academy+of+Management+Review>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
-        sdm:venueHasHandler  sdm:9981 , sdm:3231 .
+        sdm:venueHasHandler  sdm:9981 , sdm:3231 ;
+        sdm:year             "2011" , "2018" .
 
 sdm:2533  rdf:type           sdm:Handlers ;
         sdm:AssignsReviewer  sdm:2059505766 , sdm:49536533 ;
@@ -3503,7 +3548,8 @@ sdm:143976706  rdf:type  sdm:Author ;
 <http://www.sdm-lab.com/#Journal+of+Management>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Sociology , sdm:Business , sdm:Psychology ;
-        sdm:venueHasHandler  sdm:17569 , sdm:2533 .
+        sdm:venueHasHandler  sdm:17569 , sdm:2533 ;
+        sdm:year             "2015" , "2021" .
 
 <http://www.sdm-lab.com/#%2265%22>
         rdf:type                  sdm:Volume ;
@@ -3524,7 +3570,8 @@ sdm:39456927  rdf:type  sdm:Author ;
 
 sdm:bioRxiv  rdf:type        sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Biology ;
-        sdm:venueHasHandler  sdm:2640 .
+        sdm:venueHasHandler  sdm:2640 ;
+        sdm:year             "2023" .
 
 sdm:40345999  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -3613,7 +3660,8 @@ sdm:6015019  rdf:type     sdm:Reviewer ;
 <http://www.sdm-lab.com/#Journal+of+Big+Data>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   <http://www.sdm-lab.com/#Computer+Science> ;
-        sdm:venueHasHandler  sdm:8170 .
+        sdm:venueHasHandler  sdm:8170 ;
+        sdm:year             "2023" .
 
 sdm:SubmittedIn  rdf:type  owl:ObjectProperty ;
         rdfs:domain  sdm:Paper ;
@@ -3825,6 +3873,11 @@ sdm:2614057  rdf:type  sdm:Author ;
         sdm:h-index  "12"^^xsd:int ;
         sdm:name     "L. Tetrick" .
 
+sdm:year  rdf:type   owl:DatatypeProperty ;
+        rdfs:domain  sdm:Venue ;
+        rdfs:label   "A venue has an year "@en ;
+        rdfs:range   xsd:string .
+
 sdm:7326d3ac058e5653482a1b5fcdbb46d3484f6ab8
         rdf:type             sdm:ShortPaper ;
         sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
@@ -3874,7 +3927,8 @@ sdm:90244165  rdf:type  sdm:Author ;
 <http://www.sdm-lab.com/#European+Journal+of+Work+and+Organizational+Psychology>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
-        sdm:venueHasHandler  sdm:19232 .
+        sdm:venueHasHandler  sdm:19232 ;
+        sdm:year             "2020" .
 
 sdm:6038454  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -3930,7 +3984,8 @@ sdm:145349578  rdf:type  sdm:Author ;
 <http://www.sdm-lab.com/#Human+Resource+Management+Review>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
-        sdm:venueHasHandler  sdm:1339 .
+        sdm:venueHasHandler  sdm:1339 ;
+        sdm:year             "2018" .
 
 sdm:49821654  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -3991,7 +4046,8 @@ sdm:46232420  rdf:type  sdm:Author ;
 <http://www.sdm-lab.com/#Social+Behavior+and+Personality>
         rdf:type             sdm:Journal ;
         sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
-        sdm:venueHasHandler  sdm:23484 .
+        sdm:venueHasHandler  sdm:23484 ;
+        sdm:year             "2015" .
 
 sdm:18443  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:3037825 , sdm:144241701 ;

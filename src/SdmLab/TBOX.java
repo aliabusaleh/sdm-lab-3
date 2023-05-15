@@ -215,6 +215,11 @@ public class TBOX {
             issn.addRange(XSD.xstring);
             issn.addLabel("A publication has an issn ( identifier)", "en");
 
+            DatatypeProperty year = model.createDatatypeProperty(model.getNsPrefixURI("sdm") + "year");
+            year.addDomain(venue);
+            year.addRange(XSD.xstring);
+            year.addLabel("A venue has an year ", "en");
+
             DatatypeProperty domain = model.createDatatypeProperty(model.getNsPrefixURI("sdm") + "domain");
             domain.addDomain(keyword);
             domain.addRange(XSD.xstring);

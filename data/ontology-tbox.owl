@@ -168,6 +168,11 @@
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="http://www.sdm-lab.com/#Handlers"/>
   </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.sdm-lab.com/#year">
+    <rdfs:label xml:lang="en">A venue has an year </rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.sdm-lab.com/#Venue"/>
+  </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://www.sdm-lab.com/#topic">
     <rdfs:label xml:lang="en">An area has a topic</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>

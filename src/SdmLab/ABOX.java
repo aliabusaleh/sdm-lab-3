@@ -80,6 +80,7 @@ public class ABOX {
             DatatypeProperty edition = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"edition");
             DatatypeProperty h_index = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"h-index");
             DatatypeProperty issn = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"issn");
+            DatatypeProperty year = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"year");
             DatatypeProperty domain = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"domain");
             DatatypeProperty name = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"name");
             DatatypeProperty bDay = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"Bday");
@@ -283,6 +284,7 @@ public class ABOX {
                     venueInstance = __journal;
 
                 }
+                venueInstance.addProperty(year, record.get("year").toString());
 
                 // loop through the keyword and area and add them to the model
 
