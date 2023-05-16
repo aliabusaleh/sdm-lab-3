@@ -170,7 +170,11 @@ public class ABOX {
                 JsonArray revArray = record.getJsonArray("reviewers");
                 for (int j=0; j < revArray.size()-1; j++){
                     String _reviwer = revArray.getString(j);
-                    Individual __reviewer = reviewer.createIndividual(model.getNsPrefixURI("sdm") +_reviwer);
+                    Individual __reviewer = model.getIndividual(model.getNsPrefixURI("sdm") + _reviwer);
+                    if(__reviewer == null){
+                        // if reviewer is not defined before , create it
+                        __reviewer = reviewer.createIndividual(model.getNsPrefixURI("sdm") +_reviwer);
+                    }
                     __reviewer.addProperty(reviewsPaper, __paperInstance);
                     __reviewer.addProperty(h_index,  model.createTypedLiteral(Integer.valueOf(60)));
                     //Add reviewer writesReview
@@ -216,6 +220,7 @@ public class ABOX {
                                 System.out.println("Conference type unkown");
                                 continue;
                         }
+
                         // add the conference handlers :D
                         __conferenceInstance.addProperty(venueHasHandler, __handler);
                         __handler.addProperty(role, "Chair");
@@ -231,9 +236,14 @@ public class ABOX {
                     if (_reviewDecision.equals("ACCEPTED")) {
                         //Proceeding is missing - should we add the same name as the conference
                         String _proceeding = record.get("edition").toString();
-                        Individual __proceeding = proceeding.createIndividual(model.getNsPrefixURI("sdm") + _proceeding);
-                        __proceeding.addProperty(issn, "123450");
-                        __proceeding.addProperty(edition, model.createTypedLiteral(Integer.valueOf(1)));
+                        Individual __proceeding = model.getIndividual(model.getNsPrefixURI("sdm") + _proceeding);
+                        // check of proceeding already defined before, if not create new
+                        // else, use same one
+                        if(__proceeding == null){
+                           __proceeding = proceeding.createIndividual(model.getNsPrefixURI("sdm") + _proceeding);
+                            __proceeding.addProperty(issn, "123450");
+                            __proceeding.addProperty(edition, model.createTypedLiteral(Integer.valueOf(1)));
+                        }
 
                         // connect paper with publication
                         __paperInstance.addProperty(publishedIn, __proceeding);
@@ -256,6 +266,7 @@ public class ABOX {
                     // create journal instance or get existing one
                     Individual __journal;
 
+                    // check if journal already exists before, if not create it
                     __journal = model.getIndividual(model.getNsPrefixURI("sdm") +encodeValue(_journal_name));
                     if (__journal == null) __journal = journal.createIndividual(model.getNsPrefixURI("sdm") +encodeValue(_journal_name));
                     // connect paper with it
@@ -265,10 +276,14 @@ public class ABOX {
                     // else we ignore this part :D
                     if (_reviewDecision.equals("ACCEPTED")) {
                         String _journal_volume = String.valueOf(_journal.get("volume"));
-                        Individual __volume = volume.createIndividual(model.getNsPrefixURI("sdm") + encodeValue(_journal_volume));
-                        String _issn = "0123456";
-                        __volume.addProperty(issn, _issn);
-                        __volume.addProperty(volumeNumber, model.createTypedLiteral(Integer.valueOf(5)));
+                        Individual __volume = model.getIndividual(model.getNsPrefixURI("sdm") + encodeValue(_journal_volume));
+                        // check if volume already exists before or not
+                        if(__volume == null){
+                            __volume = volume.createIndividual(model.getNsPrefixURI("sdm") + encodeValue(_journal_volume));
+                            String _issn = "0123456";
+                            __volume.addProperty(issn, _issn);
+                            __volume.addProperty(volumeNumber, model.createTypedLiteral(Integer.valueOf(5)));
+                        }
 
                         // connect paper with publication
                         __paperInstance.addProperty(publishedIn, __volume);
@@ -330,11 +345,15 @@ public class ABOX {
 
                     String __author_id = _author.getString("authorId");
                     String __author_name = _author.getString("name");
+                    // check of author already exists, if not create it
+                    Individual __author = model.getIndividual( model.getNsPrefixURI("sdm") +__author_id);
+                    if (__author == null){
+                        __author = author.createIndividual( model.getNsPrefixURI("sdm") +__author_id);
+                        __author.addProperty(name, __author_name);
+                        __author.addProperty(bDay, "6/6/1998");
+                        __author.addProperty(h_index, model.createTypedLiteral(Integer.valueOf(12)));
 
-                    Individual __author = author.createIndividual( model.getNsPrefixURI("sdm") +__author_id);
-                    __author.addProperty(name, __author_name);
-                    __author.addProperty(bDay, "6/6/1998");
-                    __author.addProperty(h_index, model.createTypedLiteral(Integer.valueOf(12)));
+                    }
 
                     __paperInstance.addProperty(writtenBy, __author);
 

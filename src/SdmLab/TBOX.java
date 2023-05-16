@@ -236,8 +236,6 @@ public class TBOX {
             Bday.addRange(XSD.xstring);
             Bday.addLabel("A person has a bDay", "en");
 
-
-
             DatatypeProperty reviewdecision = model.createDatatypeProperty(model.getNsPrefixURI("sdm") + "reviewdecision");
             reviewdecision.addDomain(review);
             reviewdecision.addRange(XSD.xstring);

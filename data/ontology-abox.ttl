@@ -14,6 +14,12 @@ sdm:6203074  rdf:type     sdm:Reviewer ;
         sdm:WritesReview  <http://www.sdm-lab.com/#10.5465%2FAMJ.2010.54533176This+paper+is+rejected%21> ;
         sdm:h-index       "60"^^xsd:int .
 
+<http://www.sdm-lab.com/#European+Journal+of+Work+and+Organizational+Database>
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Database ;
+        sdm:venueHasHandler  sdm:19232 ;
+        sdm:year             "2020" .
+
 sdm:2183417632  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
         sdm:h-index  "12"^^xsd:int ;
@@ -48,7 +54,7 @@ sdm:12077660  rdf:type    sdm:Reviewer ;
 <http://www.sdm-lab.com/#%2223%22>
         rdf:type                  sdm:Volume ;
         sdm:BelongsToJournal      <http://www.sdm-lab.com/#Leadership+Quarterly> ;
-        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Database ;
         sdm:issn                  "0123456" ;
         sdm:volumenumber          "5"^^xsd:int .
 
@@ -120,7 +126,7 @@ sdm:2387226  rdf:type  sdm:Author ;
 <http://www.sdm-lab.com/#%2239%22>
         rdf:type                  sdm:Volume ;
         sdm:BelongsToJournal      <http://www.sdm-lab.com/#Journal+of+Organizational+Behavior> ;
-        sdm:PublicationRelatedTo  sdm:Psychology ;
+        sdm:PublicationRelatedTo  sdm:Database ;
         sdm:issn                  "0123456" ;
         sdm:volumenumber          "5"^^xsd:int .
 
@@ -141,7 +147,7 @@ sdm:VenueRelatedTo  rdf:type  owl:ObjectProperty ;
 
 <http://www.sdm-lab.com/#The+Rolling+Scopes+Conference>
         rdf:type             sdm:ExpertGroup ;
-        sdm:VenueRelatedTo   sdm:Business , sdm:Medicine , sdm:Psychology ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Medicine , sdm:Database ;
         sdm:name             "The Rolling Scopes Conference" ;
         sdm:venueHasHandler  sdm:688 ;
         sdm:year             "2010" , "2017" .
@@ -207,7 +213,7 @@ sdm:fb13ca4e683932b30d74fcdac4780e1b4bc819a1
 
 sdm:5ea475a81406e5d0ea907fad1ce5be42ad599a15
         rdf:type             sdm:Fullpaper ;
-        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Database ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2011.08.009This+paper+is+accepted%21> ;
         sdm:PublishedIn      <http://www.sdm-lab.com/#%2223%22> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Leadership+Quarterly> ;
@@ -217,7 +223,7 @@ sdm:5ea475a81406e5d0ea907fad1ce5be42ad599a15
 
 sdm:55bb71c7283c13cafa0950b988c1a73e802045ce
         rdf:type             sdm:ShortPaper ;
-        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Database ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.5465%2FAMJ.2009.0865This+paper+is+rejected%21> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Academy+of+Management+Journal> ;
         sdm:WrittenBy        sdm:144307804 , sdm:47446991 , sdm:2151438 ;
@@ -245,7 +251,7 @@ sdm:1796135  rdf:type     sdm:Reviewer ;
 <http://www.sdm-lab.com/#%2235%22>
         rdf:type                  sdm:Volume ;
         sdm:BelongsToJournal      <http://www.sdm-lab.com/#Journal+of+Organizational+Behavior> ;
-        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Database ;
         sdm:issn                  "0123456" ;
         sdm:volumenumber          "5"^^xsd:int .
 
@@ -264,9 +270,15 @@ sdm:3244528  rdf:type     sdm:Reviewer ;
         sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2Fj.jbusres.2019.09.052This+paper+is+rejected%21> ;
         sdm:h-index       "60"^^xsd:int .
 
+<http://www.sdm-lab.com/#Personnel+Database>
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Database ;
+        sdm:venueHasHandler  sdm:21415 ;
+        sdm:year             "2012" .
+
 sdm:340a4d469f33c07ac0108ab882a802235e0a7757
         rdf:type             sdm:Poster ;
-        sdm:ContainsKeyword  sdm:Psychology , sdm:Business ;
+        sdm:ContainsKeyword  sdm:Database , sdm:Business ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1002%2FJOB.2202This+paper+is+accepted%21> ;
         sdm:PublishedIn      sdm:1 ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Typography+Day+2017> ;
@@ -323,7 +335,7 @@ sdm:144241701  rdf:type   sdm:Reviewer ;
 
 <http://www.sdm-lab.com/#Voxxed+Days+-+Zurich>
         rdf:type             sdm:Symposium ;
-        sdm:VenueRelatedTo   sdm:Business , sdm:Medicine , sdm:Psychology ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Medicine , sdm:Database ;
         sdm:name             "Voxxed Days - Zurich" ;
         sdm:venueHasHandler  sdm:23483 ;
         sdm:year             "2012" .
@@ -370,7 +382,7 @@ sdm:c7101e46dc539be171db692c529610dd4faf01fe
 
 sdm:0700a4314a1c14f1894d58ae8581e265d80158bc
         rdf:type             sdm:ShortPaper ;
-        sdm:ContainsKeyword  sdm:Psychology , sdm:Business ;
+        sdm:ContainsKeyword  sdm:Database , sdm:Business ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1002%2FJOB.627This+paper+is+rejected%21> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+Organizational+Behavior> ;
         sdm:WrittenBy        sdm:40403474 , sdm:3455874 , sdm:39747184 , sdm:6038454 ;
@@ -456,7 +468,7 @@ sdm:2433744  rdf:type     sdm:Reviewer ;
 <http://www.sdm-lab.com/#%2247%22>
         rdf:type                  sdm:Volume ;
         sdm:BelongsToJournal      <http://www.sdm-lab.com/#Journal+of+Management> ;
-        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Database ;
         sdm:issn                  "0123456" ;
         sdm:volumenumber          "5"^^xsd:int .
 
@@ -471,7 +483,7 @@ sdm:8611013  rdf:type  sdm:Author ;
 
 sdm:e6945a04fcfcd3262f5ecceb03deeb1c3d7ed6f8
         rdf:type             sdm:Fullpaper ;
-        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Database ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2016.10.008This+paper+is+rejected%21> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Leadership+Quarterly> ;
         sdm:WrittenBy        sdm:4986923 , sdm:48287585 , sdm:115195611 ;
@@ -493,7 +505,7 @@ sdm:Reviewer  rdf:type   owl:Class ;
 
 sdm:fdb3307a9e903bacf6632d1013a280db6dcbd0d1
         rdf:type             sdm:ShortPaper ;
-        sdm:ContainsKeyword  sdm:Business , sdm:Psychology , sdm:Medicine ;
+        sdm:ContainsKeyword  sdm:Database , sdm:Business , sdm:Medicine ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1177%2F0033294117716465This+paper+is+accepted%21> ;
         sdm:PublishedIn      <http://www.sdm-lab.com/#%22120%22> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Psychological+Reports> ;
@@ -502,7 +514,7 @@ sdm:fdb3307a9e903bacf6632d1013a280db6dcbd0d1
         sdm:title            "Leader Trust, Competence, LMX, and Member Performance: A Moderated Mediation Framework" .
 
 sdm:Jfokus  rdf:type         sdm:ExpertGroup ;
-        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Database , <http://www.sdm-lab.com/#Computer+Science> ;
         sdm:name             "Jfokus" ;
         sdm:venueHasHandler  sdm:23843 ;
         sdm:year             "2020" , "2021" .
@@ -519,10 +531,10 @@ sdm:h-index  rdf:type  owl:DatatypeProperty ;
 
 sdm:0c5108cc2b1cceff12808219b16ac5f8f11dd420
         rdf:type             sdm:ShortPaper ;
-        sdm:ContainsKeyword  sdm:Psychology , sdm:Business ;
+        sdm:ContainsKeyword  sdm:Database , sdm:Business ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1111%2FJ.1744-6570.2012.01246.XThis+paper+is+accepted%21> ;
         sdm:PublishedIn      <http://www.sdm-lab.com/#%2265%22> ;
-        sdm:SubmittedIn      <http://www.sdm-lab.com/#Personnel+Psychology> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Personnel+Database> ;
         sdm:WrittenBy        sdm:4801448 , sdm:8250249 , sdm:8573611 , sdm:49391374 , sdm:16219820 ;
         sdm:doi              "10.1111%2FJ.1744-6570.2012.01246.X" ;
         sdm:title            "A TRICKLE-DOWN MODEL OF ABUSIVE SUPERVISION" .
@@ -585,7 +597,7 @@ sdm:8113436  rdf:type     sdm:Reviewer ;
 
 <http://www.sdm-lab.com/#Sustainable+UX>
         rdf:type             sdm:Workshop ;
-        sdm:VenueRelatedTo   sdm:Medicine , sdm:Psychology , sdm:Education , sdm:Sociology ;
+        sdm:VenueRelatedTo   sdm:Medicine , sdm:Database , sdm:Education , sdm:Sociology ;
         sdm:name             "Sustainable UX" ;
         sdm:venueHasHandler  sdm:12639 ;
         sdm:year             "2013" , "2019" .
@@ -613,7 +625,7 @@ sdm:48792606  rdf:type    sdm:Reviewer ;
 
 <http://www.sdm-lab.com/#Elgar+Introduction+to+Theories+of+Human+Resources+and+Employment+Relations>
         rdf:type             sdm:Journal ;
-        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Database ;
         sdm:venueHasHandler  sdm:6113 ;
         sdm:year             "2019" .
 
@@ -649,7 +661,7 @@ sdm:9c4dfc2f8841a4e80b3407bcd4ae2044ca2722bf
 
 sdm:5bf957bd3393240befc4511d130be0c2c6b5b681
         rdf:type             sdm:Fullpaper ;
-        sdm:ContainsKeyword  sdm:Psychology , sdm:Business ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Database ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.4337%2F9781786439017.00031This+paper+is+accepted%21> ;
         sdm:PublishedIn      sdm:5 ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Elgar+Introduction+to+Theories+of+Human+Resources+and+Employment+Relations> ;
@@ -713,7 +725,7 @@ sdm:113870042  rdf:type   sdm:Reviewer ;
 
 sdm:e5dd05fd5bbf4e4ace0cb2bf20e4695abbf36a01
         rdf:type             sdm:DemoPaper ;
-        sdm:ContainsKeyword  sdm:Psychology ;
+        sdm:ContainsKeyword  sdm:Database ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2017.10.002This+paper+is+accepted%21> ;
         sdm:PublishedIn      <http://www.sdm-lab.com/#%2229%22> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Leadership+Quarterly> ;
@@ -749,7 +761,7 @@ sdm:117143893  rdf:type  sdm:Author ;
 
 sdm:ec745a805f894c86df005615de7a98a257b88c6b
         rdf:type             sdm:Poster ;
-        sdm:ContainsKeyword  sdm:Medicine , sdm:Business , sdm:Psychology ;
+        sdm:ContainsKeyword  sdm:Database , sdm:Medicine , sdm:Business ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1037%2Fa0030264This+paper+is+rejected%21> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Voxxed+Days+-+Cern> ;
         sdm:WrittenBy        sdm:34655016 , sdm:1928997 ;
@@ -786,7 +798,7 @@ sdm:9981  rdf:type           sdm:Handlers ;
 
 sdm:1   rdf:type                  sdm:Proceeding ;
         sdm:BelongsToConference   <http://www.sdm-lab.com/#O%27Reilly+Velocity+Conference> , <http://www.sdm-lab.com/#Sustainable+UX> , <http://www.sdm-lab.com/#The+Lead+Developer+New+York> , <http://www.sdm-lab.com/#Typography+Day+2017> ;
-        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology , sdm:Medicine ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Database , sdm:Medicine ;
         sdm:edition               "1"^^xsd:int ;
         sdm:issn                  "123450" .
 
@@ -842,7 +854,7 @@ sdm:34615430  rdf:type  sdm:Author ;
 
 sdm:d49dc28600e0fb85cbedfefe936e1a7a8219af9c
         rdf:type             sdm:Poster ;
-        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:ContainsKeyword  sdm:Database , sdm:Business ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2018.03.001This+paper+is+rejected%21> ;
         sdm:SubmittedIn      sdm:Script17 ;
         sdm:WrittenBy        sdm:97405037 , sdm:51499126 , sdm:48384596 , sdm:2065066749 , sdm:38353251 ;
@@ -897,7 +909,7 @@ sdm:2203524009  rdf:type  sdm:Author ;
 
 sdm:779713324245b32c12f1817999ec87bb0511858f
         rdf:type             sdm:DemoPaper ;
-        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:ContainsKeyword  sdm:Database , sdm:Business ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2FJ.LEAQUA.2009.04.003This+paper+is+accepted%21> ;
         sdm:PublishedIn      <http://www.sdm-lab.com/#%2220%22> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Leadership+Quarterly> ;
@@ -977,7 +989,7 @@ sdm:2108169698  rdf:type  sdm:Author ;
 
 <http://www.sdm-lab.com/#Association+for+Computing+Machinery+%28ACM%29>
         rdf:type             sdm:Journal ;
-        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Database ;
         sdm:venueHasHandler  sdm:25512 , sdm:4705 ;
         sdm:year             "2016" , "2015" .
 
@@ -1003,7 +1015,7 @@ sdm:87796254  rdf:type  sdm:Author ;
 
 sdm:bf191236573edc2242ff319e4ea1a71fe5125cc7
         rdf:type             sdm:Poster ;
-        sdm:ContainsKeyword  sdm:Psychology , sdm:Business ;
+        sdm:ContainsKeyword  sdm:Database , sdm:Business ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.4236%2FJSSM.2016.91009This+paper+is+accepted%21> ;
         sdm:PublishedIn      sdm:1 ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#The+Lead+Developer+New+York> ;
@@ -1018,7 +1030,7 @@ sdm:1397903461  rdf:type  sdm:Author ;
 
 sdm:7253454d31e983929e683e2eb9150cc810cedce7
         rdf:type             sdm:Fullpaper ;
-        sdm:ContainsKeyword  sdm:Psychology , sdm:Business ;
+        sdm:ContainsKeyword  sdm:Database , sdm:Business ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1002%2FJOB.1885This+paper+is+accepted%21> ;
         sdm:PublishedIn      <http://www.sdm-lab.com/#%2235%22> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+Organizational+Behavior> ;
@@ -1033,7 +1045,7 @@ sdm:7253454d31e983929e683e2eb9150cc810cedce7
 
 <http://www.sdm-lab.com/#Revue+Europ%C3%A9enne+de+Psychologie+Appliqu%C3%A9e>
         rdf:type             sdm:Journal ;
-        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Database ;
         sdm:venueHasHandler  sdm:25330 ;
         sdm:year             "2017" .
 
@@ -1126,12 +1138,6 @@ sdm:Mathematics  rdf:type    sdm:Journal ;
         sdm:reviewdecision  "REJECTED" ;
         sdm:reviewtext      "This paper is rejected!" .
 
-<http://www.sdm-lab.com/#Frontiers+in+Psychology>
-        rdf:type             sdm:Journal ;
-        sdm:VenueRelatedTo   sdm:Psychology , sdm:Medicine ;
-        sdm:venueHasHandler  sdm:222 ;
-        sdm:year             "2022" .
-
 sdm:23483  rdf:type          sdm:Handlers ;
         sdm:AssignsReviewer  sdm:4004192 , sdm:34773914 ;
         sdm:h-index          "90"^^xsd:int ;
@@ -1149,7 +1155,7 @@ sdm:2898986  rdf:type     sdm:Reviewer ;
 
 sdm:7d67c664d625cdeb7f91403ceac15a4496a32396
         rdf:type             sdm:Poster ;
-        sdm:ContainsKeyword  sdm:Psychology , sdm:Medicine ;
+        sdm:ContainsKeyword  sdm:Medicine , sdm:Database ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1037%2Fa0031757This+paper+is+accepted%21> ;
         sdm:PublishedIn      sdm:1 ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Sustainable+UX> ;
@@ -1164,7 +1170,7 @@ sdm:2820282  rdf:type  sdm:Author ;
 
 <http://www.sdm-lab.com/#O%27Reilly+Velocity+Conference>
         rdf:type             sdm:Symposium ;
-        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Database ;
         sdm:name             "O'Reilly Velocity Conference" ;
         sdm:venueHasHandler  sdm:12307 ;
         sdm:year             "2021" .
@@ -1181,7 +1187,7 @@ sdm:40102157  rdf:type    sdm:Reviewer ;
 
 sdm:36e1912e9be9e1a90a06edd78ea16a429a03fb35
         rdf:type             sdm:Fullpaper ;
-        sdm:ContainsKeyword  sdm:Medicine , sdm:Psychology ;
+        sdm:ContainsKeyword  sdm:Medicine , sdm:Database ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2Fj.jaac.2012.01.018This+paper+is+rejected%21> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+the+American+Academy+of+Child+and+Adolescent+Psychiatry> ;
         sdm:WrittenBy        sdm:6677546 , sdm:145349578 ;
@@ -1194,7 +1200,7 @@ sdm:66373895  rdf:type  sdm:Author ;
         sdm:name     "T. Dundon" .
 
 sdm:Script17  rdf:type       sdm:Regular ;
-        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Database ;
         sdm:name             "Script17" ;
         sdm:venueHasHandler  sdm:22797 ;
         sdm:year             "2018" .
@@ -1213,7 +1219,7 @@ sdm:Symposium  rdf:type  owl:Class ;
 
 sdm:9a536eabd4abeb979392cf4c51aa0b7407267f93
         rdf:type             sdm:Poster ;
-        sdm:ContainsKeyword  <http://www.sdm-lab.com/#Computer+Science> , sdm:Psychology ;
+        sdm:ContainsKeyword  sdm:Database , <http://www.sdm-lab.com/#Computer+Science> ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1007%2Fs11192-019-03184-yThis+paper+is+accepted%21> ;
         sdm:PublishedIn      sdm:0 ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#The+Lead+Developer+New+York> ;
@@ -1257,7 +1263,7 @@ sdm:4381864  rdf:type  sdm:Author ;
 
 sdm:6cc1c4b8cb5daac2984bf82c043f82fd53d75af0
         rdf:type             sdm:DemoPaper ;
-        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Database ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1177%2F0018726715597481This+paper+is+rejected%21> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Human+Relations> ;
         sdm:WrittenBy        sdm:14510610 , sdm:2027364952 , sdm:49991622 , sdm:2152886813 ;
@@ -1282,7 +1288,7 @@ sdm:9593910  rdf:type  sdm:Author ;
 <http://www.sdm-lab.com/#%2219%22>
         rdf:type                  sdm:Volume ;
         sdm:BelongsToJournal      <http://www.sdm-lab.com/#Career+Development+International> ;
-        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Database ;
         sdm:issn                  "0123456" ;
         sdm:volumenumber          "5"^^xsd:int .
 
@@ -1301,7 +1307,7 @@ sdm:bab5c537bdef6b5c5b8e82213abc5650fc2ecd03
         sdm:ContainsKeyword  sdm:Sociology , sdm:Medicine , sdm:Business ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1037%2Fa0038922This+paper+is+accepted%21> ;
         sdm:PublishedIn      <http://www.sdm-lab.com/#%22100+3%22> ;
-        sdm:SubmittedIn      <http://www.sdm-lab.com/#The+Journal+of+applied+psychology> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#The+Journal+of+applied+Database> ;
         sdm:WrittenBy        sdm:2059598628 , sdm:39456927 , sdm:2820282 , sdm:67128030 ;
         sdm:doi              "10.1037%2Fa0038922" ;
         sdm:title            "Social network approaches to leadership: an integrative conceptual review." .
@@ -1408,8 +1414,8 @@ sdm:47780686  rdf:type  sdm:Author ;
 
 <http://www.sdm-lab.com/#%2296+3%22>
         rdf:type                  sdm:Volume ;
-        sdm:BelongsToJournal      <http://www.sdm-lab.com/#The+Journal+of+applied+psychology> ;
-        sdm:PublicationRelatedTo  sdm:Business , sdm:Medicine , sdm:Psychology ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#The+Journal+of+applied+Database> ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Medicine , sdm:Database ;
         sdm:issn                  "0123456" ;
         sdm:volumenumber          "5"^^xsd:int .
 
@@ -1426,13 +1432,13 @@ sdm:48811537  rdf:type  sdm:Author ;
 
 <http://www.sdm-lab.com/#Leadership+Quarterly>
         rdf:type             sdm:Journal ;
-        sdm:VenueRelatedTo   sdm:Sociology , sdm:Psychology , sdm:Engineering , sdm:Economics , sdm:Business ;
+        sdm:VenueRelatedTo   sdm:Sociology , sdm:Engineering , sdm:Economics , sdm:Database , sdm:Business ;
         sdm:venueHasHandler  sdm:8058 , sdm:10003 , sdm:3862 , sdm:9968 , sdm:6917 , sdm:16176 , sdm:10450 ;
         sdm:year             "2009" , "2020" , "2017" , "2012" , "2014" .
 
 sdm:3286d652031571d504f78ab989e0263f759e4e12
         rdf:type             sdm:ShortPaper ;
-        sdm:ContainsKeyword  sdm:Psychology , sdm:Medicine ;
+        sdm:ContainsKeyword  sdm:Database , sdm:Medicine ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1111%2Fj.1035-6851.2001.249-13.xThis+paper+is+accepted%21> ;
         sdm:PublishedIn      <http://www.sdm-lab.com/#%2275%22> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#MTZ+worldwide> ;
@@ -1461,7 +1467,7 @@ sdm:122037404  rdf:type  sdm:Author ;
 
 sdm:1b241abeac4fa252a3ec59f7b79ff9ee56445d4e
         rdf:type             sdm:Fullpaper ;
-        sdm:ContainsKeyword  sdm:Psychology ;
+        sdm:ContainsKeyword  sdm:Database ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1002%2FJOB.2268This+paper+is+accepted%21> ;
         sdm:PublishedIn      <http://www.sdm-lab.com/#%2239%22> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+Organizational+Behavior> ;
@@ -1505,10 +1511,10 @@ sdm:98895639  rdf:type  sdm:Author ;
 
 sdm:f435c4e1a2f549b3a6288520499014769d311a67
         rdf:type             sdm:Fullpaper ;
-        sdm:ContainsKeyword  sdm:Psychology , sdm:Medicine ;
+        sdm:ContainsKeyword  sdm:Database , sdm:Medicine ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.3389%2Ffpsyg.2022.792599This+paper+is+accepted%21> ;
         sdm:PublishedIn      <http://www.sdm-lab.com/#%2213%22> ;
-        sdm:SubmittedIn      <http://www.sdm-lab.com/#Frontiers+in+Psychology> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#Frontiers+in+Database> ;
         sdm:WrittenBy        sdm:2179215280 , sdm:52204670 , sdm:51439243 ;
         sdm:doi              "10.3389%2Ffpsyg.2022.792599" ;
         sdm:title            "Exploring the past, present, and future of the mindfulness field: A multitechnique bibliometric review" .
@@ -1527,16 +1533,10 @@ sdm:Biology  rdf:type         sdm:Keyword ;
         sdm:KeywordRelatedTo  sdm:Biology ;
         sdm:domain            "dummy domain" .
 
-<http://www.sdm-lab.com/#The+Journal+of+applied+psychology>
-        rdf:type             sdm:Journal ;
-        sdm:VenueRelatedTo   sdm:Psychology , sdm:Sociology , sdm:Business , sdm:Medicine ;
-        sdm:venueHasHandler  sdm:13119 , sdm:13862 , sdm:23385 ;
-        sdm:year             "2011" , "2015" .
-
 <http://www.sdm-lab.com/#%2296+1%22>
         rdf:type                  sdm:Volume ;
-        sdm:BelongsToJournal      <http://www.sdm-lab.com/#The+Journal+of+applied+psychology> ;
-        sdm:PublicationRelatedTo  sdm:Business , sdm:Medicine , sdm:Psychology ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#The+Journal+of+applied+Database> ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Medicine , sdm:Database ;
         sdm:issn                  "0123456" ;
         sdm:volumenumber          "5"^^xsd:int .
 
@@ -1552,7 +1552,7 @@ sdm:40041524  rdf:type    sdm:Reviewer ;
 
 sdm:64ea9a1a6677325d07b44753f13e0bce8f605acf
         rdf:type             sdm:Fullpaper ;
-        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Database ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.2224%2FSBP.2015.43.8.1273%E2%80%931286This+paper+is+rejected%21> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Social+Behavior+and+Personality> ;
         sdm:WrittenBy        sdm:2144735991 , sdm:49649535 , sdm:2143950738 , sdm:2109971529 ;
@@ -1607,7 +1607,7 @@ sdm:40403474  rdf:type  sdm:Author ;
 
 sdm:cc5d004f90bb2ef05cdc2d28f87f462d57754d72
         rdf:type             sdm:Fullpaper ;
-        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Database ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2FJ.ERAP.2017.05.005This+paper+is+rejected%21> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Revue+Europ%C3%A9enne+de+Psychologie+Appliqu%C3%A9e> ;
         sdm:WrittenBy        sdm:144676228 , sdm:49200540 ;
@@ -1634,12 +1634,11 @@ sdm:3553866  rdf:type  sdm:Author ;
         sdm:h-index  "12"^^xsd:int ;
         sdm:name     "Thomas Rockstuhl" .
 
-sdm:3   rdf:type                  sdm:Volume , sdm:Proceeding ;
+sdm:3   rdf:type                  sdm:Volume ;
         sdm:BelongsToConference   <http://www.sdm-lab.com/#Sustainable+UX> ;
         sdm:BelongsToJournal      sdm:Sustainability ;
-        sdm:PublicationRelatedTo  <http://www.sdm-lab.com/#Computer+Science> , sdm:Education , sdm:Sociology ;
-        sdm:edition               "1"^^xsd:int ;
-        sdm:issn                  "0123456" , "123450" ;
+        sdm:PublicationRelatedTo  sdm:Education , sdm:Sociology , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:issn                  "0123456" ;
         sdm:volumenumber          "5"^^xsd:int .
 
 sdm:2152176463  rdf:type  sdm:Author ;
@@ -1672,10 +1671,10 @@ sdm:Venue  rdf:type  owl:Class .
 
 sdm:9679912b1386a04b793841ce3fb45de05a938676
         rdf:type             sdm:Fullpaper ;
-        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:ContainsKeyword  sdm:Database , sdm:Business ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1080%2F1359432x.2020.1819241This+paper+is+accepted%21> ;
         sdm:PublishedIn      <http://www.sdm-lab.com/#%2230%22> ;
-        sdm:SubmittedIn      <http://www.sdm-lab.com/#European+Journal+of+Work+and+Organizational+Psychology> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#European+Journal+of+Work+and+Organizational+Database> ;
         sdm:WrittenBy        sdm:1398112513 , sdm:8319240 , sdm:51499126 , sdm:97405037 ;
         sdm:doi              "10.1080%2F1359432x.2020.1819241" ;
         sdm:title            "A meta-analysis of the role of trust in the leadership- performance relationship" .
@@ -1803,7 +1802,7 @@ sdm:3455874  rdf:type  sdm:Author ;
 
 <http://www.sdm-lab.com/#Human+Relations>
         rdf:type             sdm:Journal ;
-        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Database ;
         sdm:venueHasHandler  sdm:20572 ;
         sdm:year             "2016" .
 
@@ -1825,7 +1824,7 @@ sdm:a2126884ac972bc42ac96b1f5a3c9aa7c979cd02
 
 sdm:5e8c9145855755438ae8f732d2256b92045018f7
         rdf:type             sdm:Fullpaper ;
-        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Database ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1093%2FOXFORDHB%2F9780199326174.013.0009This+paper+is+rejected%21> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Association+for+Computing+Machinery+%28ACM%29> ;
         sdm:WrittenBy        sdm:5934403 , sdm:3052094 ;
@@ -1844,6 +1843,12 @@ sdm:2202347418  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
         sdm:h-index  "12"^^xsd:int ;
         sdm:name     "Lili Feng" .
+
+<http://www.sdm-lab.com/#Frontiers+in+Database>
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Database , sdm:Medicine ;
+        sdm:venueHasHandler  sdm:222 ;
+        sdm:year             "2022" .
 
 <http://www.sdm-lab.com/#10.1080%2F1359432x.2020.1819241This+paper+is+accepted%21>
         rdf:type            sdm:Review ;
@@ -1879,7 +1884,7 @@ sdm:2126812  rdf:type  sdm:Author ;
 <http://www.sdm-lab.com/#%22120%22>
         rdf:type                  sdm:Volume ;
         sdm:BelongsToJournal      <http://www.sdm-lab.com/#Psychological+Reports> ;
-        sdm:PublicationRelatedTo  sdm:Business , sdm:Medicine , sdm:Psychology ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Medicine , sdm:Database ;
         sdm:issn                  "0123456" ;
         sdm:volumenumber          "5"^^xsd:int .
 
@@ -1895,14 +1900,14 @@ sdm:31839425  rdf:type    sdm:Reviewer ;
 
 <http://www.sdm-lab.com/#UX+Riga>
         rdf:type             sdm:Symposium ;
-        sdm:VenueRelatedTo   sdm:Medicine , sdm:Psychology ;
+        sdm:VenueRelatedTo   sdm:Medicine , sdm:Database ;
         sdm:name             "UX Riga" ;
         sdm:venueHasHandler  sdm:12153 ;
         sdm:year             "2021" .
 
 <http://www.sdm-lab.com/#Career+Development+International>
         rdf:type             sdm:Journal ;
-        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Database ;
         sdm:venueHasHandler  sdm:18735 ;
         sdm:year             "2014" .
 
@@ -2000,7 +2005,7 @@ sdm:2582168  rdf:type  sdm:Author ;
 
 sdm:ad0beaa0e79a9b95e4de41cd855b7f7f76a8eb7a
         rdf:type             sdm:Poster ;
-        sdm:ContainsKeyword  sdm:Psychology , sdm:Business ;
+        sdm:ContainsKeyword  sdm:Database , sdm:Business ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1111%2FJ.1744-6570.2010.01203.XThis+paper+is+rejected%21> ;
         sdm:SubmittedIn      sdm:Webstock ;
         sdm:WrittenBy        sdm:39581878 , sdm:6329466 , sdm:5939684 ;
@@ -2061,13 +2066,19 @@ sdm:1769770  rdf:type  sdm:Author ;
         sdm:h-index  "12"^^xsd:int ;
         sdm:name     "Miha Škerlavaj" .
 
-sdm:Conference  rdf:type  owl:Class ;
-        rdfs:subClassOf  sdm:Venue .
-
 sdm:39711839  rdf:type    sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:0700a4314a1c14f1894d58ae8581e265d80158bc ;
         sdm:WritesReview  <http://www.sdm-lab.com/#10.1002%2FJOB.627This+paper+is+rejected%21> ;
         sdm:h-index       "60"^^xsd:int .
+
+sdm:Conference  rdf:type  owl:Class ;
+        rdfs:subClassOf  sdm:Venue .
+
+<http://www.sdm-lab.com/#The+Journal+of+applied+Database>
+        rdf:type             sdm:Journal ;
+        sdm:VenueRelatedTo   sdm:Medicine , sdm:Database , sdm:Business , sdm:Sociology ;
+        sdm:venueHasHandler  sdm:13862 , sdm:13119 , sdm:23385 ;
+        sdm:year             "2015" , "2011" .
 
 sdm:102979552  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -2190,7 +2201,7 @@ sdm:35b460874243165533df66b6dfc31e9c7aee3fb9
 <http://www.sdm-lab.com/#%222014%22>
         rdf:type                  sdm:Volume ;
         sdm:BelongsToJournal      <http://www.sdm-lab.com/#Association+for+Computing+Machinery+%28ACM%29> ;
-        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Database ;
         sdm:issn                  "0123456" ;
         sdm:volumenumber          "5"^^xsd:int .
 
@@ -2221,7 +2232,7 @@ sdm:37d0ee300bd42ec99c986b538760066ff0dea56d
 <http://www.sdm-lab.com/#%2220%22>
         rdf:type                  sdm:Volume ;
         sdm:BelongsToJournal      <http://www.sdm-lab.com/#Leadership+Quarterly> ;
-        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Database ;
         sdm:issn                  "0123456" ;
         sdm:volumenumber          "5"^^xsd:int .
 
@@ -2254,7 +2265,7 @@ sdm:BelongsToConference
 
 sdm:0d105d6281b13c140581198f1a2d42f905585513
         rdf:type             sdm:Poster ;
-        sdm:ContainsKeyword  sdm:Psychology , sdm:Medicine ;
+        sdm:ContainsKeyword  sdm:Medicine , sdm:Database ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1111%2FJASP.12744This+paper+is+rejected%21> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#UX+Riga> ;
         sdm:WrittenBy        sdm:48250810 , sdm:114570655 , sdm:46362397 , sdm:52205524 ;
@@ -2289,7 +2300,7 @@ sdm:40595787  rdf:type  sdm:Author ;
 
 sdm:2066fe8e700fa0f67ba727386c49c9189260fa8e
         rdf:type             sdm:Fullpaper ;
-        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Database ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2Fj.leaqua.2020.101385This+paper+is+rejected%21> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Leadership+Quarterly> ;
         sdm:WrittenBy        sdm:31857231 , sdm:38979717 , sdm:145835903 ;
@@ -2313,7 +2324,7 @@ sdm:121546819  rdf:type   sdm:Reviewer ;
 
 sdm:5   rdf:type                  sdm:Volume ;
         sdm:BelongsToJournal      <http://www.sdm-lab.com/#Elgar+Introduction+to+Theories+of+Human+Resources+and+Employment+Relations> ;
-        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Database ;
         sdm:issn                  "0123456" ;
         sdm:volumenumber          "5"^^xsd:int .
 
@@ -2375,7 +2386,7 @@ sdm:5422191  rdf:type     sdm:Reviewer ;
 
 sdm:e6ebc91a221d1d0d822b68ea6f269e888873ef1a
         rdf:type             sdm:ShortPaper ;
-        sdm:ContainsKeyword  sdm:Psychology ;
+        sdm:ContainsKeyword  sdm:Database ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.5465%2FAMR.2016.0264This+paper+is+rejected%21> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Academy+of+Management+Review> ;
         sdm:WrittenBy        sdm:39835700 , sdm:8381772 ;
@@ -2431,7 +2442,7 @@ sdm:17569  rdf:type          sdm:Handlers ;
 
 <http://www.sdm-lab.com/#Voxxed+Days+-+Cern>
         rdf:type             sdm:Symposium ;
-        sdm:VenueRelatedTo   sdm:Business , sdm:Medicine , sdm:Psychology ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Medicine , sdm:Database ;
         sdm:name             "Voxxed Days - Cern" ;
         sdm:venueHasHandler  sdm:496 ;
         sdm:year             "2014" .
@@ -2458,7 +2469,7 @@ sdm:10620012  rdf:type  sdm:Author ;
 
 sdm:a713ea4d4c48afc79abea40af006e420e8547802
         rdf:type             sdm:ShortPaper ;
-        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:ContainsKeyword  sdm:Database , sdm:Business ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1108%2FCDI-05-2013-0063This+paper+is+accepted%21> ;
         sdm:PublishedIn      <http://www.sdm-lab.com/#%2219%22> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Career+Development+International> ;
@@ -2471,31 +2482,24 @@ sdm:a713ea4d4c48afc79abea40af006e420e8547802
         sdm:reviewdecision  "ACCEPTED" ;
         sdm:reviewtext      "This paper is accepted!" .
 
-<http://www.sdm-lab.com/#10.1002%2FJOB.627This+paper+is+rejected%21>
-        rdf:type            sdm:Review ;
-        sdm:reviewdecision  "REJECTED" ;
-        sdm:reviewtext      "This paper is rejected!" .
-
 sdm:39747184  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
         sdm:h-index  "12"^^xsd:int ;
         sdm:name     "Rebecca L. Greenbaum" .
+
+<http://www.sdm-lab.com/#10.1002%2FJOB.627This+paper+is+rejected%21>
+        rdf:type            sdm:Review ;
+        sdm:reviewdecision  "REJECTED" ;
+        sdm:reviewtext      "This paper is rejected!" .
 
 sdm:1393567274  rdf:type  sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:a2126884ac972bc42ac96b1f5a3c9aa7c979cd02 ;
         sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2FJ.JBUSRES.2021.04.070This+paper+is+rejected%21> ;
         sdm:h-index       "60"^^xsd:int .
 
-<http://www.sdm-lab.com/#%2230%22>
-        rdf:type                  sdm:Volume ;
-        sdm:BelongsToJournal      <http://www.sdm-lab.com/#European+Journal+of+Work+and+Organizational+Psychology> ;
-        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology ;
-        sdm:issn                  "0123456" ;
-        sdm:volumenumber          "5"^^xsd:int .
-
 sdm:c8fcd37be1be142bcfc9ef745f204a1d286669d5
         rdf:type             sdm:DemoPaper ;
-        sdm:ContainsKeyword  sdm:Psychology , sdm:Business ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Database ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1177%2F0149206320930813This+paper+is+accepted%21> ;
         sdm:PublishedIn      <http://www.sdm-lab.com/#%2247%22> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+Management> ;
@@ -2503,9 +2507,20 @@ sdm:c8fcd37be1be142bcfc9ef745f204a1d286669d5
         sdm:doi              "10.1177%2F0149206320930813" ;
         sdm:title            "LMX Differentiation and Group Outcomes: A Framework and Review Drawing on Group Diversity Insights" .
 
+<http://www.sdm-lab.com/#%2230%22>
+        rdf:type                  sdm:Volume ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#European+Journal+of+Work+and+Organizational+Database> ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Database ;
+        sdm:issn                  "0123456" ;
+        sdm:volumenumber          "5"^^xsd:int .
+
+sdm:Database  rdf:type        sdm:Keyword ;
+        sdm:KeywordRelatedTo  sdm:Database ;
+        sdm:domain            "dummy domain" .
+
 sdm:bff0c902c546e1e40c38c0575f58c505f45aeb16
         rdf:type             sdm:ShortPaper ;
-        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:ContainsKeyword  sdm:Database , sdm:Business ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2FJ.HRMR.2018.02.004This+paper+is+rejected%21> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Human+Resource+Management+Review> ;
         sdm:WrittenBy        sdm:51439243 , sdm:2345032 , sdm:102979552 ;
@@ -2532,19 +2547,19 @@ sdm:Handlers  rdf:type   owl:Class ;
 
 <http://www.sdm-lab.com/#Academy+of+Management+Journal>
         rdf:type             sdm:Journal ;
-        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Database ;
         sdm:venueHasHandler  sdm:6907 ;
         sdm:year             "2012" .
 
 sdm:0   rdf:type                  sdm:Proceeding ;
         sdm:BelongsToConference   <http://www.sdm-lab.com/#Agile+Content+Conf> , <http://www.sdm-lab.com/#The+Lead+Developer+New+York> ;
-        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology , <http://www.sdm-lab.com/#Computer+Science> ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Database , <http://www.sdm-lab.com/#Computer+Science> ;
         sdm:edition               "1"^^xsd:int ;
         sdm:issn                  "123450" .
 
 <http://www.sdm-lab.com/#MTZ+worldwide>
         rdf:type             sdm:Journal ;
-        sdm:VenueRelatedTo   sdm:Psychology , sdm:Medicine ;
+        sdm:VenueRelatedTo   sdm:Database , sdm:Medicine ;
         sdm:venueHasHandler  sdm:19226 ;
         sdm:year             "2014" .
 
@@ -2565,7 +2580,7 @@ sdm:15574296  rdf:type  sdm:Author ;
 
 <http://www.sdm-lab.com/#%22100+3%22>
         rdf:type                  sdm:Volume ;
-        sdm:BelongsToJournal      <http://www.sdm-lab.com/#The+Journal+of+applied+psychology> ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#The+Journal+of+applied+Database> ;
         sdm:PublicationRelatedTo  sdm:Business , sdm:Medicine , sdm:Sociology ;
         sdm:issn                  "0123456" ;
         sdm:volumenumber          "5"^^xsd:int .
@@ -2576,7 +2591,7 @@ sdm:2405956  rdf:type     sdm:Reviewer ;
         sdm:h-index       "60"^^xsd:int .
 
 sdm:Webstock  rdf:type       sdm:Symposium ;
-        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Database ;
         sdm:name             "Webstock" ;
         sdm:venueHasHandler  sdm:18011 ;
         sdm:year             "2011" .
@@ -2682,7 +2697,7 @@ sdm:114570655  rdf:type  sdm:Author ;
 
 <http://www.sdm-lab.com/#Typography+Day+2017>
         rdf:type             sdm:Regular ;
-        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Database ;
         sdm:name             "Typography Day 2017" ;
         sdm:venueHasHandler  sdm:18443 ;
         sdm:year             "2018" .
@@ -2784,7 +2799,7 @@ sdm:5934403  rdf:type  sdm:Author ;
 
 sdm:ee7aaba2e911b3a74e0eb97a14d7028db825945b
         rdf:type             sdm:Poster ;
-        sdm:ContainsKeyword  sdm:Medicine , sdm:Business , sdm:Psychology ;
+        sdm:ContainsKeyword  sdm:Medicine , sdm:Business , sdm:Database ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1037%2Fa0029978This+paper+is+rejected%21> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Voxxed+Days+-+Zurich> ;
         sdm:WrittenBy        sdm:33091184 , sdm:145886367 , sdm:3042061 , sdm:3553866 ;
@@ -2868,7 +2883,7 @@ sdm:25330  rdf:type          sdm:Handlers ;
 
 sdm:9ae8a63742aae79c94a86ab0661a7d8c2971c433
         rdf:type             sdm:Poster ;
-        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Database ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1177%2F1742715012455130This+paper+is+accepted%21> ;
         sdm:PublishedIn      sdm:0 ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Agile+Content+Conf> ;
@@ -2878,7 +2893,7 @@ sdm:9ae8a63742aae79c94a86ab0661a7d8c2971c433
 
 <http://www.sdm-lab.com/#Psychological+Reports>
         rdf:type             sdm:Journal ;
-        sdm:VenueRelatedTo   sdm:Business , sdm:Medicine , sdm:Psychology ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Medicine , sdm:Database ;
         sdm:venueHasHandler  sdm:12967 ;
         sdm:year             "2017" .
 
@@ -2904,7 +2919,7 @@ sdm:2202557717  rdf:type  sdm:Author ;
 
 sdm:60be7fab57de6fd77e52812264f6d0073d9e19cb
         rdf:type             sdm:Poster ;
-        sdm:ContainsKeyword  sdm:Psychology ;
+        sdm:ContainsKeyword  sdm:Database ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2FJ.HRMR.2016.09.008This+paper+is+accepted%21> ;
         sdm:PublishedIn      sdm:2 ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#The+Rolling+Scopes+Conference> ;
@@ -2929,7 +2944,7 @@ sdm:2059151067  rdf:type  sdm:Reviewer ;
 
 <http://www.sdm-lab.com/#Journal+of+the+American+Academy+of+Child+and+Adolescent+Psychiatry>
         rdf:type             sdm:Journal ;
-        sdm:VenueRelatedTo   sdm:Medicine , sdm:Psychology ;
+        sdm:VenueRelatedTo   sdm:Medicine , sdm:Database ;
         sdm:venueHasHandler  sdm:19896 ;
         sdm:year             "2012" .
 
@@ -2985,7 +3000,7 @@ sdm:2065066749  rdf:type  sdm:Author ;
 
 <http://www.sdm-lab.com/#Journal+of+Organizational+Behavior>
         rdf:type             sdm:Journal ;
-        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Database ;
         sdm:venueHasHandler  sdm:18356 , sdm:25785 , sdm:3810 , sdm:13372 , sdm:25835 ;
         sdm:year             "2018" , "2013" , "2010" , "2014" , "2021" .
 
@@ -3143,12 +3158,6 @@ sdm:115195611  rdf:type  sdm:Author ;
         sdm:h-index  "12"^^xsd:int ;
         sdm:name     "A. F. Marstand" .
 
-<http://www.sdm-lab.com/#Personnel+Psychology>
-        rdf:type             sdm:Journal ;
-        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
-        sdm:venueHasHandler  sdm:21415 ;
-        sdm:year             "2012" .
-
 sdm:94943d22fce7877f2089f0a9afb90eb7fc2352ee
         rdf:type             sdm:DemoPaper ;
         sdm:ContainsKeyword  sdm:Medicine ;
@@ -3185,7 +3194,7 @@ sdm:5939684  rdf:type  sdm:Author ;
 
 sdm:20bf58363cd91bb483296bc7ed9850ecc73fcb56
         rdf:type             sdm:Fullpaper ;
-        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:ContainsKeyword  sdm:Database , sdm:Business ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.5465%2FAMBPP.2014.12416ABSTRACTThis+paper+is+accepted%21> ;
         sdm:PublishedIn      <http://www.sdm-lab.com/#%222014%22> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Association+for+Computing+Machinery+%28ACM%29> ;
@@ -3210,7 +3219,7 @@ sdm:1401569491  rdf:type  sdm:Reviewer ;
 
 <http://www.sdm-lab.com/#The+Lead+Developer+New+York>
         rdf:type             sdm:Symposium ;
-        sdm:VenueRelatedTo   sdm:Business , sdm:Sociology , <http://www.sdm-lab.com/#Computer+Science> , sdm:Psychology ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Sociology , <http://www.sdm-lab.com/#Computer+Science> , sdm:Database ;
         sdm:name             "The Lead Developer New York" ;
         sdm:venueHasHandler  sdm:20876 ;
         sdm:year             "2019" , "2010" , "2016" .
@@ -3270,21 +3279,16 @@ sdm:3545916  rdf:type     sdm:Reviewer ;
         sdm:reviewdecision  "ACCEPTED" ;
         sdm:reviewtext      "This paper is accepted!" .
 
-sdm:Psychology  rdf:type      sdm:Keyword ;
-        sdm:KeywordRelatedTo  sdm:Psychology ;
-        sdm:domain            "dummy domain" .
-
 sdm:1422425649  rdf:type  sdm:Reviewer ;
         sdm:ReviewsPaper  sdm:7a4e971ceaef48d194abf6d206e6c2855f7d107e ;
         sdm:WritesReview  <http://www.sdm-lab.com/#10.1016%2Fj.aap.2009.08.009This+paper+is+accepted%21> ;
         sdm:h-index       "60"^^xsd:int .
 
-sdm:2   rdf:type                  sdm:Volume , sdm:Proceeding ;
+sdm:2   rdf:type                  sdm:Volume ;
         sdm:BelongsToConference   <http://www.sdm-lab.com/#The+Rolling+Scopes+Conference> ;
         sdm:BelongsToJournal      <http://www.sdm-lab.com/#Journal+of+Organizational+Behavior> ;
-        sdm:PublicationRelatedTo  sdm:Medicine , sdm:Psychology , sdm:Business ;
-        sdm:edition               "1"^^xsd:int ;
-        sdm:issn                  "0123456" , "123450" ;
+        sdm:PublicationRelatedTo  sdm:Medicine , sdm:Business , sdm:Database ;
+        sdm:issn                  "0123456" ;
         sdm:volumenumber          "5"^^xsd:int .
 
 sdm:3505664  rdf:type     sdm:Reviewer ;
@@ -3404,10 +3408,10 @@ sdm:25835  rdf:type          sdm:Handlers ;
 
 sdm:a797c38057fddbf635a2917424f44b5583792813
         rdf:type             sdm:Fullpaper ;
-        sdm:ContainsKeyword  sdm:Business , sdm:Psychology , sdm:Medicine ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Database , sdm:Medicine ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1037%2Fa0021484This+paper+is+accepted%21> ;
         sdm:PublishedIn      <http://www.sdm-lab.com/#%2296+1%22> ;
-        sdm:SubmittedIn      <http://www.sdm-lab.com/#The+Journal+of+applied+psychology> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#The+Journal+of+applied+Database> ;
         sdm:WrittenBy        sdm:3001948 , sdm:5749406 , sdm:34312385 ;
         sdm:doi              "10.1037%2Fa0021484" ;
         sdm:title            "Safety at work: a meta-analytic investigation of the link between job demands, job resources, burnout, engagement, and safety outcomes." .
@@ -3434,10 +3438,10 @@ sdm:3056908  rdf:type     sdm:Reviewer ;
 
 sdm:dae4a6e0d6bf612993b608e2e556a3c91ff8b56f
         rdf:type             sdm:DemoPaper ;
-        sdm:ContainsKeyword  sdm:Psychology , sdm:Business , sdm:Medicine ;
+        sdm:ContainsKeyword  sdm:Database , sdm:Business , sdm:Medicine ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1037%2Fa0021452This+paper+is+accepted%21> ;
         sdm:PublishedIn      <http://www.sdm-lab.com/#%2296+3%22> ;
-        sdm:SubmittedIn      <http://www.sdm-lab.com/#The+Journal+of+applied+psychology> ;
+        sdm:SubmittedIn      <http://www.sdm-lab.com/#The+Journal+of+applied+Database> ;
         sdm:WrittenBy        sdm:32508883 , sdm:4381864 , sdm:16219820 , sdm:115434713 , sdm:8572229 ;
         sdm:doi              "10.1037%2Fa0021452" ;
         sdm:title            "Antecedents and outcomes of organizational support for development: the critical role of career opportunities." .
@@ -3461,7 +3465,7 @@ sdm:18011  rdf:type          sdm:Handlers ;
 
 <http://www.sdm-lab.com/#Agile+Content+Conf>
         rdf:type             sdm:Workshop ;
-        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Database ;
         sdm:name             "Agile Content Conf" ;
         sdm:venueHasHandler  sdm:6562 ;
         sdm:year             "2013" .
@@ -3473,7 +3477,7 @@ sdm:19226  rdf:type          sdm:Handlers ;
 
 <http://www.sdm-lab.com/#Academy+of+Management+Review>
         rdf:type             sdm:Journal ;
-        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Database ;
         sdm:venueHasHandler  sdm:9981 , sdm:3231 ;
         sdm:year             "2011" , "2018" .
 
@@ -3547,14 +3551,14 @@ sdm:143976706  rdf:type  sdm:Author ;
 
 <http://www.sdm-lab.com/#Journal+of+Management>
         rdf:type             sdm:Journal ;
-        sdm:VenueRelatedTo   sdm:Sociology , sdm:Business , sdm:Psychology ;
+        sdm:VenueRelatedTo   sdm:Sociology , sdm:Business , sdm:Database ;
         sdm:venueHasHandler  sdm:17569 , sdm:2533 ;
         sdm:year             "2015" , "2021" .
 
 <http://www.sdm-lab.com/#%2265%22>
         rdf:type                  sdm:Volume ;
-        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Personnel+Psychology> ;
-        sdm:PublicationRelatedTo  sdm:Business , sdm:Psychology ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Personnel+Database> ;
+        sdm:PublicationRelatedTo  sdm:Business , sdm:Database ;
         sdm:issn                  "0123456" ;
         sdm:volumenumber          "5"^^xsd:int .
 
@@ -3614,7 +3618,7 @@ sdm:16176  rdf:type          sdm:Handlers ;
 
 sdm:cfd0400973b9215ac96ef918c6ea2215b845571a
         rdf:type             sdm:Poster ;
-        sdm:ContainsKeyword  sdm:Psychology , sdm:Business ;
+        sdm:ContainsKeyword  sdm:Database , sdm:Business ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2FJ.JBUSRES.2021.03.032This+paper+is+accepted%21> ;
         sdm:PublishedIn      sdm:1 ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#O%27Reilly+Velocity+Conference> ;
@@ -3813,7 +3817,7 @@ sdm:2109971529  rdf:type  sdm:Author ;
 <http://www.sdm-lab.com/#%2275%22>
         rdf:type                  sdm:Volume ;
         sdm:BelongsToJournal      <http://www.sdm-lab.com/#MTZ+worldwide> ;
-        sdm:PublicationRelatedTo  sdm:Psychology , sdm:Medicine ;
+        sdm:PublicationRelatedTo  sdm:Database , sdm:Medicine ;
         sdm:issn                  "0123456" ;
         sdm:volumenumber          "5"^^xsd:int .
 
@@ -3829,7 +3833,7 @@ sdm:2169447913  rdf:type  sdm:Author ;
 
 sdm:95c7559eabc7c16ca0c2c7fa113a944574547f59
         rdf:type             sdm:Fullpaper ;
-        sdm:ContainsKeyword  sdm:Psychology ;
+        sdm:ContainsKeyword  sdm:Database ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1002%2FJOB.1888This+paper+is+rejected%21> ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+Organizational+Behavior> ;
         sdm:WrittenBy        sdm:3128421 , sdm:40790271 , sdm:40806683 , sdm:144229104 ;
@@ -3843,8 +3847,8 @@ sdm:95c7559eabc7c16ca0c2c7fa113a944574547f59
 
 <http://www.sdm-lab.com/#%2213%22>
         rdf:type                  sdm:Volume ;
-        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Frontiers+in+Psychology> ;
-        sdm:PublicationRelatedTo  sdm:Psychology , sdm:Medicine ;
+        sdm:BelongsToJournal      <http://www.sdm-lab.com/#Frontiers+in+Database> ;
+        sdm:PublicationRelatedTo  sdm:Database , sdm:Medicine ;
         sdm:issn                  "0123456" ;
         sdm:volumenumber          "5"^^xsd:int .
 
@@ -3880,7 +3884,7 @@ sdm:year  rdf:type   owl:DatatypeProperty ;
 
 sdm:7326d3ac058e5653482a1b5fcdbb46d3484f6ab8
         rdf:type             sdm:ShortPaper ;
-        sdm:ContainsKeyword  sdm:Business , sdm:Psychology ;
+        sdm:ContainsKeyword  sdm:Business , sdm:Database ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1002%2FJOB.2549This+paper+is+accepted%21> ;
         sdm:PublishedIn      sdm:2 ;
         sdm:SubmittedIn      <http://www.sdm-lab.com/#Journal+of+Organizational+Behavior> ;
@@ -3920,15 +3924,9 @@ sdm:90244165  rdf:type  sdm:Author ;
 <http://www.sdm-lab.com/#%2229%22>
         rdf:type                  sdm:Volume ;
         sdm:BelongsToJournal      <http://www.sdm-lab.com/#Leadership+Quarterly> , <http://www.sdm-lab.com/#Medical+Science+Monitor+%3A+International+Medical+Journal+of+Experimental+and+Clinical+Research> ;
-        sdm:PublicationRelatedTo  sdm:Psychology , sdm:Medicine ;
+        sdm:PublicationRelatedTo  sdm:Database , sdm:Medicine ;
         sdm:issn                  "0123456" ;
         sdm:volumenumber          "5"^^xsd:int .
-
-<http://www.sdm-lab.com/#European+Journal+of+Work+and+Organizational+Psychology>
-        rdf:type             sdm:Journal ;
-        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
-        sdm:venueHasHandler  sdm:19232 ;
-        sdm:year             "2020" .
 
 sdm:6038454  rdf:type  sdm:Author ;
         sdm:Bday     "6/6/1998" ;
@@ -3983,7 +3981,7 @@ sdm:145349578  rdf:type  sdm:Author ;
 
 <http://www.sdm-lab.com/#Human+Resource+Management+Review>
         rdf:type             sdm:Journal ;
-        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Database ;
         sdm:venueHasHandler  sdm:1339 ;
         sdm:year             "2018" .
 
@@ -4004,7 +4002,7 @@ sdm:name  rdf:type   owl:DatatypeProperty ;
 
 sdm:7f6b6ce19d8bc00df9f3ee1060f26222c80e52a2
         rdf:type             sdm:Poster ;
-        sdm:ContainsKeyword  sdm:Psychology , sdm:Business ;
+        sdm:ContainsKeyword  sdm:Database , sdm:Business ;
         sdm:HasReview        <http://www.sdm-lab.com/#10.1016%2Fj.leaqua.2020.101423This+paper+is+rejected%21> ;
         sdm:SubmittedIn      sdm:Jfokus ;
         sdm:WrittenBy        sdm:2387226 , sdm:102979552 , sdm:2126812 , sdm:49598271 ;
@@ -4045,7 +4043,7 @@ sdm:46232420  rdf:type  sdm:Author ;
 
 <http://www.sdm-lab.com/#Social+Behavior+and+Personality>
         rdf:type             sdm:Journal ;
-        sdm:VenueRelatedTo   sdm:Business , sdm:Psychology ;
+        sdm:VenueRelatedTo   sdm:Business , sdm:Database ;
         sdm:venueHasHandler  sdm:23484 ;
         sdm:year             "2015" .
 
