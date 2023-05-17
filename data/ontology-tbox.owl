@@ -24,17 +24,13 @@
       <owl:Class rdf:about="http://www.sdm-lab.com/#Conference"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="http://www.sdm-lab.com/#NamedConcepts">
-    <owl:unionOf rdf:parseType="Collection">
-      <owl:Class rdf:about="http://www.sdm-lab.com/#Person"/>
-      <owl:Class rdf:about="http://www.sdm-lab.com/#Venue"/>
-    </owl:unionOf>
-  </owl:Class>
   <owl:Class rdf:about="http://www.sdm-lab.com/#Volume">
     <rdfs:subClassOf rdf:resource="http://www.sdm-lab.com/#Publication"/>
   </owl:Class>
   <owl:Class rdf:about="http://www.sdm-lab.com/#Journal">
-    <rdfs:subClassOf rdf:resource="http://www.sdm-lab.com/#Venue"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.sdm-lab.com/#Venue"/>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="http://www.sdm-lab.com/#Review"/>
   <owl:Class rdf:about="http://www.sdm-lab.com/#Reviewer">
@@ -138,11 +134,7 @@
     <rdfs:range rdf:resource="http://www.sdm-lab.com/#Area"/>
     <rdfs:domain rdf:resource="http://www.sdm-lab.com/#Keyword"/>
   </owl:ObjectProperty>
-  <owl:DatatypeProperty rdf:about="http://www.sdm-lab.com/#name">
-    <rdfs:label xml:lang="en">A person/venue has a name</rdfs:label>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="http://www.sdm-lab.com/#NamedConcepts"/>
-  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.sdm-lab.com/#name"/>
   <owl:DatatypeProperty rdf:about="http://www.sdm-lab.com/#domain">
     <rdfs:label xml:lang="en">A keyword has a domain</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -152,6 +144,18 @@
     <rdfs:label xml:lang="en">A paper has a DOI</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:domain rdf:resource="http://www.sdm-lab.com/#Paper"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.sdm-lab.com/#personName">
+    <rdfs:subPropertyOf rdf:resource="http://www.sdm-lab.com/#name"/>
+    <rdfs:label xml:lang="en">A person has a name</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.sdm-lab.com/#Person"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.sdm-lab.com/#venueName">
+    <rdfs:subPropertyOf rdf:resource="http://www.sdm-lab.com/#name"/>
+    <rdfs:label xml:lang="en">A person has a name</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.sdm-lab.com/#Venue"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://www.sdm-lab.com/#role">
     <rdfs:label xml:lang="en">A handler has a role</rdfs:label>

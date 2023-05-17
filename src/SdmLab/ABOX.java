@@ -82,7 +82,8 @@ public class ABOX {
             DatatypeProperty issn = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"issn");
             DatatypeProperty year = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"year");
             DatatypeProperty domain = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"domain");
-            DatatypeProperty name = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"name");
+            DatatypeProperty personName = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"personName");
+            DatatypeProperty venueName = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"venueName");
             DatatypeProperty bDay = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"Bday");
             DatatypeProperty reviewDecision = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"reviewdecision");
             DatatypeProperty reviewText = model.getDatatypeProperty(model.getNsPrefixURI("sdm") +"reviewtext");
@@ -229,7 +230,7 @@ public class ABOX {
                     }
                     venueInstance = __conferenceInstance;
                     //Conference name as attribute
-                    __conferenceInstance.addProperty(name, __conference_name);
+                    __conferenceInstance.addProperty(venueName, __conference_name);
 
                     // if a paper is accepted, we have publication-related only
                     // else we ignore this part :D
@@ -349,7 +350,7 @@ public class ABOX {
                     Individual __author = model.getIndividual( model.getNsPrefixURI("sdm") +__author_id);
                     if (__author == null){
                         __author = author.createIndividual( model.getNsPrefixURI("sdm") +__author_id);
-                        __author.addProperty(name, __author_name);
+                        __author.addProperty(personName, __author_name);
                         __author.addProperty(bDay, "6/6/1998");
                         __author.addProperty(h_index, model.createTypedLiteral(Integer.valueOf(12)));
 

@@ -225,11 +225,19 @@ public class TBOX {
             domain.addRange(XSD.xstring);
             domain.addLabel("A keyword has a domain", "en");
 
+            DatatypeProperty personName = model.createDatatypeProperty(model.getNsPrefixURI("sdm") + "personName");
+            personName.addDomain(person);
+            personName.addRange(XSD.xstring);
+            personName.addLabel("A person has a name", "en");
+
+            DatatypeProperty venueName = model.createDatatypeProperty(model.getNsPrefixURI("sdm") + "venueName");
+            venueName.addDomain(venue);
+            venueName.addRange(XSD.xstring);
+            venueName.addLabel("A person has a name", "en");
+
             DatatypeProperty name = model.createDatatypeProperty(model.getNsPrefixURI("sdm") + "name");
-            UnionClass unionClass = model.createUnionClass(model.getNsPrefixURI("sdm")  + "NamedConcepts", model.createList(person, venue));
-            name.addDomain(unionClass);
-            name.addRange(XSD.xstring);
-            name.addLabel("A person/venue has a name", "en");
+            name.addSubProperty(personName);
+            name.addSubProperty(venueName);
 
             DatatypeProperty Bday = model.createDatatypeProperty(model.getNsPrefixURI("sdm") + "Bday");
             Bday.addDomain(person);
